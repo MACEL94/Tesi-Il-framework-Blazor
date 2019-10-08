@@ -1,0 +1,100 @@
+\chapter{Introduzione}\label{cap:introduzione}
+
+\section{Contesto}\label{sez:contesto}
+
+A seguito della crescente diffusione di apparecchi portabili quali laptop, palmari, cellulari, ecc.\
+utilizzati in un numero sempre maggiore di luoghi pubblici e privati quali ospedali, aereoporti, uffici,
+aziende e negozi si sono dovute trovare soluzioni che conciliassero necessit\`a diverse come
+interattivit\`a, molteplicit\`a di funzioni, semplicit\`a di utilizzo, maneggevolezza e riduzione degli
+ingombri.
+
+I maggiori problemi riguardano il compromesso tra molteplicit\`a di funzioni e riduzione degli ingombri, in
+quanto accessori aggiuntivi e funzioni complicate implicano risorse computazionali elevate a discapito di un
+maggiore consumo di energia~\cite{MathewsSicuranza}. In particolar modo l'utilizzo di questi dispositivi ha
+permesso una comunicabilit\`a elevatissima: le informazioni desiderate possono essere recuperate sempre ed
+ovunque in pochi minuti, grazie alla loro condivisione in reti quali internet.
+
+Proprio per quanto riguarda lo scambio di informazioni col mondo esterno \`e necessario munire questi
+dispositivi di interfacce per il collegamento con l'esterno. L'utilizzo di queste interfacce influisce in
+modo negativo sull'autonomia del dispositivo consumando molta energia, ci\`o implica che bisogna porre dei
+limiti sul numero e sull'utilizzo delle interfacce per non costringere l'installazione di batterie troppo
+ingombranti e pi\`u pesanti~\cite{CariniMumoloSicuranza}.
+
+Un esempio molto pratico e concreto si pu\`o fare su un dispositivo entrato oramai nel modo di vita di tutti
+noi, il cellulare. Lo sviluppo di questo dispositivo nato inizialmente solo per effettuare telefonate \`e
+vertiginoso, ora permette di inviare messaggi di testo, di effettuare fotografie, di personalizzare le
+suonerie, di scambiare e-mail, di navigare in internet, di giocare e tant'altro; tutto ci\`o per\`o consuma
+energia: fotocamera nel caso delle fotografie o display grandi e spaziosi per i giochi; ci\`o non tanto a
+discapito dell'ingombro grazie alla miniaturizzazione della componentistica elettronica quanto
+all'eccessivo consumo energetico colpevole di un'autonomia delle batterie minore. Proprio per questi ultimi
+due elementi \`e invece richiesto l'opposto, cio\`e un ingombro sempre minore e un'autonomia maggiore; \`e
+importante trovare un compromesso, in quanto per aumentare l'autonomia sarebbe sufficiente installare
+batterie di dimensioni superiori che per\`o implica un aumento di peso del dispositivo non trascurabile.
+
+Essendo dispositivi destinati ad un utilizzo mobile non sono accettabili i tradizionali collegamenti tramite
+cavo, le nuove tecnologie permettono comunicazioni senza cavo come infrarosso o onde radio; nello specifico
+Irda per la prima tipologia, Bluetooth e Wireless LAN per la seconda. A fronte di queste nuove tecnologie
+sono emerse nuove problematiche quali limitata copertura del servizio, tasso d'errore nella comunicazione
+maggiore che comporta la ritrasmissione delle informazioni perse, velocit\`a di connessione minore e consumi
+di energia maggiori. \\
+Proprio in questo quadro si colloca tale lavoro, il quale consiste in un nuovo modo di utilizzare una
+tecnologia esistente e consolidata quale la tecnologia wireless LAN, nella sua versione pi\`u diffusa e
+conosciuta, lo standard 802.11b; tale nuovo modo consente di minimizzare il consumo di energia per aumentare
+la durata delle batteria di cui ogni dispositivo portatile \`e fornito.
+
+Generalmente ogni stazione wireless comunica con un server che pu\`o essere collegato ad internet, o
+disporre egli stesso delle informazioni richieste dal dispositivo portatile. Il nostro intento \`e la
+riorganizzazione ({\em reshaping}) del traffico, costituito dalle informazioni dirette verso il dispositivo
+portatile direttamente sul server, questo ci permette un risparmio energetico delle stazioni wireless senza
+modificare l'architettura attualmente esistente.
+
+Sostenere una comunicazione costa molto in termini di energia consumata, per tale ragione \`e necessario
+evitare comunicazioni inutili come l'ascolto di traffico destinato ad altri o l'attesa continua di
+informazioni ({\em pacchetti}) che per qualche ragione non vi sono attualmente. A seguito degli elementi
+sopra elencati ci troviamo di fronte ad un problema di {\em Dynamic Power Management}, cio\`e di variare
+dinamicamente il consumo di energia della stazione wireless a seconda che debba o meno scambiare
+informazioni. Principalmente i metodi di power management cercano di mantenere la scheda wireless il pi\`u
+possibile in uno stato di basso consumo, perci\`o \`e importante il modo in cui le viene passato il
+traffico. Se un'applicazione invia pachetti sporadicamente, tiene attiva per molto tempo la scheda
+wireless inutilmente; sar\`a allora necessario riorganizzare il traffico ad un livello sottostante,
+raggruppandolo ed inviandolo solo quando \`e veramente corposo, da rendere conveniente il risveglio della
+scheda.
+
+A fronte delle considerazioni soprastanti, abbiamo deciso di spostare il problema dalle stazioni wireless al
+server principalmente per due motivi: innanzi tutto il server \`e collegato all'alimentazione di rete per
+cui non ha i problemi di autonomia delle batterie, e poi perch\'e ha la visione del traffico globale diretto
+verso tutte le stazioni wireless a lui collegate. Proprio tramite la visione globale del traffico \`e
+possibile un reshaping in modo che ogni stazione riceva solamente le informazioni a lei destinate o dirette
+a tutti ({\em broadcast}), cosa che allo stato attuale non \`e; infatti ogni stazione \`e sensibile anche
+alle informazioni dirette ad altri provocando un inutile consumo di energia.  Il reshaping consiste
+nell'invio di blocchi di informazioni dirette verso una sola stazione, mettendola in stand-by quando non ve
+ne sono; attualmente esiste una sorta di modo di lavoro in stand-by analizzata nel dettaglio in seguito, ma
+al risveglio una stazione pu\`o riceve comunque le informazioni altrui; il nostro intento \`e disaccoppiare
+il pi\`u possibile la visione delle informazioni altrui sino a farle scomparire.
+
+%alcuni risultati sul risparmio
+\section{Organizzazione}\label{sez:organizzazione}
+
+Prima di analizzare nel dettaglio come viene effettuato il reshaping \`e necessario vedere le
+caratteristiche principali del protocollo 802.11; proprio a tal fine il capitolo~\ref{cap:wlan} \`e stato
+concepito per introdurre le problematiche relative allo scambio di informazioni in una rete senza fili e
+alla loro risoluzione. Inoltre sempre nel capitolo~\ref{cap:wlan} viene mostrato lo stato attuale del
+protocollo da noi utilizzato, le implementazioni riguardanti il power management e la monitorizzazione del
+consumo di potenza.
+
+Nei successivi capitoli ... come si vede in Tabella~\ref{tab:numeri} ...
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+1 & 2 & 3 \\
+1 & 2 & 3 \\
+1 & 2 & 3 \\
+1 & 2 & 3 \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Numeri riepilogativi}
+\label{tab:numeri}
+\end{table}

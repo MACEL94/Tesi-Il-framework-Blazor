@@ -1,0 +1,61 @@
+\chapter{Wireless LAN}\label{cap:wlan}
+
+\section{Stato Attuale delle Wireless Network}\label{sec:stato_attuale}
+
+Oggigiorno non esistono pi\`u dispositivi isolati che non comunicano con altri, tutti i PC prevedono la
+connessione ad internet, o in generale comunicano con altri dispositivi elettronici grazie alle reti di
+comunicazione. Inizialmente queste reti erano basate sui cavi ({\em wired network}), poi si sono rivelate
+pi\`u pratiche le reti senza filo ({\em wireless network}); da ci\`o si \`e dovuto affrontare il problema di
+permettere l'utilizzo delle tecnologie attualmente utilizzate nelle reti wired anche in reti wireless, che
+per loro natura sono intrinsecamente meno sicure a causa del mezzo trasmissivo. Le informazioni non vengono
+pi\`u convertite sotto forma di impulso elettronico e spedite su un filo metallico, ma essendo l'etere il
+mezzo di propagazione sono convertite in onde radio; queste ultime hanno una portata limitata non sempre ben
+determinabile, sono soggette a disturbi che degradano le informazioni inviate fino, a volte, a farle
+perdere; ed infine cosa a noi maggiormente sgradita l'energia consumata e direttamente connessa alla potenza
+trasmessa, ci\`o significa che aumentare la portata di trasmissione e la qualit\`a del segnale comporta un
+consumo maggiore dell'energia consumata.
+
+\section{Dynamic Power Management}\label{sec:dpm}
+
+Essendo la parte a radio frequenza colpevole del maggior consumo di energia, in particolare gli
+amplificatori utilizzati immediatamente prima dell'invio del segnale o dopo una ricezione, le stazioni
+802.11 possono allungare la vita delle batterie spegnendo i transceiver radio e mettendo la schada wireless
+in sleep periodicamente.
+
+Nella figura sottostante (Figura~\ref{fig:consumo_senza_ps}), si pu\`o osservare una finestra di 20~secondi
+del consumo di energia di una scheda wireless senza il power management abilitato:
+
+\begin{figure}[htbp]
+\centerline{\includegraphics{figure/consumo_senza_ps}}
+\caption{Consumo di energia senza power management}
+\label{fig:consumo_senza_ps}
+\end{figure}
+
+Attivando il power management si pu\`o notare un sensibile risparmio energetico, a fronte di un diverso
+consumo energetico dovuto ad un diverso modo di operare: 
+
+\begin{figure}[htbp]
+\centerline{\includegraphics{figure/consumo_con_ps}}
+\caption{Consumo di energia con power management}
+\label{fig:consumo_con_ps}
+\end{figure}
+
+In questa modalit\`a la stazione resta per la maggior parte del tempo nello stato di sleep, risvegliandosi
+periodicamente (nella figura ogni 100~ms) per controllare se nel frattempo c'\`e stato traffico per essa.
+Durante il periodo di sleep, sar\`a demandato all'Access Point il compito di bufferizzare i frame destinati
+verso la scheda momentaneamente in sleep; al risveglio i frame bufferizzati saranno annunciati da un {\em
+Beacon frame}, la ricezione da parte della stazione wireless dei frame bufferizzati inizier\`a subito dopo
+con la loro richiesta tramite il {\em PS-Poll frame} (Figura~\ref{fig:power_saving}).
+
+\begin{figure}[htbp]
+\centerline{\includegraphics{figure/power_saving}}
+\caption{Visione beacon e Ps-Poll}
+\label{fig:power_saving}
+\end{figure}
+
+Quando viene attivato il power management l'Access Point e la stazione wireless devono sincronizzarsi per
+risvegliarsi ad intervalli prestabiliti, che nel caso della figura soprastante \`e 100~ms; all'inizio di
+ogni risveglio l'Access Point invier\`a il beacon contenente la {\em traffic indication map - TIM} che dice
+alla stazione se vi sono pacchetti bufferizzati destinati ad essa; in tal cosa la stazione risponder\`a con
+un PS-Pool contenente il suo Association ID. Grazie all'Association ID l'Access Point sar\`a in grado di
+selezionare i frame destinati alla stazione e provveder\`a ad inviarli.

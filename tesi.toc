@@ -1,0 +1,13 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {chapter}{\numberline {1}Introduzione}{1}% 
+\contentsline {section}{\numberline {1.1}Contesto}{1}% 
+\contentsline {section}{\numberline {1.2}Organizzazione}{3}% 
+\contentsline {chapter}{\numberline {2}Wireless LAN}{4}% 
+\contentsline {section}{\numberline {2.1}Stato Attuale delle Wireless Network}{4}% 
+\contentsline {section}{\numberline {2.2}Dynamic Power Management}{4}% 
+\contentsline {chapter}{\numberline {A}Prova}{7}% 
+\contentsline {section}{\numberline {A.1}Pippo}{7}% 
+\contentsline {section}{\numberline {A.2}Ciu Ciu}{7}% 
+\contentsline {chapter}{Bibliografia}{8}% 
+\contentsline {chapter}{Ringraziamenti}{9}% 
