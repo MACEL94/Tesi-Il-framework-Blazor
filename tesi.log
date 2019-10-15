@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  8 OCT 2019 19:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  15 OCT 2019 22:30
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -362,58 +362,58 @@ G,.JBIG2,.JB2,.eps]
 LaTeX Info: Redefining \it@ocap on input line 24.
 LaTeX Info: Redefining \it@ccap on input line 24.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
-5.
+1.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-5.
+1.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-35.
+31.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-35.
+31.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 35.
+(Font)              <10.95> on input line 31.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 35.
+(Font)              <8> on input line 31.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 35.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
+(Font)              <6> on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 35
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 31
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 3
-5.
+1.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/stmaryrd\ustmry.fd")
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 35
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 31
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ulasy.fd"
@@ -422,16 +422,11 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 <logo-uniurb-2016.jpg, id=1, 595.22375pt x 314.17375pt>
 File: logo-uniurb-2016.jpg Graphic file (type jpg)
 <use logo-uniurb-2016.jpg>
-Package pdftex.def Info: logo-uniurb-2016.jpg  used on input line 35.
+Package pdftex.def Info: logo-uniurb-2016.jpg  used on input line 31.
 (pdftex.def)             Requested size: 172.4924pt x 91.04872pt.
 
-Overfull \hbox (17.0pt too wide) in paragraph at lines 35--35
+Overfull \hbox (17.0pt too wide) in paragraph at lines 31--31
 []$[]$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--35
-[][]
  []
 
 [1
@@ -475,38 +470,42 @@ Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[2]) [3]
+[2]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [3] [4]
 \openout2 = `sorgenti/cap_2.aux'.
 
  (sorgenti/cap_2.tex
 Capitolo 2.
-<figure/consumo_senza_ps.pdf, id=33, 310.15875pt x 75.28125pt>
+<figure/consumo_senza_ps.pdf, id=36, 310.15875pt x 75.28125pt>
 File: figure/consumo_senza_ps.pdf Graphic file (type pdf)
 <use figure/consumo_senza_ps.pdf>
 Package pdftex.def Info: figure/consumo_senza_ps.pdf  used on input line 29.
 (pdftex.def)             Requested size: 310.15799pt x 75.28105pt.
-<figure/consumo_con_ps.pdf, id=34, 310.15875pt x 75.28125pt>
+<figure/consumo_con_ps.pdf, id=37, 310.15875pt x 75.28125pt>
 File: figure/consumo_con_ps.pdf Graphic file (type pdf)
 <use figure/consumo_con_ps.pdf>
 Package pdftex.def Info: figure/consumo_con_ps.pdf  used on input line 38.
 (pdftex.def)             Requested size: 310.15799pt x 75.28105pt.
-[4
+[5
 
 
 
 ]
-<figure/power_saving.pdf, id=38, 310.15875pt x 75.28125pt>
+<figure/power_saving.pdf, id=41, 310.15875pt x 75.28125pt>
 File: figure/power_saving.pdf Graphic file (type pdf)
 <use figure/power_saving.pdf>
 Package pdftex.def Info: figure/power_saving.pdf  used on input line 51.
 (pdftex.def)             Requested size: 310.15799pt x 75.28105pt.
-) [5 <./figure/consumo_senza_ps.pdf> <./figure/consumo_con_ps.pdf> <./figure/po
-wer_saving.pdf>] [6]
+) [6 <./figure/consumo_senza_ps.pdf> <./figure/consumo_con_ps.pdf> <./figure/po
+wer_saving.pdf>] [7]
 \openout2 = `sorgenti/app_a.aux'.
 
  (sorgenti/app_a.tex
 Appendice A.
-) [7
+) [8
 
 
 
@@ -524,11 +523,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--41
 \T1/lmr/m/n/10.95 ti-mo Ac-ces-so: 22 Mag-gio 2013]. Di-spo-ni-bi-le:
  []
 
-) [8
+) [9
 
 
 
-] [9
+] [10
 
 
 
@@ -536,8 +535,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--41
 (sorgenti/app_a.aux) (sorgenti/biblio.aux)) ) 
 Here is how much of TeX's memory you used:
  4767 strings out of 492452
- 62545 string characters out of 3129808
- 138724 words of memory out of 3000000
+ 62948 string characters out of 3129808
+ 138725 words of memory out of 3000000
  8941 multiletter control sequences out of 15000+200000
  49659 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -548,9 +547,9 @@ Here is how much of TeX's memory you used:
 m Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/lm/lmri10.pfb>
-Output written on tesi.pdf (14 pages, 811472 bytes).
+Output written on tesi.pdf (15 pages, 814971 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
+ 100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2,17 +2,20 @@
 
 \section{Contesto}\label{sez:contesto}
 
-A seguito della crescente diffusione di apparecchi portabili quali laptop, palmari, cellulari, ecc.\
-utilizzati in un numero sempre maggiore di luoghi pubblici e privati quali ospedali, aereoporti, uffici,
-aziende e negozi si sono dovute trovare soluzioni che conciliassero necessit\`a diverse come
-interattivit\`a, molteplicit\`a di funzioni, semplicit\`a di utilizzo, maneggevolezza e riduzione degli
-ingombri.
+A seguito della crescita esponenziale del web in questo secolo e dell'abituarsi di coloro che ne usufruiscono ad un livello grafico sempre migliore e ad una esperienza mano a mano pi\`u interattiva e vicina all'utente medio, i siti web e le tecnologie utilizzate si sono adattati per permettere uno sviluppo sempre pi\`u rapido di codice pi\`u facilmente testabile e mantenibile.
 
-I maggiori problemi riguardano il compromesso tra molteplicit\`a di funzioni e riduzione degli ingombri, in
-quanto accessori aggiuntivi e funzioni complicate implicano risorse computazionali elevate a discapito di un
-maggiore consumo di energia~\cite{MathewsSicuranza}. In particolar modo l'utilizzo di questi dispositivi ha
-permesso una comunicabilit\`a elevatissima: le informazioni desiderate possono essere recuperate sempre ed
-ovunque in pochi minuti, grazie alla loro condivisione in reti quali internet.
+Di conseguenza nel frontend si sono susseguiti una serie di framework a partire da JQuery nel 2006, che per primo si \`e occupato di risolvere il problema della compatibilit\`a tra browsers, permettendo ai developers di scrivere una volta, e poter eseguire su tutti i browsers.
+AngularJS nel 2010 \`e stato il primo MVC framework ad offrire in un unico pacchetto, two-way data binding, dependency injection, routing facilitato e altri strumenti utili per rendere pi\`u standard lo sviluppo nel frontend.
+Dopo la riscrittura di questo framework nel 2013 che \`e diventato Angular 2 (e recentemente Angular) senza mantenere retrocompatibilit\`a e senza offrire un modo preciso per migrare alla nuova versione agli utilizzatori di AngularJS, React, un nuovo framework pi\`u leggero e modulare sviluppato dagli sviluppatori di Facebook, ha preso il posto di Angular come framework pi\`u utilizzato.
+
+Vue infine \`e il terzo dei principali framework che ha provato a prendere piede proponendo una versione intermedia tra il fortemente opinionato Angular e il flessibile React.
+
+Attorno a questi, ciascuno con la propria semantica, organizzazione logica dei folder, CLI dedicato, ad un developer frontend viene solitamente richiesto di conoscere HTML, CSS e vanilla Javascript su cui si basano poi i vari framework.
+
+Oltre a Javascript, se si vuole scrivere degli unit test facilmente mantenibili, bisogna conoscere TypeScript(specialmente se si utilizza Angular, che rende il suo utilizzo obbligatorio) e dei framework che facilitino i test(Enzyme, Karma + Jasmine, ...).
+
+I continui cambiamenti nei framework utilizzati, la variet\`a degli strumenti, che spesso realizzano in modo diverso tutti la stessa cosa, rendono molto ampia la curva di apprendimento e il tempo necessario ad un neo-developer per essere pienamente operativo.
+
 
 Proprio per quanto riguarda lo scambio di informazioni col mondo esterno \`e necessario munire questi
 dispositivi di interfacce per il collegamento con l'esterno. L'utilizzo di queste interfacce influisce in
