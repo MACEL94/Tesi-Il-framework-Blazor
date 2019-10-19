@@ -5,99 +5,22 @@
 A seguito della crescita esponenziale del web in questo secolo e dell'abituarsi di coloro che ne usufruiscono ad un livello grafico sempre migliore e ad una esperienza mano a mano pi\`u interattiva e vicina all'utente medio, i siti web e le tecnologie utilizzate si sono adattati per permettere uno sviluppo sempre pi\`u rapido di codice pi\`u facilmente testabile e mantenibile.
 
 Di conseguenza nel frontend si sono susseguiti una serie di framework a partire da JQuery nel 2006, che per primo si \`e occupato di risolvere il problema della compatibilit\`a tra browsers, permettendo ai developers di scrivere una volta, e poter eseguire su tutti i browsers.
-AngularJS nel 2010 \`e stato il primo MVC framework ad offrire in un unico pacchetto, two-way data binding, dependency injection, routing facilitato e altri strumenti utili per rendere pi\`u standard lo sviluppo nel frontend.
+
+AngularJS nel 2010 \`e stato il primo MVC framework ad offrire in un unico pacchetto, two-way data binding, dependency injection, routing facilitato e altri strumenti utili per rendere pi\`u standard lo sviluppo nel frontend~\cite{Hoff}.
 Dopo la riscrittura di questo framework nel 2013 che \`e diventato Angular 2 (e recentemente Angular) senza mantenere retrocompatibilit\`a e senza offrire un modo preciso per migrare alla nuova versione agli utilizzatori di AngularJS, React, un nuovo framework pi\`u leggero e modulare sviluppato dagli sviluppatori di Facebook, ha preso il posto di Angular come framework pi\`u utilizzato.
 
-Vue infine \`e il terzo dei principali framework che ha provato a prendere piede proponendo una versione intermedia tra il fortemente opinionato Angular e il flessibile React.
+Vue infine \'e il terzo dei principali framework che ha provato a prendere piede proponendo una versione intermedia tra il fortemente opinionato Angular e il pi\'u flessibile React.
 
-Attorno a questi, ciascuno con la propria semantica, organizzazione logica dei folder, CLI dedicato, ad un developer frontend viene solitamente richiesto di conoscere HTML, CSS e vanilla Javascript su cui si basano poi i vari framework.
+Oltre a questi, ciascuno con la propria semantica, organizzazione logica dei folder, spesso una CLI dedicata, ad un developer frontend viene solitamente richiesto di conoscere HTML, CSS e Javascript su cui si basano poi i vari framework.
 
-Oltre a Javascript, se si vuole scrivere degli unit test facilmente mantenibili, bisogna conoscere TypeScript(specialmente se si utilizza Angular, che rende il suo utilizzo obbligatorio) e dei framework che facilitino i test(Enzyme, Karma + Jasmine, ...).
+Oltre a Javascript, se si vuole scrivere degli unit test facilmente mantenibili, bisogna conoscere TypeScript(specialmente se si utilizza Angular, che rende il suo utilizzo obbligatorio) e degli altri framework che facilitino i test(Enzyme, Karma + Jasmine, ...).
 
-I continui cambiamenti nei framework utilizzati, la variet\`a degli strumenti, che spesso realizzano in modo diverso tutti la stessa cosa, rendono molto ampia la curva di apprendimento e il tempo necessario ad un neo-developer per essere pienamente operativo.
+\section{Problema}\label{sez:problema}
+I continui cambiamenti nei molti framework utilizzati, la diversit\`a degli strumenti stessi tra loco, che spesso realizzano in modo diverso tutti la stessa cosa(framework concorrenti), rendono specialmente per un junior developer molto ampia la curva di apprendimento e lo studio necessario, per essere anche solo operativo.
 
+Oltretutto un developer ad oggi finisce per essere costretto a scegliere se diventare uno sviluppatore frontend o backend, dato che rimanere al passo e aggiornarsi gi\`a in uno di questi due campi richiede tempo e non \`e scontato che venga concesso di poterlo fare in orario lavorativo, pur essendo fondamentale.
 
-Proprio per quanto riguarda lo scambio di informazioni col mondo esterno \`e necessario munire questi
-dispositivi di interfacce per il collegamento con l'esterno. L'utilizzo di queste interfacce influisce in
-modo negativo sull'autonomia del dispositivo consumando molta energia, ci\`o implica che bisogna porre dei
-limiti sul numero e sull'utilizzo delle interfacce per non costringere l'installazione di batterie troppo
-ingombranti e pi\`u pesanti~\cite{CariniMumoloSicuranza}.
+Microsoft ha reso nel tempo il framework .NET e le sue implementazioni(.NET Core, .NET Framework e Mono) utilizzabili nei vari linguaggi supportati, C\#, F\# e VB.
+Scrivendo ad esempio in C\# \`e possibile sviluppare vari tipi di applicazioni, ma se si decide di sviluppare codice per un applicazione client web ad oggi si \`e ancora costretti a scrivere utilizzando Javascript e un suo framework se si vuole essere utili e competitivi a livello enterprise.
 
-Un esempio molto pratico e concreto si pu\`o fare su un dispositivo entrato oramai nel modo di vita di tutti
-noi, il cellulare. Lo sviluppo di questo dispositivo nato inizialmente solo per effettuare telefonate \`e
-vertiginoso, ora permette di inviare messaggi di testo, di effettuare fotografie, di personalizzare le
-suonerie, di scambiare e-mail, di navigare in internet, di giocare e tant'altro; tutto ci\`o per\`o consuma
-energia: fotocamera nel caso delle fotografie o display grandi e spaziosi per i giochi; ci\`o non tanto a
-discapito dell'ingombro grazie alla miniaturizzazione della componentistica elettronica quanto
-all'eccessivo consumo energetico colpevole di un'autonomia delle batterie minore. Proprio per questi ultimi
-due elementi \`e invece richiesto l'opposto, cio\`e un ingombro sempre minore e un'autonomia maggiore; \`e
-importante trovare un compromesso, in quanto per aumentare l'autonomia sarebbe sufficiente installare
-batterie di dimensioni superiori che per\`o implica un aumento di peso del dispositivo non trascurabile.
-
-Essendo dispositivi destinati ad un utilizzo mobile non sono accettabili i tradizionali collegamenti tramite
-cavo, le nuove tecnologie permettono comunicazioni senza cavo come infrarosso o onde radio; nello specifico
-Irda per la prima tipologia, Bluetooth e Wireless LAN per la seconda. A fronte di queste nuove tecnologie
-sono emerse nuove problematiche quali limitata copertura del servizio, tasso d'errore nella comunicazione
-maggiore che comporta la ritrasmissione delle informazioni perse, velocit\`a di connessione minore e consumi
-di energia maggiori. \\
-Proprio in questo quadro si colloca tale lavoro, il quale consiste in un nuovo modo di utilizzare una
-tecnologia esistente e consolidata quale la tecnologia wireless LAN, nella sua versione pi\`u diffusa e
-conosciuta, lo standard 802.11b; tale nuovo modo consente di minimizzare il consumo di energia per aumentare
-la durata delle batteria di cui ogni dispositivo portatile \`e fornito.
-
-Generalmente ogni stazione wireless comunica con un server che pu\`o essere collegato ad internet, o
-disporre egli stesso delle informazioni richieste dal dispositivo portatile. Il nostro intento \`e la
-riorganizzazione ({\em reshaping}) del traffico, costituito dalle informazioni dirette verso il dispositivo
-portatile direttamente sul server, questo ci permette un risparmio energetico delle stazioni wireless senza
-modificare l'architettura attualmente esistente.
-
-Sostenere una comunicazione costa molto in termini di energia consumata, per tale ragione \`e necessario
-evitare comunicazioni inutili come l'ascolto di traffico destinato ad altri o l'attesa continua di
-informazioni ({\em pacchetti}) che per qualche ragione non vi sono attualmente. A seguito degli elementi
-sopra elencati ci troviamo di fronte ad un problema di {\em Dynamic Power Management}, cio\`e di variare
-dinamicamente il consumo di energia della stazione wireless a seconda che debba o meno scambiare
-informazioni. Principalmente i metodi di power management cercano di mantenere la scheda wireless il pi\`u
-possibile in uno stato di basso consumo, perci\`o \`e importante il modo in cui le viene passato il
-traffico. Se un'applicazione invia pachetti sporadicamente, tiene attiva per molto tempo la scheda
-wireless inutilmente; sar\`a allora necessario riorganizzare il traffico ad un livello sottostante,
-raggruppandolo ed inviandolo solo quando \`e veramente corposo, da rendere conveniente il risveglio della
-scheda.
-
-A fronte delle considerazioni soprastanti, abbiamo deciso di spostare il problema dalle stazioni wireless al
-server principalmente per due motivi: innanzi tutto il server \`e collegato all'alimentazione di rete per
-cui non ha i problemi di autonomia delle batterie, e poi perch\'e ha la visione del traffico globale diretto
-verso tutte le stazioni wireless a lui collegate. Proprio tramite la visione globale del traffico \`e
-possibile un reshaping in modo che ogni stazione riceva solamente le informazioni a lei destinate o dirette
-a tutti ({\em broadcast}), cosa che allo stato attuale non \`e; infatti ogni stazione \`e sensibile anche
-alle informazioni dirette ad altri provocando un inutile consumo di energia.  Il reshaping consiste
-nell'invio di blocchi di informazioni dirette verso una sola stazione, mettendola in stand-by quando non ve
-ne sono; attualmente esiste una sorta di modo di lavoro in stand-by analizzata nel dettaglio in seguito, ma
-al risveglio una stazione pu\`o riceve comunque le informazioni altrui; il nostro intento \`e disaccoppiare
-il pi\`u possibile la visione delle informazioni altrui sino a farle scomparire.
-
-%alcuni risultati sul risparmio
-\section{Organizzazione}\label{sez:organizzazione}
-
-Prima di analizzare nel dettaglio come viene effettuato il reshaping \`e necessario vedere le
-caratteristiche principali del protocollo 802.11; proprio a tal fine il capitolo~\ref{cap:wlan} \`e stato
-concepito per introdurre le problematiche relative allo scambio di informazioni in una rete senza fili e
-alla loro risoluzione. Inoltre sempre nel capitolo~\ref{cap:wlan} viene mostrato lo stato attuale del
-protocollo da noi utilizzato, le implementazioni riguardanti il power management e la monitorizzazione del
-consumo di potenza.
-
-Nei successivi capitoli ... come si vede in Tabella~\ref{tab:numeri} ...
-
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{|c|c|c|}
-\hline
-1 & 2 & 3 \\
-1 & 2 & 3 \\
-1 & 2 & 3 \\
-1 & 2 & 3 \\
-\hline
-\end{tabular}
-\end{center}
-\caption{Numeri riepilogativi}
-\label{tab:numeri}
-\end{table}
+Razor ha provato a risolvere parzialmente il problema di generare codice HTML e CSS in modo dinamico utilizzando C\#, ma \`e utilizzabile solo lato server e quindi ad esempio la cattura di un evento client side come il click di un utente su un bottone senza contattare il server non \`e gestibile utilizzando il solo C\#.

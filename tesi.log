@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  15 OCT 2019 22:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  19 OCT 2019 18:38
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -282,8 +282,8 @@ Excluding comment 'comment')
 LaTeX Warning: Unused global option(s):
     [singleside].
 
-(tesi.aux (sorgenti/cap_1.aux) (sorgenti/cap_2.aux) (sorgenti/app_a.aux)
-(sorgenti/biblio.aux))
+(tesi.aux (sorgenti/cap_1.aux) (sorgenti/cap_2.aux) (sorgenti/cap_3.aux)
+(sorgenti/cap_4.aux) (sorgenti/cap_5.aux) (sorgenti/biblio.aux))
 \openout1 = `tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -300,7 +300,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 24
 .
- ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
@@ -463,7 +464,7 @@ Capitolo 1.
 
 
 
-]
+])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
@@ -471,85 +472,74 @@ We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
 [2]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [3] [4]
 \openout2 = `sorgenti/cap_2.aux'.
 
  (sorgenti/cap_2.tex
 Capitolo 2.
-<figure/consumo_senza_ps.pdf, id=36, 310.15875pt x 75.28125pt>
-File: figure/consumo_senza_ps.pdf Graphic file (type pdf)
-<use figure/consumo_senza_ps.pdf>
-Package pdftex.def Info: figure/consumo_senza_ps.pdf  used on input line 29.
-(pdftex.def)             Requested size: 310.15799pt x 75.28105pt.
-<figure/consumo_con_ps.pdf, id=37, 310.15875pt x 75.28125pt>
-File: figure/consumo_con_ps.pdf Graphic file (type pdf)
-<use figure/consumo_con_ps.pdf>
-Package pdftex.def Info: figure/consumo_con_ps.pdf  used on input line 38.
-(pdftex.def)             Requested size: 310.15799pt x 75.28105pt.
-[5
+
+LaTeX Warning: Reference `fig:consumo_senza_ps' on page 3 undefined on input li
+ne 25.
+
+[3
 
 
 
-]
-<figure/power_saving.pdf, id=41, 310.15875pt x 75.28125pt>
-File: figure/power_saving.pdf Graphic file (type pdf)
-<use figure/power_saving.pdf>
-Package pdftex.def Info: figure/power_saving.pdf  used on input line 51.
-(pdftex.def)             Requested size: 310.15799pt x 75.28105pt.
-) [6 <./figure/consumo_senza_ps.pdf> <./figure/consumo_con_ps.pdf> <./figure/po
-wer_saving.pdf>] [7]
-\openout2 = `sorgenti/app_a.aux'.
+]) [4]
+\openout2 = `sorgenti/cap_3.aux'.
 
- (sorgenti/app_a.tex
-Appendice A.
-) [8
+ (sorgenti/cap_3.tex)
+\openout2 = `sorgenti/cap_4.aux'.
 
+ (sorgenti/cap_4.tex)
+\openout2 = `sorgenti/cap_5.aux'.
 
-
-]
+ (sorgenti/cap_5.tex)
 \openout2 = `sorgenti/biblio.aux'.
 
- (sorgenti/biblio.tex
-Underfull \hbox (badness 10000) in paragraph at lines 39--41
-[]\T1/lmr/m/it/10.95 Prova Fi-na-le \T1/lmr/m/n/10.95 [On-li-ne] (21 Feb-bra-io
- 2013). [Ul-
+
+(sorgenti/biblio.tex
+Underfull \hbox (badness 8075) in paragraph at lines 39--41
+[]\T1/lmr/m/n/10.95 M. Wa-nyoi-ke Di-spo-ni-bi-le: https://blog.logrocket.com/h
+istory-of-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--41
-\T1/lmr/m/n/10.95 ti-mo Ac-ces-so: 22 Mag-gio 2013]. Di-spo-ni-bi-le:
- []
-
-) [9
+) [5
 
 
 
-] [10
+
+
+
+
+
+
+] [6
 
 
 
 ] (tesi.aux (sorgenti/cap_1.aux) (sorgenti/cap_2.aux)
-(sorgenti/app_a.aux) (sorgenti/biblio.aux)) ) 
+(sorgenti/cap_3.aux) (sorgenti/cap_4.aux) (sorgenti/cap_5.aux)
+(sorgenti/biblio.aux))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4767 strings out of 492452
- 62948 string characters out of 3129808
- 138725 words of memory out of 3000000
- 8941 multiletter control sequences out of 15000+200000
+ 4754 strings out of 492452
+ 62763 string characters out of 3129808
+ 136174 words of memory out of 3000000
+ 8918 multiletter control sequences out of 15000+200000
  49659 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,12n,49p,800b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts
-/enc/dvips/lm/lm-ec.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmri10.pfb>
-Output written on tesi.pdf (15 pages, 814971 bytes).
+ 46i,12n,49p,800b,277s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
+r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb>
+Output written on tesi.pdf (11 pages, 777346 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
+ 60 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
