@@ -2,42 +2,48 @@
 
 \section{Contesto}\label{sez:contesto}
 
-A seguito della crescita esponenziale del web in questo secolo e dell'abituarsi di coloro che ne usufruiscono ad un livello grafico sempre migliore e ad una esperienza mano a mano pi\`u interattiva e vicina all'utente medio, i siti web e le tecnologie utilizzate si sono adattati per permettere uno sviluppo sempre pi\`u rapido di codice pi\`u facilmente testabile e mantenibile.
+A seguito della crescita esponenziale del web in questo secolo e dell'abituarsi di tutti coloro che ne usufruiscono ad un livello grafico sempre migliore e ad una esperienza mano a mano pi\`u interattiva e vicina all'utente medio, i siti web e le tecnologie utilizzate si sono adattati per permettere uno sviluppo sempre pi\`u rapido di codice pi\`u facilmente testabile e mantenibile.
 
-Di conseguenza nel frontend si sono susseguiti una serie di framework a partire da JQuery nel 2006, che per primo si \`e occupato di risolvere il problema della compatibilit\`a tra browsers, permettendo ai developers di scrivere una volta, e poter eseguire su tutti i browsers.
+Di conseguenza nel frontend si sono susseguiti una serie di framework e di strumenti, a partire da JQuery\cite{jquery} nel 2006, che per primo si \`e occupato di risolvere il problema della compatibilit\`a tra browsers, permettendo ai developers di scrivere una volta, e poter eseguire su tutti i browsers.
 
-AngularJS nel 2010 \`e stato il primo MVC framework ad offrire in un unico pacchetto, two-way data binding, dependency injection, routing facilitato e altri strumenti utili per rendere pi\`u standard lo sviluppo nel frontend~\cite{Hoff}.
-Dopo la riscrittura di questo framework nel 2013 che \`e diventato Angular 2 (e recentemente Angular) senza mantenere retrocompatibilit\`a e senza offrire un modo preciso per migrare alla nuova versione agli utilizzatori di AngularJS, React, un nuovo framework pi\`u leggero e modulare sviluppato dagli sviluppatori di Facebook, ha preso il posto di Angular come framework pi\`u utilizzato.
+AngularJS nel 2010 \`e stato il primo MVC framework ad offrire in un unico pacchetto un insieme di features che hanno facilitato tantissimo la vita ai developers, come il two-way data binding, la dependency injection, il routin, oltre ad altri strumenti utili per rendere pi\`u standard lo sviluppo nel frontend~\cite{Hoff}.
+Questo framework largamente utilizzato, \'e stato riscritto nel 2013 diventando Angular 2 (e nelle versioni pi\'u recenti rinominato semplicemente in Angular) senza mantenere retrocompatibilit\`a e senza offrire un modo preciso per migrare alla nuova versione agli utilizzatori di AngularJS.
+Anche per questo React, un nuovo framework pi\`u leggero e modulare sviluppato dagli sviluppatori di Facebook, ha preso il posto di Angular come framework pi\`u utilizzato nel frontend.
 
 Vue infine \'e il terzo dei principali framework che ha provato a prendere piede proponendo una versione intermedia tra il fortemente opinionato Angular e il pi\'u flessibile React.
 
-Oltre a questi, ciascuno con la propria semantica, organizzazione logica dei folder, spesso una CLI dedicata, ad un developer frontend viene solitamente richiesto di conoscere HTML, CSS e Javascript su cui si basano poi i vari framework.
+Oltre a questi, ciascuno con la propria semantica, organizzazione logica dei folder, spesso una CLI dedicata, ad un developer frontend viene solitamente richiesto di conoscere HTML, CSS e chiaramente Javascript essendo ci\'o su cui si basano poi i vari framework.
 
 Oltre a Javascript, se si vuole scrivere degli unit test facilmente mantenibili, bisogna conoscere TypeScript(specialmente se si utilizza Angular, che rende il suo utilizzo obbligatorio) e degli altri framework che facilitino i test(Enzyme, Karma + Jasmine, ...).
 
 \section{Problema}\label{sez:problema}
-I continui cambiamenti nei molti framework utilizzati, la diversit\`a degli strumenti stessi tra loco, che spesso realizzano in modo diverso tutti la stessa cosa(framework concorrenti), rendono specialmente per un junior developer molto ampia la curva di apprendimento e lo studio necessario, per essere anche solo operativo.
+I continui cambiamenti nei molti framework utilizzati, la diversit\`a degli strumenti stessi tra loro, che spesso realizzano in modo diverso tutti la stessa cosa, rendono sempre pi\'u difficile per un junior developer iniziare a sviluppare, vista l'ampia curva di apprendimento e lo studio necessario, per poter essere spendibile a livello professionale.
 
-Oltretutto un developer ad oggi finisce per essere costretto a scegliere se diventare uno sviluppatore frontend o backend, dato che rimanere al passo e aggiornarsi gi\`a in solo uno di questi due campi richiede tempo e non \`e scontato ad esempio che venga concesso di poterlo fare in orario lavorativo, pur essendo fondamentale.
+Oltretutto un web developer ad oggi finisce per essere costretto a scegliere se diventare uno sviluppatore frontend o backend, dato che rimanere al passo e aggiornarsi gi\`a in solo uno di questi due campi richiede tempo e non \`e scontato ad esempio che venga concesso di poterlo fare in orario lavorativo, pur essendo fondamentale.
 
-\'E quindi chiaro che per tutti i web developer, e specialmente per una figura mista spesso identificata con il titolo "Full-Stack Developer", ci sia una continua ricerca del modo per rendere le proprie competenze quanto pi\'u trasversali possibile tra frontend e backend, anche in termini di tecnologia utilizzata.
+\'E quindi chiaro che per tutti i web developer, e specialmente per una figura mista spesso identificata con il titolo "Full-Stack Developer", ci sia una continua ricerca del modo per rendere le proprie competenze quanto pi\'u trasversali possibile, anche in termini di tecnologia utilizzata.
+
+\pagebreak
 
 \section{Linguaggi General-Purpose}\label{sez:problema}
-Microsoft ha reso nel tempo il framework .NET e le sue implementazioni(.NET Core, .NET Framework e Mono) utilizzabili nei vari linguaggi supportati, C\#, F\# e VB.
-\begin{figure}[htbp]
+Microsoft, nel backend e in ambito applicativo, ha reso nel tempo il framework .NET e le sue implementazioni(.NET Core, .NET Framework e Mono) utilizzabili nei vari propri linguaggi, C\#, F\# e VB.
+
+\begin{figure}[H]
 	\centerline{\includegraphics[scale=0.3]{figure/DotNetImplementations}}
 	\caption{Implementazioni di .NET}
 	\label{fig:DotNetImplementations}
 \end{figure}
 
-Scrivendo ad esempio in C\# \`e possibile sviluppare vari tipi di applicazioni, ma se si decide di sviluppare codice per un applicazione client web ad oggi si \`e ancora costretti a scrivere utilizzando Javascript e un suo framework se si vuole essere veloci nello sviluppo e scrivere codice mantenibile in team pi\'u grandi, come nel mondo enterprise.
+\pagebreak
 
-\begin{figure}[htbp]
-\centerline{\includegraphics[scale=0.65]{figure/DotNetFrameworkCapabilities}}
+Scrivendo ad esempio in C\# \`e possibile sviluppare vari tipi di applicazioni, ma se si decide di sviluppare codice per un applicazione client web ad oggi si \`e ancora costretti a scrivere utilizzando Javascript e un suo framework se si vuole essere veloci nello sviluppo e scrivere codice mantenibile specialmente in team pi\'u grandi, come nel mondo enterprise.
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.6]{figure/DotNetFrameworkCapabilities}}
 \caption{Possibilit\'a di .NET}
 \label{fig:DotNetCapabilities}
 \end{figure}
 
 Gi\'a con Razor\cite{razor}, Microsoft ha provato a permettere la generazione di codice HTML e CSS in modo dinamico utilizzando C\#, ma \`e utilizzabile solo lato server e quindi ad esempio la cattura di un evento client side come il click di un utente su un bottone senza contattare il server non \`e gestibile utilizzando il solo C\#.
 
-Blazor \'e quindi la versione successiva(Web-Razor) che permette ai developer di gestire anche gli eventi client-side, direttamente in C\# come se questo fosse effettivamente ci\'o che viene eseguito lato client, mentre in reat\'a l'esecuzione lato client cambia a seconda del modello scelto, come poi vedremo pi\'u nel dettaglio.
+Ecco cosa \'e quindi Blazor: la versione successiva di Razor(Web-Razor) che permette ai developer di gestire anche gli eventi client-side, direttamente in C\# come se questo fosse effettivamente ci\'o che viene eseguito lato client, mentre in reat\'a l'esecuzione lato client cambia a seconda del modello scelto, come poi vedremo pi\'u nel dettaglio.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  20 OCT 2019 21:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  20 OCT 2019 23:11
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -274,6 +274,14 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
+("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count107
+\float@exts=\toks22
+\float@box=\box33
+\@float@everytoks=\toks23
+\@floatcapt=\box34
+)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/comment\comment.sty"
 \CommentStream=\write3
 
@@ -290,19 +298,19 @@ LaTeX Warning: Label `sez:problema' multiply defined.
 (sorgenti/cap_5.aux) (sorgenti/biblio.aux))
 \openout1 = `tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 24
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 25
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
@@ -310,17 +318,17 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count107
+\scratchcounter=\count108
 \scratchdimen=\dimen136
-\scratchbox=\box33
-\nofMPsegments=\count108
-\nofMParguments=\count109
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count110
+\scratchbox=\box35
+\nofMPsegments=\count109
+\nofMParguments=\count110
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count111
 \MPscratchDim=\dimen137
-\MPnumerator=\count111
-\makeMPintoPDFobject=\count112
-\everyMPtoPDFconversion=\toks23
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
+\everyMPtoPDFconversion=\toks25
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -364,61 +372,61 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Info: Redefining \it@ocap on input line 24.
-LaTeX Info: Redefining \it@ccap on input line 24.
+LaTeX Info: Redefining \it@ocap on input line 25.
+LaTeX Info: Redefining \it@ccap on input line 25.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
-1.
+2.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-1.
+2.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-31.
+32.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-31.
+32.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 31.
+(Font)              <10.95> on input line 32.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 31.
+(Font)              <8> on input line 32.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 31.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
+(Font)              <6> on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 31
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 32
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 3
-1.
+2.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/stmaryrd\ustmry.fd")
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 31
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 32
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ulasy.fd"
@@ -427,10 +435,10 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 <logo-uniurb-2016.jpg, id=1, 595.22375pt x 314.17375pt>
 File: logo-uniurb-2016.jpg Graphic file (type jpg)
 <use logo-uniurb-2016.jpg>
-Package pdftex.def Info: logo-uniurb-2016.jpg  used on input line 31.
+Package pdftex.def Info: logo-uniurb-2016.jpg  used on input line 32.
 (pdftex.def)             Requested size: 172.4924pt x 91.04872pt.
 
-Overfull \hbox (17.0pt too wide) in paragraph at lines 31--31
+Overfull \hbox (17.0pt too wide) in paragraph at lines 32--32
 []$[]$ 
  []
 
@@ -462,32 +470,32 @@ Capitolo 1.
 
 
 ]
-<figure/DotNetImplementations.png, id=22, 1586.92876pt x 856.19875pt>
-File: figure/DotNetImplementations.png Graphic file (type png)
-<use figure/DotNetImplementations.png>
-Package pdftex.def Info: figure/DotNetImplementations.png  used on input line 2
-8.
-(pdftex.def)             Requested size: 476.0823pt x 256.8616pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[2 <./figure/DotNetImplementations.png>]
-<figure/DotNetFrameworkCapabilities.png, id=28, 1028.34187pt x 382.42876pt>
+[2]
+<figure/DotNetImplementations.png, id=25, 1586.92876pt x 856.19875pt>
+File: figure/DotNetImplementations.png Graphic file (type png)
+<use figure/DotNetImplementations.png>
+Package pdftex.def Info: figure/DotNetImplementations.png  used on input line 3
+2.
+(pdftex.def)             Requested size: 476.0823pt x 256.8616pt.
+ [3 <./figure/DotNetImplementations.png>]
+<figure/DotNetFrameworkCapabilities.png, id=32, 1028.34187pt x 382.42876pt>
 File: figure/DotNetFrameworkCapabilities.png Graphic file (type png)
 <use figure/DotNetFrameworkCapabilities.png>
 Package pdftex.def Info: figure/DotNetFrameworkCapabilities.png  used on input 
-line 36.
-(pdftex.def)             Requested size: 668.4143pt x 248.57573pt.
-) [3 <./figure/DotNetFrameworkCapabilities.png>]
+line 42.
+(pdftex.def)             Requested size: 617.00989pt x 229.45901pt.
+) [4 <./figure/DotNetFrameworkCapabilities.png>]
 \openout2 = `sorgenti/cap_2.aux'.
 
  (sorgenti/cap_2.tex
 Capitolo 2.
-) [4
+) [5
 
 
 
@@ -496,7 +504,7 @@ Capitolo 2.
 
  (sorgenti/cap_3.tex
 Capitolo 3.
-) [5
+) [6
 
 
 
@@ -505,7 +513,7 @@ Capitolo 3.
 
  (sorgenti/cap_4.tex
 Capitolo 4.
-) [6
+) [7
 
 
 
@@ -522,18 +530,18 @@ history-of-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
 []\T1/lmr/m/n/10.95 Disponibile: https://docs.microsoft.com/en-us/aspnet/core/r
 azor-
  []
 
-) [7
+) [8
 
 
 
 
 
-] [8
+] [9
 
 
 
@@ -545,10 +553,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4775 strings out of 492452
- 63396 string characters out of 3129808
- 136313 words of memory out of 3000000
- 8939 multiletter control sequences out of 15000+200000
+ 4836 strings out of 492452
+ 64178 string characters out of 3129808
+ 137816 words of memory out of 3000000
+ 8996 multiletter control sequences out of 15000+200000
  45396 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,12n,49p,800b,277s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -556,9 +564,9 @@ Here is how much of TeX's memory you used:
 iKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
 r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb>
-Output written on tesi.pdf (12 pages, 859352 bytes).
+Output written on tesi.pdf (13 pages, 860931 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 68 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
