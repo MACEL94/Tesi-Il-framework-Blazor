@@ -18,9 +18,26 @@ Oltre a Javascript, se si vuole scrivere degli unit test facilmente mantenibili,
 \section{Problema}\label{sez:problema}
 I continui cambiamenti nei molti framework utilizzati, la diversit\`a degli strumenti stessi tra loco, che spesso realizzano in modo diverso tutti la stessa cosa(framework concorrenti), rendono specialmente per un junior developer molto ampia la curva di apprendimento e lo studio necessario, per essere anche solo operativo.
 
-Oltretutto un developer ad oggi finisce per essere costretto a scegliere se diventare uno sviluppatore frontend o backend, dato che rimanere al passo e aggiornarsi gi\`a in uno di questi due campi richiede tempo e non \`e scontato che venga concesso di poterlo fare in orario lavorativo, pur essendo fondamentale.
+Oltretutto un developer ad oggi finisce per essere costretto a scegliere se diventare uno sviluppatore frontend o backend, dato che rimanere al passo e aggiornarsi gi\`a in solo uno di questi due campi richiede tempo e non \`e scontato ad esempio che venga concesso di poterlo fare in orario lavorativo, pur essendo fondamentale.
 
+\'E quindi chiaro che per tutti i web developer, e specialmente per una figura mista spesso identificata con il titolo "Full-Stack Developer", ci sia una continua ricerca del modo per rendere le proprie competenze quanto pi\'u trasversali possibile tra frontend e backend, anche in termini di tecnologia utilizzata.
+
+\section{Linguaggi General-Purpose}\label{sez:problema}
 Microsoft ha reso nel tempo il framework .NET e le sue implementazioni(.NET Core, .NET Framework e Mono) utilizzabili nei vari linguaggi supportati, C\#, F\# e VB.
-Scrivendo ad esempio in C\# \`e possibile sviluppare vari tipi di applicazioni, ma se si decide di sviluppare codice per un applicazione client web ad oggi si \`e ancora costretti a scrivere utilizzando Javascript e un suo framework se si vuole essere utili e competitivi a livello enterprise.
+\begin{figure}[htbp]
+	\centerline{\includegraphics[scale=0.3]{figure/DotNetImplementations}}
+	\caption{Implementazioni di .NET}
+	\label{fig:DotNetImplementations}
+\end{figure}
 
-Razor ha provato a risolvere parzialmente il problema di generare codice HTML e CSS in modo dinamico utilizzando C\#, ma \`e utilizzabile solo lato server e quindi ad esempio la cattura di un evento client side come il click di un utente su un bottone senza contattare il server non \`e gestibile utilizzando il solo C\#.
+Scrivendo ad esempio in C\# \`e possibile sviluppare vari tipi di applicazioni, ma se si decide di sviluppare codice per un applicazione client web ad oggi si \`e ancora costretti a scrivere utilizzando Javascript e un suo framework se si vuole essere veloci nello sviluppo e scrivere codice mantenibile in team pi\'u grandi, come nel mondo enterprise.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[scale=0.65]{figure/DotNetFrameworkCapabilities}}
+\caption{Possibilit\'a di .NET}
+\label{fig:DotNetCapabilities}
+\end{figure}
+
+Gi\'a con Razor\cite{razor}, Microsoft ha provato a permettere la generazione di codice HTML e CSS in modo dinamico utilizzando C\#, ma \`e utilizzabile solo lato server e quindi ad esempio la cattura di un evento client side come il click di un utente su un bottone senza contattare il server non \`e gestibile utilizzando il solo C\#.
+
+Blazor \'e quindi la versione successiva(Web-Razor) che permette ai developer di gestire anche gli eventi client-side, direttamente in C\# come se questo fosse effettivamente ci\'o che viene eseguito lato client, mentre in reat\'a l'esecuzione lato client cambia a seconda del modello scelto, come poi vedremo pi\'u nel dettaglio.
