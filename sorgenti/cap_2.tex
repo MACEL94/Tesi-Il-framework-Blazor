@@ -3,6 +3,13 @@
 Il primo dei modelli ufficialmente rilasciati e per il quale si pu\'o ricevere supporto in produzione da settembre 2019\cite{blazorServerRelease}, \'e proprio questo.
 
 Un'applicazione Blazor Server ospita i componenti Blazor lato Server e gestisce le interazioni dell'utente con la UI attraverso una connessione in tempo reale sfruttando SignalR.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=0.6]{figure/blazor-server.png}}
+	\caption{Blazor Server}
+	\label{fig:BlazorServer}
+\end{figure}
+
 Quando un utente scatena un evento, questo viene inviato attraverso la RTC al server, dove i vari componenti gestiscono l'evento.
 Quando l'evento \'e stato gestito, blazor compara l'output generato con quello precedente l'evento, e manda quindi le sole differenze al browser del client, per poi applicarle al DOM.\cite{blazorModelsScenarios}
 
@@ -10,13 +17,37 @@ Blazor Server quindi necessita di una connessione stabile e a bassa latenza per 
 
 \'E particolarmente indicato quando si vuole delegare il costo computazionale al server e non ai client connessi, dato che ci\'o che il client esegue \'e il solo codice statico e le differenze di volta in volta inviate ma calcolate lato server.
 Ci\'o rende molto veloce ed efficiente l'avvio dell'applicazione e in particolare il suo caricamento iniziale lato client, che rende il modello perfetto per funzionare su apparecchi a basso costo.
-
+\pagebreak
 %Oltretutto ci\'o che viene scaricato lato client non varia al crescere dell'applicazione lato server.
 
 \section{Blazor WebAssembly}\label{sez:bclient}
+Blazor WebAssembly \'e un modello attualmente in preview, che verr\'a ufficialmente rilasciato nella prima parte del 2020.
+
+Questo modello si chiama cos\'i perch\'e il codice viene scaricato completamente dal client come da standard delle SPA odierne.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=0.6]{figure/blazor-webassembly.png}}
+	\caption{Blazor Webassembly}
+	\label{fig:BlazorWebassembly}
+\end{figure}
+
+Vengono quindi scaricati dal client l'applicazione Blazor, le sue dipendenze, ed il runtime del .NET scelto come target per l'applicazione.
+L'applicazione viene quindi eseguita direttamente nel thread della User Interface del Browser utilizzato.
+
+Gli update alla UI e la gestione degli stessi, avvengono utilizzando lo stesso processo nel browser.
+
+Per questo modello, blazor.webassembly.js \'e il nome dello script che si occupa di scaricare il .NET runtime, l'applicazione e le dipendenze, come anche dell'inizializzazione dell'applicazione.
+
+In particolare il nome WebAssembly \'e stato scelto perch\'e 
+
 \section{Blazor PWA}\label{sez:bpwa}
+
+
 \section{Blazor Hybrid}\label{sez:bhybrid}
+
+
 \section{Blazor Native}\label{sez:bnative}
+
 %\section{Stato Attuale delle Wireless Network}\label{sec:stato_attuale}
 %
 %Oggigiorno non esistono pi\`u dispositivi isolati che non comunicano con altri, tutti i PC prevedono la
