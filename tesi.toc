@@ -10,9 +10,10 @@
 \contentsline {section}{\numberline {2.3}Blazor PWA}{5}% 
 \contentsline {section}{\numberline {2.4}Blazor Hybrid}{5}% 
 \contentsline {section}{\numberline {2.5}Blazor Native}{5}% 
-\contentsline {chapter}{\numberline {3}Pro e Contro}{6}% 
-\contentsline {section}{\numberline {3.1}Pro}{6}% 
-\contentsline {section}{\numberline {3.2}Contro}{6}% 
+\contentsline {chapter}{\numberline {3}Scalabilit\'a, Pro e Contro}{6}% 
+\contentsline {section}{\numberline {3.1}Scalabilit\'a}{6}% 
+\contentsline {section}{\numberline {3.2}Pro}{6}% 
+\contentsline {section}{\numberline {3.3}Contro}{6}% 
 \contentsline {chapter}{\numberline {4}Conclusioni}{7}% 
 \contentsline {section}{\numberline {4.1}Conclusioni}{7}% 
 \contentsline {section}{\numberline {4.2}Futuro del progetto}{7}% 

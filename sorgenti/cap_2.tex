@@ -1,5 +1,18 @@
 \chapter{Modelli e Funzionamento}\label{cap:modefunz}
 \section{Blazor Server}\label{sez:bserver}
+Il primo dei modelli ufficialmente rilasciati e per il quale si pu\'o ricevere supporto in produzione da settembre 2019\cite{blazorServerRelease}, \'e proprio questo.
+
+Un'applicazione Blazor Server ospita i componenti Blazor lato Server e gestisce le interazioni dell'utente con la UI attraverso una connessione in tempo reale sfruttando SignalR.
+Quando un utente scatena un evento, questo viene inviato attraverso la RTC al server, dove i vari componenti gestiscono l'evento.
+Quando l'evento \'e stato gestito, blazor compara l'output generato con quello precedente l'evento, e manda quindi le sole differenze al browser del client, per poi applicarle al DOM.\cite{blazorModelsScenarios}
+
+Blazor Server quindi necessita di una connessione stabile e a bassa latenza per funzionare al meglio, e gli scenari offline non sono supportati.
+
+\'E particolarmente indicato quando si vuole delegare il costo computazionale al server e non ai client connessi, dato che ci\'o che il client esegue \'e il solo codice statico e le differenze di volta in volta inviate ma calcolate lato server.
+Ci\'o rende molto veloce ed efficiente l'avvio dell'applicazione e in particolare il suo caricamento iniziale lato client, che rende il modello perfetto per funzionare su apparecchi a basso costo.
+
+%Oltretutto ci\'o che viene scaricato lato client non varia al crescere dell'applicazione lato server.
+
 \section{Blazor WebAssembly}\label{sez:bclient}
 \section{Blazor PWA}\label{sez:bpwa}
 \section{Blazor Hybrid}\label{sez:bhybrid}
