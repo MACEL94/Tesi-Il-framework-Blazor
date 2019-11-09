@@ -2,7 +2,7 @@
 \section{Blazor Server}\label{sez:bserver}
 Il primo dei modelli ufficialmente rilasciati e per il quale si pu\'o ricevere supporto in produzione da settembre 2019\cite{blazorServerRelease}, \'e proprio questo.
 
-Un'applicazione Blazor Server ospita i componenti Blazor lato Server e gestisce le interazioni dell'utente con la UI attraverso una connessione in tempo reale sfruttando SignalR.
+Un'applicazione Blazor Server ospita i componenti Blazor lato Server e gestisce le interazioni dell'utente con la UI attraverso una connessione in tempo reale sfruttando SignalR, come visibile nella figura 2.1.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.6]{figure/blazor-server.png}}
@@ -23,7 +23,7 @@ Ci\'o rende molto veloce ed efficiente l'avvio dell'applicazione e in particolar
 \section{Blazor WebAssembly}\label{sez:bclient}
 Blazor WebAssembly \'e un modello attualmente in preview, che verr\'a ufficialmente rilasciato nella prima parte del 2020.
 
-Questo modello si chiama cos\'i perch\'e il codice viene scaricato completamente dal client come da standard delle SPA odierne.
+In questo modello il codice della SPA viene eseguito completamente lato client come solitamente avviene quando si utilizza un framework moderno per UI basato su JS, come i gi\'a citati Angular,React,Vue.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.6]{figure/blazor-webassembly.png}}
@@ -32,13 +32,12 @@ Questo modello si chiama cos\'i perch\'e il codice viene scaricato completamente
 \end{figure}
 
 Vengono quindi scaricati dal client l'applicazione Blazor, le sue dipendenze, ed il runtime del .NET scelto come target per l'applicazione.
-L'applicazione viene quindi eseguita direttamente nel thread della User Interface del Browser utilizzato.
+L'applicazione viene quindi eseguita direttamente nel thread della User Interface del Browser utilizzato, come visibile nella figura 2.2.
 
-Gli update alla UI e la gestione degli stessi, avvengono utilizzando lo stesso processo nel browser.
+Quindi esegue nella stessa sandbox di qualsiasi altra applicazione javascript, e non pu\'o fare niente di pi\'u o di meno. Ogni update alla UI e la gestione di ciascuno, avvengono utilizzando lo stesso processo nel browser. Per questo modello, blazor.webassembly.js \'e il nome dello script Javascript che si occupa di scaricare il .NET runtime, l'applicazione e le dipendenze, come anche dell'inizializzazione dell'applicazione. 
 
-Per questo modello, blazor.webassembly.js \'e il nome dello script che si occupa di scaricare il .NET runtime, l'applicazione e le dipendenze, come anche dell'inizializzazione dell'applicazione.
+In particolare il nome Blazor WebAssembly \'e stato scelto perch\'e il WebAssembly \'e il byte code del web che dal 2015 i pi\'u diffusi browser al mondo si sono impegnati per sviluppare ed adottare.
 
-In particolare il nome WebAssembly \'e stato scelto perch\'e 
 
 \section{Blazor PWA}\label{sez:bpwa}
 

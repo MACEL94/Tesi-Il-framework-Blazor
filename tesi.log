@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  27 OCT 2019 19:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  9 NOV 2019 12:49
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -484,15 +484,15 @@ This may cause the page layout to be inconsistent, however.
 File: figure/DotNetImplementations.png Graphic file (type png)
 <use figure/DotNetImplementations.png>
 Package pdftex.def Info: figure/DotNetImplementations.png  used on input line 3
-2.
-(pdftex.def)             Requested size: 476.0823pt x 256.8616pt.
+3.
+(pdftex.def)             Requested size: 317.38013pt x 171.23671pt.
  [3 <./figure/DotNetImplementations.png>]
 <figure/DotNetFrameworkCapabilities.png, id=32, 1028.34187pt x 382.42876pt>
 File: figure/DotNetFrameworkCapabilities.png Graphic file (type png)
 <use figure/DotNetFrameworkCapabilities.png>
 Package pdftex.def Info: figure/DotNetFrameworkCapabilities.png  used on input 
-line 42.
-(pdftex.def)             Requested size: 617.00989pt x 229.45901pt.
+line 43.
+(pdftex.def)             Requested size: 359.92505pt x 133.85207pt.
 ) [4 <./figure/DotNetFrameworkCapabilities.png>]
 \openout2 = `sorgenti/cap_2.aux'.
 
@@ -585,7 +585,7 @@ Here is how much of TeX's memory you used:
 iKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
 r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb>
-Output written on tesi.pdf (14 pages, 882617 bytes).
+Output written on tesi.pdf (14 pages, 883290 bytes).
 PDF statistics:
  75 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
