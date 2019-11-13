@@ -35,74 +35,55 @@ Vengono quindi scaricati dal client l'applicazione Blazor, le sue dipendenze, ed
 L'applicazione viene quindi eseguita direttamente nel thread della User Interface del Browser utilizzato, come visibile nella figura 2.2.
 
 Quindi esegue nella stessa sandbox di qualsiasi altra applicazione javascript, e non pu\'o fare niente di pi\'u o di meno. Ogni update alla UI e la gestione di ciascuno, avvengono utilizzando lo stesso processo nel browser. Per questo modello, blazor.webassembly.js \'e il nome dello script Javascript che si occupa di scaricare il .NET runtime, l'applicazione e le dipendenze, come anche dell'inizializzazione dell'applicazione. 
-
-In particolare il nome Blazor WebAssembly \'e stato scelto perch\'e il WebAssembly \'e il byte code del web che dal 2015 i pi\'u diffusi browser al mondo si sono impegnati per sviluppare ed adottare.
-
+In particolare il nome Blazor WebAssembly \'e stato scelto perch\'e il WebAssembly \'e il byte code del web che dal 2015 i browser pi\'u diffusi al mondo si sono impegnati per sviluppare ed adottare.
+\pagebreak
 
 \section{Blazor PWA}\label{sez:bpwa}
+Lo step successivo per avvicinarsi al client allontanandosi dal modello server \'e poi Blazor PWA.
 
+\'E cos\'i chiamato perch\'e in questo modello Blazor, permette di sviluppare l'interfaccia utente di una Progressive Web App.
+Nella figura 2.3 viene riassunto cosa sia una Progressive Web App.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=0.5]{figure/ProgressiveWebApp.png}}
+	\caption{Progressive Web Apps}
+	\label{fig:WhatIsAPWA}
+\end{figure}
+
+
+In particolare queste sono applicazioni web che hanno la capacit\'a di funzionare anche offline, e che spesso possono essere scaricate in modo persistente sulla macchina dell'utente che le esegue.
+Offrono chiaramente una maggiore velocit\'a di esecuzione e la possibilit\'a di sfruttare alcune API native.
+Ad esempio possono essere utilizzate quando la necessit\'a \'e quella di utilizzare le notifiche push native del SO che sta utilizzando il client(e.g. Windows).
+
+Per realizzarne una in Blazor al momento, bisogna partire dal modello Blazor WebAssembly aggiungendo un manifesto che descriva le capacit\'a dell'applicazione, i permessi richiesti e l'icona da utilizzare una volta installata, oltre chiaramente a dover implementare l'applicazione in modo che possa lavorare anche offline, basandosi su un service worker.\cite{blazorPWA}
+\pagebreak
 
 \section{Blazor Hybrid}\label{sez:bhybrid}
+Da questo punto in poi, i modelli di Blazor servono a sviluppare applicazioni native.
+Nel modello Hybrid, l'applicazione sviluppata non \'e quindi pi\'u considerabile una web app ma rimane ibrida perch\'e pur essendo un app nativa, utilizza tecnologie web per effettuare il rendering della user interface.
+
+Esempi di Hybrid Apps possono essere applicazioni mobile native, che hanno accesso alle API esposte ad esempio da Android, ma che utilizzano delle WebViews per la gestione dell'interazione dell'utente con la UI.
+
+Un'altro esempio molto interessante sono le applicazioni che sfruttano Electron, che permette di compilare un'applicazione web in un applicazione desktop cross platform.
+Infatti utilizzando Electron si pu\'o creare un'applicazione nativa, con l'interfaccia utente scritta utilizzando blazor, facendo in modo che in fase di esecuzione il processo host sia .NET Core(avendo quindi pieno accesso alle capacit\'a native e ad esempio al file system) pur rimanendo cross platform e potendo quindi eseguire su Windows, Linux e Mac.
+Di seguito nell'immagine 2.4 si pu\'o vedere una Web Application compilata nativamente con Electron(con target Windows), e quindi eseguita come applicazione desktop:
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=0.6]{figure/BlazorWeatherElectron.png}}
+	\caption{Blazor Hybrid Application}
+	\label{fig:BlazorHybridApplication}
+\end{figure}
+
+Il codice open source dell'applicazione qui sopra, si trovare al seguente link: https://github.com/danroth27/BlazorWeather/tree/master/BlazorWeather.Electron
+\pagebreak
+
 
 
 \section{Blazor Native}\label{sez:bnative}
+Infine esiste il modello Native che \'e possibile grazie al fatto che Blazor \'e stato architettato per poter renderizzare controlli della User Interface che non siano obbligatoriamente strumenti web, e pu\'o quindi integrarsi con controlli nativi.
+Il rendering layer \'e infatti intercambiabile, pur essendo quello di default dedicato all'HTML.
 
-%\section{Stato Attuale delle Wireless Network}\label{sec:stato_attuale}
-%
-%Oggigiorno non esistono pi\`u dispositivi isolati che non comunicano con altri, tutti i PC prevedono la
-%connessione ad internet, o in generale comunicano con altri dispositivi elettronici grazie alle reti di
-%comunicazione. Inizialmente queste reti erano basate sui cavi ({\em wired network}), poi si sono rivelate
-%pi\`u pratiche le reti senza filo ({\em wireless network}); da ci\`o si \`e dovuto affrontare il problema di
-%permettere l'utilizzo delle tecnologie attualmente utilizzate nelle reti wired anche in reti wireless, che
-%per loro natura sono intrinsecamente meno sicure a causa del mezzo trasmissivo. Le informazioni non vengono
-%pi\`u convertite sotto forma di impulso elettronico e spedite su un filo metallico, ma essendo l'etere il
-%mezzo di propagazione sono convertite in onde radio; queste ultime hanno una portata limitata non sempre ben
-%determinabile, sono soggette a disturbi che degradano le informazioni inviate fino, a volte, a farle
-%perdere; ed infine cosa a noi maggiormente sgradita l'energia consumata e direttamente connessa alla potenza
-%trasmessa, ci\`o significa che aumentare la portata di trasmissione e la qualit\`a del segnale comporta un
-%consumo maggiore dell'energia consumata.
-%
-%\section{Dynamic Power Management}\label{sec:dpm}
-%
-%Essendo la parte a radio frequenza colpevole del maggior consumo di energia, in particolare gli
-%amplificatori utilizzati immediatamente prima dell'invio del segnale o dopo una ricezione, le stazioni
-%802.11 possono allungare la vita delle batterie spegnendo i transceiver radio e mettendo la schada wireless
-%in sleep periodicamente.
-%
-%Nella figura sottostante (Figura~\ref{fig:consumo_senza_ps}), si pu\`o osservare una finestra di 20~secondi
-%del consumo di energia di una scheda wireless senza il power management abilitato:
-%
-%\begin{figure}[htbp]
-%%\centerline{\includegraphics{figure/consumo_senza_ps}}
-%%\caption{Consumo di energia senza power management}
-%%\label{fig:consumo_senza_ps}
-%\end{figure}
-%
-%Attivando il power management si pu\`o notare un sensibile risparmio energetico, a fronte di un diverso
-%consumo energetico dovuto ad un diverso modo di operare: 
-%
-%\begin{figure}[htbp]
-%%\centerline{\includegraphics{figure/consumo_con_ps}}
-%%\caption{Consumo di energia con power management}
-%%\label{fig:consumo_con_ps}
-%\end{figure}
-%
-%In questa modalit\`a la stazione resta per la maggior parte del tempo nello stato di sleep, risvegliandosi
-%periodicamente (nella figura ogni 100~ms) per controllare se nel frattempo c'\`e stato traffico per essa.
-%Durante il periodo di sleep, sar\`a demandato all'Access Point il compito di bufferizzare i frame destinati
-%verso la scheda momentaneamente in sleep; al risveglio i frame bufferizzati saranno annunciati da un {\em
-%Beacon frame}, la ricezione da parte della stazione wireless dei frame bufferizzati inizier\`a subito dopo
-%con la loro richiesta tramite il {\em PS-Poll frame} (Figura~\ref{fig:power_saving}).
-%
-%\begin{figure}[htbp]
-%%\centerline{\includegraphics{figure/power_saving}}
-%%\caption{Visione beacon e Ps-Poll}
-%%\label{fig:power_saving}
-%\end{figure}
-%
-%Quando viene attivato il power management l'Access Point e la stazione wireless devono sincronizzarsi per
-%risvegliarsi ad intervalli prestabiliti, che nel caso della figura soprastante \`e 100~ms; all'inizio di
-%ogni risveglio l'Access Point invier\`a il beacon contenente la {\em traffic indication map - TIM} che dice
-%alla stazione se vi sono pacchetti bufferizzati destinati ad essa; in tal cosa la stazione risponder\`a con
-%un PS-Pool contenente il suo Association ID. Grazie all'Association ID l'Access Point sar\`a in grado di
-%selezionare i frame destinati alla stazione e provveder\`a ad inviarli.
+Un esempio di applicazione sviluppata utilizzando Blazor per il rendering di controlli nativi nella user interface, si pu\'o vedere durante la presentazione di Steve Sanderson all' evento NDC Oslo di quest'anno, pur non essendo stato ancora rilasciato il codice di un esempio ufficiale.\cite{sandersonNDCBlutter}
+In questa applicazione, si \'e scelto di sostituire il default rendering layer per utilizzarne uno custom, utilizzando componenti di Flutter, il toolkit di Google per costruire interfacce utente native CrossPlatform.
+Questo modello viene qui citato per completezza, ma al momento non \'e nemmeno presente nella documentazione ufficiale ed \'e solo stato citato da Daniel Roth durante la presentazione dei futuri modelli di Blazor lato client.\cite{blazorNative}
+\pagebreak
