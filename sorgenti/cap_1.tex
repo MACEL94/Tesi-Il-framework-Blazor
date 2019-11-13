@@ -35,8 +35,6 @@ La figura 1.1 qui di seguito riassume le implementazioni del .NET Standard e le 
 	\label{fig:DotNetImplementations}
 \end{figure}
 
-\pagebreak
-
 Scrivendo ad esempio in C\# \`e possibile sviluppare vari tipi di applicazioni come si pu\'o vedere nella figura 1.2, ma se si decide di sviluppare codice per un applicazione client web ad oggi si \`e ancora costretti a scrivere utilizzando Javascript e un suo framework se si vuole essere veloci nello sviluppo e scrivere codice mantenibile specialmente in team pi\'u grandi, come nel mondo enterprise.
 
 \begin{figure}[H]
@@ -45,6 +43,6 @@ Scrivendo ad esempio in C\# \`e possibile sviluppare vari tipi di applicazioni c
 \label{fig:DotNetCapabilities}
 \end{figure}
 
-Gi\'a con Razor\cite{razor}, Microsoft ha provato a permettere la generazione di codice HTML e CSS in modo dinamico utilizzando C\#, ma \`e utilizzabile solo lato server e quindi ad esempio la cattura di un evento client side come il click di un utente su un bottone senza contattare il server non \`e gestibile utilizzando il solo C\#.
+Gi\'a con Razor\cite{razor}, Microsoft ha permesso la generazione di codice HTML e CSS in modo dinamico utilizzando C\#, ma \`e utilizzabile solo lato server e quindi la cattura di un evento client side come il click di un utente su un bottone, senza contattare il server, non \`e stato possibile fino ad ora senza passare per Javascript.
 
 Ecco cosa \'e quindi Blazor: la versione successiva di Razor(Web-Razor) che permette ai developer di gestire anche gli eventi client-side, direttamente in C\# come se questo fosse effettivamente ci\'o che viene eseguito lato client, mentre in reat\'a l'esecuzione lato client cambia a seconda del modello scelto, come poi vedremo pi\'u nel dettaglio.
