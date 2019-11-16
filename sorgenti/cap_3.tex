@@ -1,4 +1,22 @@
-\chapter{Scalabilit\'a, Pro e Contro}\label{cap:procontr}
-\section{Scalabilit\'a}\label{sez:pro}
+\chapter{Scalabilit\'a, Pro e Contro}\label{cap:scalprocont}
+\section{Scalabilit\'a}\label{sez:scalabilita}
+Il problema della Scalabilit\'a, ossia della capacit\'a dell'applicazione di resistere all'aumentare del numero di utenti concorrenti che ne usufruiscono, dipende dal modello scelto, come anche dalla tipologia di applicazine sviluppata.
+Non \'e quindi risolvibile banalmente e non esiste una scelta universalmente giusta.
+
+Il problema della scalabilit\'a comunque \'e fondamentalmente diverso tra Blazor Server, e tutti gli altri modelli.
+Questo principalmente per 3 motivi:
+\begin{enumerate}
+	\item Il primo \'e che Blazor Server delega completamente al Server il carico computazionale necessario per gestire ogni singolo evento della UI di ogni utente connesso, compreso il salvataggio temporaneo dello stato di ciascuna UI nel tempo, visto che ad ogni Client connesso (o meglio allo specifico DOM) arrivano solamente le differenze rispetto allo stato precedente, ogni volta che cambia qualcosa.
+	Ci\'o implica che la potenza del server debba tener conto di eventuali picchi di utenze, e debba avere a disposizione sufficiente RAM per poter mantenere in memoria il peso di ciascun utente concorrente connesso.
+	
+	\item Il secondo \'e che Blazor Server, necessita di una connessione sempre attiva con ogni utente collegato.
+	
+	\item Il terzo \'e che questo modello sfrutta SignalR, che per funzionare al meglio utilizza il protocollo di trasporto WebSocket, quindi la macchina server sul quale viene ospitata l'applicazione Blazor \'e consigliato che lo supporti, mentre negli altri modelli non non \'e necessario.
+\end{enumerate}
+
+Gli altri modelli invece
+
 \section{Pro}\label{sez:pro}
+
+
 \section{Contro}\label{sez:contro}

@@ -20,21 +20,21 @@ Ci\'o rende molto veloce ed efficiente l'avvio dell'applicazione e in particolar
 \pagebreak
 %Oltretutto ci\'o che viene scaricato lato client non varia al crescere dell'applicazione lato server.
 
-\section{Blazor WebAssembly}\label{sez:bclient}
+\section{Blazor WebAssembly}\label{sez:bwa}
 Blazor WebAssembly \'e un modello attualmente in preview, che verr\'a ufficialmente rilasciato nella prima parte del 2020.
 
 In questo modello il codice della SPA viene eseguito completamente lato client come solitamente avviene quando si utilizza un framework moderno per UI basato su JS, come i gi\'a citati Angular,React,Vue.
 
 \begin{figure}[H]
-	\centerline{\includegraphics[scale=0.6]{figure/blazor-webassembly.png}}
-	\caption{Blazor Webassembly}
-	\label{fig:BlazorWebassembly}
+	\centerline{\includegraphics[scale=0.6]{figure/blazor-WebAssembly.png}}
+	\caption{Blazor WebAssembly}
+	\label{fig:BlazorWebAssembly}
 \end{figure}
 
 Vengono quindi scaricati dal client l'applicazione Blazor, le sue dipendenze, ed il runtime del .NET scelto come target per l'applicazione.
 L'applicazione viene quindi eseguita direttamente nel thread della User Interface del Browser utilizzato, come visibile nella figura 2.2.
 
-Quindi esegue nella stessa sandbox di qualsiasi altra applicazione javascript, e non pu\'o fare niente di pi\'u o di meno. Ogni update alla UI e la gestione di ciascuno, avvengono utilizzando lo stesso processo nel browser. Per questo modello, blazor.webassembly.js \'e il nome dello script Javascript che si occupa di scaricare il .NET runtime, l'applicazione e le dipendenze, come anche dell'inizializzazione dell'applicazione. 
+Quindi esegue nella stessa sandbox di qualsiasi altra applicazione javascript, e non pu\'o fare niente di pi\'u o di meno. Ogni update alla UI e la gestione di ciascuno, avvengono utilizzando lo stesso processo nel browser. Per questo modello, blazor.WebAssembly.js \'e il nome dello script Javascript che si occupa di scaricare il .NET runtime, l'applicazione e le dipendenze, come anche dell'inizializzazione dell'applicazione. 
 In particolare il nome Blazor WebAssembly \'e stato scelto perch\'e il WebAssembly \'e il byte code del web che dal 2015 i browser pi\'u diffusi al mondo si sono impegnati per sviluppare ed adottare.
 \pagebreak
 
@@ -59,7 +59,7 @@ Per realizzarne una in Blazor al momento, bisogna partire dal modello Blazor Web
 \pagebreak
 
 \section{Blazor Hybrid}\label{sez:bhybrid}
-Da questo punto in poi, i modelli di Blazor servono a sviluppare applicazioni native.
+Questo modello di Blazor ed anche il successivo, servono a sviluppare applicazioni native.
 Nel modello Hybrid, l'applicazione sviluppata non \'e quindi pi\'u considerabile una web app ma rimane ibrida perch\'e pur essendo un app nativa, utilizza tecnologie web per effettuare il rendering della user interface.
 
 Esempi di Hybrid Apps possono essere applicazioni mobile native, che hanno accesso alle API esposte ad esempio da Android, ma che utilizzano delle WebViews per la gestione dell'interazione dell'utente con la UI.
