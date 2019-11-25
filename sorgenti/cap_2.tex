@@ -10,13 +10,26 @@ Un'applicazione Blazor Server ospita i componenti Blazor lato Server e gestisce 
 	\label{fig:BlazorServer}
 \end{figure}
 
-Quando un utente scatena un evento, questo viene inviato attraverso la RTC al server, dove i vari componenti gestiscono l'evento.
-Quando l'evento \'e stato gestito, blazor compara l'output generato con quello precedente l'evento, e manda quindi le sole differenze al browser del client, per poi applicarle al DOM.\cite{blazorModelsScenarios}
+Ci\'o significa che quando un utente scatena un evento, questo viene inviato attraverso la real time connection al server, dove il rispettivo componente di competenza gestisce l'evento.
+Quando l'evento \'e stato gestito, blazor compara l'output appena generato con quello precedente all'evento, e manda quindi le sole differenze al browser del client, per poi applicarle al DOM.\cite{blazorModelsScenarios}
 
-Blazor Server quindi necessita di una connessione stabile e a bassa latenza per funzionare al meglio, e gli scenari offline non sono supportati.
+Blazor Server perci\'o necessita di una connessione stabile e a bassa latenza per funzionare al meglio, e gli scenari offline non sono supportati.
+Ci\'o significa anche che la posizione del server sul quale \'e ospitata l'applicazione non pu\'o essere troppo distante dal client che si sta connettendo per garantire un funzionamento senza lag.
 
 \'E particolarmente indicato quando si vuole delegare il costo computazionale al server e non ai client connessi, dato che ci\'o che il client esegue \'e il solo codice statico e le differenze di volta in volta inviate ma calcolate lato server.
-Ci\'o rende molto veloce ed efficiente l'avvio dell'applicazione e in particolare il suo caricamento iniziale lato client, che rende il modello perfetto per funzionare su apparecchi a basso costo.
+Ci\'o rende molto veloce ed efficiente il download e l'avvio dell'applicazione lato client, il che lo rende il modello perfetto per funzionare su apparecchi a basso costo.
+
+\subsection{BlazorPong }\label{sez:bpong}
+Un'esempio di applicazione scritta con questo modello, \'e BlazorPong\cite{blazorPong}, da me implementata e la cui demo \'e disponibile sul sito: https://blazorpong-dev-as.azurewebsites.net.
+Questa applicazione permette a due giocatori che si collegano al sito contemporaneamente di giocare, e ai successivi utenti che si collegano di visionare la partita in corso come spettatori in tempo reale.
+In questa applicazione ho scelto di utilizzare il modello server side per vari motivi.:
+\begin{enumerate}
+	\item Il service worker, ossia il processo che  che si occupa di aggiornare la posizione della pallina su tutti i client connessi, deve eseguire lato server ed inviare il segnale di aggiornamento a tutti i client connessi;
+	\item Il calcolo delle differenze da applicare a ciascun DOM di ciascun cliente, per quanto avvenga continuamente, pu\'o avvenire direttamente lato server perch\'e l'applicazione \'e molto semplice e anche un server free come quello che ho a disposizione riesce a far giocare senza problemi due persone con diversi spettatori.
+	\item Essendo la gestione degli eventi server side, la latenza con cui 
+	
+\end{enumerate}
+
 \pagebreak
 %Oltretutto ci\'o che viene scaricato lato client non varia al crescere dell'applicazione lato server.
 
