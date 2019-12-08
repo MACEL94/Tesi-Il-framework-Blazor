@@ -4,21 +4,22 @@
 \contentsline {section}{\numberline {1.1}Contesto}{1}% 
 \contentsline {section}{\numberline {1.2}Problema}{2}% 
 \contentsline {section}{\numberline {1.3}Linguaggi General-Purpose}{3}% 
+\contentsline {section}{\numberline {1.4}Blazor}{4}% 
 \contentsline {chapter}{\numberline {2}Modelli e Funzionamento}{5}% 
 \contentsline {section}{\numberline {2.1}Blazor Server}{5}% 
 \contentsline {subsection}{\numberline {2.1.1}BlazorPong }{6}% 
 \contentsline {section}{\numberline {2.2}Blazor WebAssembly}{7}% 
 \contentsline {subsection}{\numberline {2.2.1}WebAssembly}{7}% 
-\contentsline {subsection}{\numberline {2.2.2}Blazor PWA}{8}% 
-\contentsline {section}{\numberline {2.3}Modelli in roadmap}{9}% 
-\contentsline {subsection}{\numberline {2.3.1}Blazor Hybrid}{9}% 
-\contentsline {subsection}{\numberline {2.3.2}Blazor Native}{10}% 
-\contentsline {chapter}{\numberline {3}Scalabilit\'a, Pro e Contro}{11}% 
-\contentsline {section}{\numberline {3.1}Scalabilit\'a}{11}% 
-\contentsline {section}{\numberline {3.2}Pro}{12}% 
-\contentsline {section}{\numberline {3.3}Contro}{12}% 
-\contentsline {chapter}{\numberline {4}Conclusioni}{13}% 
-\contentsline {section}{\numberline {4.1}Conclusioni}{13}% 
-\contentsline {section}{\numberline {4.2}Futuro del progetto}{13}% 
-\contentsline {chapter}{Bibliografia}{14}% 
-\contentsline {chapter}{Ringraziamenti}{15}% 
+\contentsline {subsection}{\numberline {2.2.2}Blazor PWA}{9}% 
+\contentsline {section}{\numberline {2.3}Modelli in roadmap}{10}% 
+\contentsline {subsection}{\numberline {2.3.1}Blazor Hybrid}{10}% 
+\contentsline {subsection}{\numberline {2.3.2}Blazor Native}{11}% 
+\contentsline {chapter}{\numberline {3}Scalabilit\'a, Pro e Contro}{12}% 
+\contentsline {section}{\numberline {3.1}Scalabilit\'a}{12}% 
+\contentsline {section}{\numberline {3.2}Pro}{13}% 
+\contentsline {section}{\numberline {3.3}Contro}{13}% 
+\contentsline {chapter}{\numberline {4}Conclusioni}{14}% 
+\contentsline {section}{\numberline {4.1}Conclusioni}{14}% 
+\contentsline {section}{\numberline {4.2}Futuro del progetto}{14}% 
+\contentsline {chapter}{Bibliografia}{15}% 
+\contentsline {chapter}{Ringraziamenti}{16}% 

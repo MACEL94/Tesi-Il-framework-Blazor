@@ -52,8 +52,21 @@ Ogni update alla UI e la relativa gestione, avvengono utilizzando lo stesso proc
 Per questo modello, blazor.WebAssembly.js \'e il nome dello script Javascript che si occupa di scaricare il .NET runtime, l'applicazione e le dipendenze, come anche dell'inizializzazione dell'applicazione.
 
 \subsection{WebAssembly}\label{sez:webAssembly}
-In particolare il nome Blazor WebAssembly \'e stato scelto perch\'e utilizza il WebAssembly, che \'e un open standard che definisce un formato portatile di codice binario per programmi eseguibili e il rispettivo linguaggio assembly, come anche delle interfacce per facilitare le interazioni del codice con il proprio host.
+In particolare il nome Blazor WebAssembly \'e stato scelto perch\'e utilizzlato client il codice viene eseguito grazie al file mono.wasm, ossia la compilazione del Runtime del framework Mono in WebAssembly, e Mono \'e una delle implementazioni esistenti del framework di base .NET Standard.
+Il WebAssembly, che \'e un open standard che definisce un formato portatile di codice binario per programmi eseguibili e il rispettivo linguaggio assembly, come anche delle interfacce per facilitare le interazioni del codice con il proprio host.
 \'E anche detto il byte code del web, dato che dal 2017 i browser pi\'u diffusi al mondo si sono impegnati per svilupparlo ed adottarlo.\cite{webAssemblySupport}
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=0.7]{figure/WasmVSJavascript.PNG}}
+	\caption{Confronto tra WebAssembly e Javascript}
+	\label{fig:WasmVSJavascript}
+\end{figure}
+Come si pu\'o vedere nella figura 2.3, uno dei motivi per cui WASM \'e pi\'u veloce di Javascript \'e che non deve essere processato e compilato prima di poter essere interpretato, ma solamente scompattato ed eseguito.
+
+La compilazione avviene in modalita AOT(Ahead of Time) e non pi\'u JIT(Just in Time), il che si traduce in un sensibile miglioramenteo delle prestazioni del codice dinamico.
+Il C\# quindi non \'e l'unico linguaggio che potr\'a essere utilizzato come partenza per essere compilato in WASM, tuttavia questa tecnologia \'e ci\'o che rende possibile il funzionamento di Blazor.
+
+
 \pagebreak
 
 \subsection{Blazor PWA}\label{sez:bpwa}
