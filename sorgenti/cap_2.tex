@@ -53,10 +53,10 @@ Per questo modello, blazor.WebAssembly.js \'e il nome dello script Javascript ch
 
 \subsection{WebAssembly}\label{sez:webAssembly}
 In particolare il nome Blazor WebAssembly \'e stato scelto perch\'e utilizza il WebAssembly, che \'e un open standard che definisce un formato portatile di codice binario per programmi eseguibili e il rispettivo linguaggio assembly, come anche delle interfacce per facilitare le interazioni del codice con il proprio host.
-\'E anche detto il byte code del web, dato che dal 2017 i browser pi\'u diffusi al mondo si sono impegnati per svilupparlo ed adottarlo, e che ad oggi vanta di essere supportato?????????????????????????????? .\cite{webAssemblySupport}
+\'E anche detto il byte code del web, dato che dal 2017 i browser pi\'u diffusi al mondo si sono impegnati per svilupparlo ed adottarlo.\cite{webAssemblySupport}
 \pagebreak
 
-\section{Blazor PWA}\label{sez:bpwa}
+\subsection{Blazor PWA}\label{sez:bpwa}
 Lo step successivo per avvicinarsi al client allontanandosi dal modello server \'e poi Blazor PWA.
 
 \'E cos\'i chiamato perch\'e in questo modello Blazor, permette di sviluppare l'interfaccia utente di una Progressive Web App.
@@ -68,7 +68,6 @@ Nella figura 2.3 viene riassunto cosa sia una Progressive Web App.
 	\label{fig:WhatIsAPWA}
 \end{figure}
 
-
 In particolare queste sono applicazioni web che hanno la capacit\'a di funzionare anche offline, e che spesso possono essere scaricate in modo persistente sulla macchina dell'utente che le esegue.
 Offrono chiaramente una maggiore velocit\'a di esecuzione e la possibilit\'a di sfruttare alcune API native.
 Ad esempio possono essere utilizzate quando la necessit\'a \'e quella di utilizzare le notifiche push native del SO che sta utilizzando il client(e.g. Windows).
@@ -76,7 +75,8 @@ Ad esempio possono essere utilizzate quando la necessit\'a \'e quella di utilizz
 Per realizzarne una in Blazor al momento, bisogna partire dal modello Blazor WebAssembly aggiungendo un manifesto che descriva le capacit\'a dell'applicazione, i permessi richiesti e l'icona da utilizzare una volta installata, oltre chiaramente a dover implementare l'applicazione in modo che possa lavorare anche offline, basandosi su un service worker.\cite{blazorPWA}
 \pagebreak
 
-\section{Blazor Hybrid}\label{sez:bhybrid}
+\section{Modelli in roadmap}
+\subsection{Blazor Hybrid}\label{sez:bhybrid}
 Questo modello di Blazor ed anche il successivo, servono a sviluppare applicazioni native.
 Nel modello Hybrid, l'applicazione sviluppata non \'e quindi pi\'u considerabile una web app ma rimane ibrida perch\'e pur essendo un app nativa, utilizza tecnologie web per effettuare il rendering della user interface.
 
@@ -97,7 +97,7 @@ Il codice open source dell'applicazione qui sopra, si trovare al seguente link: 
 
 
 
-\section{Blazor Native}\label{sez:bnative}
+\subsection{Blazor Native}\label{sez:bnative}
 Infine esiste il modello Native che \'e possibile grazie al fatto che Blazor \'e stato architettato per poter renderizzare controlli della User Interface che non siano obbligatoriamente strumenti web, e pu\'o quindi integrarsi con controlli nativi.
 Il rendering layer \'e infatti intercambiabile, pur essendo quello di default dedicato all'HTML.
 

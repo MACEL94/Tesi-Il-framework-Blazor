@@ -9,9 +9,10 @@
 \contentsline {subsection}{\numberline {2.1.1}BlazorPong }{6}% 
 \contentsline {section}{\numberline {2.2}Blazor WebAssembly}{7}% 
 \contentsline {subsection}{\numberline {2.2.1}WebAssembly}{7}% 
-\contentsline {section}{\numberline {2.3}Blazor PWA}{8}% 
-\contentsline {section}{\numberline {2.4}Blazor Hybrid}{9}% 
-\contentsline {section}{\numberline {2.5}Blazor Native}{10}% 
+\contentsline {subsection}{\numberline {2.2.2}Blazor PWA}{8}% 
+\contentsline {section}{\numberline {2.3}Modelli in roadmap}{9}% 
+\contentsline {subsection}{\numberline {2.3.1}Blazor Hybrid}{9}% 
+\contentsline {subsection}{\numberline {2.3.2}Blazor Native}{10}% 
 \contentsline {chapter}{\numberline {3}Scalabilit\'a, Pro e Contro}{11}% 
 \contentsline {section}{\numberline {3.1}Scalabilit\'a}{11}% 
 \contentsline {section}{\numberline {3.2}Pro}{12}% 

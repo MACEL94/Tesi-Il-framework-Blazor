@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  2 DEC 2019 22:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  7 DEC 2019 17:09
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -580,7 +580,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  4879 strings out of 492452
  65299 string characters out of 3129808
- 137933 words of memory out of 3000000
+ 137939 words of memory out of 3000000
  9035 multiletter control sequences out of 15000+200000
  48394 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -589,7 +589,7 @@ Here is how much of TeX's memory you used:
 iKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
 r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb>
-Output written on tesi.pdf (19 pages, 1070892 bytes).
+Output written on tesi.pdf (19 pages, 1070076 bytes).
 PDF statistics:
  95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
