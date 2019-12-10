@@ -8,18 +8,18 @@
 \contentsline {chapter}{\numberline {2}Modelli e Funzionamento}{5}% 
 \contentsline {section}{\numberline {2.1}Blazor Server}{5}% 
 \contentsline {subsection}{\numberline {2.1.1}BlazorPong }{6}% 
-\contentsline {section}{\numberline {2.2}Blazor WebAssembly}{7}% 
-\contentsline {subsection}{\numberline {2.2.1}WebAssembly}{7}% 
+\contentsline {section}{\numberline {2.2}Blazor WebAssembly}{8}% 
+\contentsline {subsection}{\numberline {2.2.1}WebAssembly}{8}% 
 \contentsline {subsection}{\numberline {2.2.2}Blazor PWA}{9}% 
-\contentsline {section}{\numberline {2.3}Modelli in roadmap}{10}% 
-\contentsline {subsection}{\numberline {2.3.1}Blazor Hybrid}{10}% 
-\contentsline {subsection}{\numberline {2.3.2}Blazor Native}{11}% 
-\contentsline {chapter}{\numberline {3}Scalabilit\'a, Pro e Contro}{12}% 
-\contentsline {section}{\numberline {3.1}Scalabilit\'a}{12}% 
-\contentsline {section}{\numberline {3.2}Pro}{13}% 
-\contentsline {section}{\numberline {3.3}Contro}{13}% 
-\contentsline {chapter}{\numberline {4}Conclusioni}{14}% 
-\contentsline {section}{\numberline {4.1}Conclusioni}{14}% 
-\contentsline {section}{\numberline {4.2}Futuro del progetto}{14}% 
-\contentsline {chapter}{Bibliografia}{15}% 
-\contentsline {chapter}{Ringraziamenti}{16}% 
+\contentsline {section}{\numberline {2.3}Modelli in roadmap}{11}% 
+\contentsline {subsection}{\numberline {2.3.1}Blazor Hybrid}{11}% 
+\contentsline {subsection}{\numberline {2.3.2}Blazor Native}{12}% 
+\contentsline {chapter}{\numberline {3}Scalabilit\'a, Pro e Contro}{13}% 
+\contentsline {section}{\numberline {3.1}Scalabilit\'a}{13}% 
+\contentsline {section}{\numberline {3.2}Pro}{14}% 
+\contentsline {section}{\numberline {3.3}Contro}{14}% 
+\contentsline {chapter}{\numberline {4}Conclusioni}{15}% 
+\contentsline {section}{\numberline {4.1}Conclusioni}{15}% 
+\contentsline {section}{\numberline {4.2}Futuro del progetto}{15}% 
+\contentsline {chapter}{Bibliografia}{16}% 
+\contentsline {chapter}{Ringraziamenti}{17}% 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  8 DEC 2019 20:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  10 DEC 2019 08:16
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -504,52 +504,57 @@ Package pdftex.def Info: figure/blazor-server.png  used on input line 8.
 
 
 
- <./figure/blazor-server.png>] [6]
-<figure/blazor-WebAssembly.png, id=45, 173.448pt x 159.9576pt>
+ <./figure/blazor-server.png>]
+<figure/BlazorPong.PNG, id=42, 1017.04968pt x 505.13719pt>
+File: figure/BlazorPong.PNG Graphic file (type png)
+<use figure/BlazorPong.PNG>
+Package pdftex.def Info: figure/BlazorPong.PNG  used on input line 26.
+(pdftex.def)             Requested size: 305.11725pt x 151.54233pt.
+ [6 <./figure/BlazorPong.PNG>] [7]
+<figure/blazor-WebAssembly.png, id=50, 173.448pt x 159.9576pt>
 File: figure/blazor-WebAssembly.png Graphic file (type png)
 <use figure/blazor-WebAssembly.png>
-Package pdftex.def Info: figure/blazor-WebAssembly.png  used on input line 41.
+Package pdftex.def Info: figure/blazor-WebAssembly.png  used on input line 61.
 (pdftex.def)             Requested size: 104.0696pt x 95.97528pt.
-<figure/WasmVSJavascript.PNG, id=46, 407.27156pt x 231.11343pt>
+<figure/WasmVSJavascript.PNG, id=51, 407.27156pt x 231.11343pt>
 File: figure/WasmVSJavascript.PNG Graphic file (type png)
 <use figure/WasmVSJavascript.PNG>
-Package pdftex.def Info: figure/WasmVSJavascript.PNG  used on input line 60.
+Package pdftex.def Info: figure/WasmVSJavascript.PNG  used on input line 80.
 (pdftex.def)             Requested size: 285.08813pt x 161.77829pt.
- [7 <./figure/blazor-WebAssembly.png>]
-[8 <./figure/WasmVSJavascript.PNG>]
-<figure/ProgressiveWebApp.png, id=55, 595.47469pt x 309.40594pt>
+ [8 <./figure/blazor-WebAssembly.png>]
+<figure/ProgressiveWebApp.png, id=56, 595.47469pt x 309.40594pt>
 File: figure/ProgressiveWebApp.png Graphic file (type png)
 <use figure/ProgressiveWebApp.png>
-Package pdftex.def Info: figure/ProgressiveWebApp.png  used on input line 79.
+Package pdftex.def Info: figure/ProgressiveWebApp.png  used on input line 98.
 (pdftex.def)             Requested size: 297.7366pt x 154.70259pt.
- [9 <./figure/ProgressiveWebApp.png>]
-<figure/BlazorWeatherElectron.png, id=61, 526.96875pt x 396.7322pt>
+ [9 <./figure/WasmVSJavascript.PNG>] [10 <./figure/ProgressiveWebApp.png>]
+<figure/BlazorWeatherElectron.png, id=66, 526.96875pt x 396.7322pt>
 File: figure/BlazorWeatherElectron.png Graphic file (type png)
 <use figure/BlazorWeatherElectron.png>
 Package pdftex.def Info: figure/BlazorWeatherElectron.png  used on input line 1
-03.
+22.
 (pdftex.def)             Requested size: 316.18369pt x 238.04114pt.
 
-Overfull \hbox (34.25986pt too wide) in paragraph at lines 108--110
+Overfull \hbox (34.25986pt too wide) in paragraph at lines 127--129
 \T1/lmr/m/n/10.95 https://github.com/danroth27/BlazorWeather/tree/master/Blazor
 Weather.Electron
  []
 
-[10 <./figure/BlazorWeatherElectron.png>]) [11]
+[11 <./figure/BlazorWeatherElectron.png>]) [12]
 \openout2 = `sorgenti/cap_3.aux'.
 
  (sorgenti/cap_3.tex
 Capitolo 3.
-) [12
+) [13
 
 
 
-] [13]
+] [14]
 \openout2 = `sorgenti/cap_4.aux'.
 
  (sorgenti/cap_4.tex
 Capitolo 4.
-) [14
+) [15
 
 
 
@@ -565,13 +570,13 @@ Underfull \hbox (badness 4967) in paragraph at lines 4--6
 history-of-
  []
 
-) [15
+) [16
 
 
 
 
 
-] [16
+] [17
 
 
 
@@ -583,20 +588,20 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4888 strings out of 492452
- 65530 string characters out of 3129808
- 137951 words of memory out of 3000000
- 9042 multiletter control sequences out of 15000+200000
+ 4896 strings out of 492452
+ 65709 string characters out of 3129808
+ 137962 words of memory out of 3000000
+ 9049 multiletter control sequences out of 15000+200000
  48394 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,12n,49p,800b,277s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,12n,49p,800b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
 r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb>
-Output written on tesi.pdf (20 pages, 1352907 bytes).
+Output written on tesi.pdf (21 pages, 1374545 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
+ 105 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

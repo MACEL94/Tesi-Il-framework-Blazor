@@ -20,15 +20,35 @@ Ci\'o significa anche che la posizione del server sul quale \'e ospitata l'appli
 Ci\'o rende molto veloce ed efficiente il download e l'avvio dell'applicazione lato client, il che lo rende il modello perfetto per funzionare su apparecchi a basso costo.
 
 \subsection{BlazorPong }\label{sez:bpong}
-Un'esempio di applicazione scritta con questo modello, \'e BlazorPong\cite{blazorPong}, da me implementata e la cui demo \'e disponibile sul sito: https://blazorpong-dev-as.azurewebsites.net.
-Questa applicazione permette a due giocatori che si collegano al sito contemporaneamente di giocare, e ai successivi utenti che si collegano di visionare la partita in corso come spettatori in tempo reale.
+Un'esempio di applicazione scritta con questo modello, \'e BlazorPong, da me implementata e la cui demo \'e disponibile sul relativo repository in GitHub\cite{blazorPong}.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=0.3]{figure/BlazorPong.PNG}}
+	\caption{BlazorPong}
+	\label{fig:BlazorPong}
+\end{figure}
+
+Visibile nella figura  questa applicazione permette a due giocatori che si collegano al sito contemporaneamente di giocare, e ai successivi utenti che si collegano di visionare la partita in corso come spettatori in tempo reale.
 In questa applicazione ho scelto di utilizzare il modello server side per vari motivi:
 \begin{enumerate}
-	\item Il service worker che si occupa di aggiornare la posizione della pallina su tutti i client connessi, deve essere eseguito in un unico thread utilizzato per tutti i client connessi al server, ai quali devono arrivare gli aggiornamenti.
-	\item Il calcolo delle differenze da applicare a ciascun DOM di ciascun cliente, per quanto avvenga continuamente, pu\'o avvenire direttamente lato server perch\'e l'applicazione \'e molto semplice e infatti persino un server di livello free come quello che ho utilizzato riesce a far giocare senza problemi due persone con diversi spettatori(i test che ho fatto sono tutti dall'europa, poich\'e il server utilizzato si trova in Francia).
-	\item Essendo la gestione degli eventi server side, il gioco pu\'o essere visualizzato in modalit\'a spettatore senza problemi anche su cellulari non performanti.
+	\item Il service worker che si occupa di aggiornare la posizione della pallina su tutti i client connessi, deve essere eseguito in un unico thread utilizzato per tutti i client connessi al server, ad ognuno dei quali invece devono arrivare gli aggiornamenti.
+	\item Il calcolo delle differenze da applicare a ciascun DOM di ciascun utente connesso, per quanto avvenga continuamente(60fps circa), conviene avvenga direttamente lato server poich\'e l'applicazione \'e molto semplice e infatti anche un host di livello gratuito come quello che ho utilizzato riesce a far giocare senza problemi due persone con diversi spettatori(i test che ho fatto sono tutti dall'europa, poich\'e il server utilizzato si trova in Francia).
+	\item Essendo la gestione degli eventi server side, il gioco pu\'o essere visualizzato in modalit\'a spettatore senza problemi anche su cellulari non molto performanti.
 	
 \end{enumerate}
+
+Il funzionamento \'e piuttosto semplice: una volta che l'applicazione \'e stata avviata e che ciascun player si \'e connesso al sito ed ha cliccato play, quindi quando entrambi gli utenti sono pronti a giocare, inizia la partita.
+Lato server viene gestito lo spostamento costante della pallina ed eventuali collisioni con muri verticali, orizzontali o con il blocco di uno dei player.
+Rispettivamente gli eventi gestiti direttamente dal background worker sono quindi:
+\begin{enumerate}
+	\item Punto per il player dal lato opposto in cui avviene la collisione con un muro verticale;
+	\item Inversione della velocit\'a di spostamento della pallina sull'asse y a seguito di una collisione con un muro orizzontale;
+	\item Inversione della velocit\'a di spostamento della pallina sugli assi x ed y a seguito di una collisione con uno dei player;
+	\item Invio di messaggio di fine partita contenente il player vincitore a tutti gli utenti connessi quando un utente arriva a 3 punti o uno dei due player si disconnette.
+\end{enumerate}
+
+Ci\'o che invece avviene grazie all'utente, \'e lo spostamento del proprio player attraverso l'evento di drag del proprio blocco.
+Ad ogni evento scatenato dall'utente, la connessione SignalR invia l'evento al server, che lo processa e restituisce a tutti gli utenti connessi(compreso quello che ha scatenato l'evento) la differenza di CSS necessaria a far combaciare la nuova posizione reale del blocco del player che si \'e mosso, con l'immagine visualizzata.
 
 \pagebreak
 
@@ -66,8 +86,7 @@ Come si pu\'o vedere nella figura 2.3, uno dei motivi per cui WASM \'e pi\'u vel
 La compilazione avviene in modalita AOT(Ahead of Time) e non pi\'u JIT(Just in Time), il che si traduce in un sensibile miglioramenteo delle prestazioni del codice dinamico.
 Il C\# quindi non \'e l'unico linguaggio che potr\'a essere utilizzato come partenza per essere compilato in WASM, tuttavia questa tecnologia \'e ci\'o che rende possibile il funzionamento di Blazor.
 
-
-\pagebreak
+In questo modello quindi, come visibile dai Chrome Developer Tools, vengono scaricate le DLL dell'applicazione direttamente nel browser dell'utente.
 
 \subsection{Blazor PWA}\label{sez:bpwa}
 Lo step successivo per avvicinarsi al client allontanandosi dal modello server \'e poi Blazor PWA.
