@@ -136,4 +136,20 @@ Il rendering layer \'e infatti intercambiabile, pur essendo quello di default de
 Un esempio di applicazione sviluppata utilizzando Blazor per il rendering di controlli nativi nella user interface, si pu\'o vedere durante la presentazione di Steve Sanderson all' evento NDC Oslo di quest'anno, pur non essendo stato ancora rilasciato il codice di un esempio ufficiale.\cite{sandersonNDCBlutter}
 In questa applicazione, si \'e scelto di sostituire il default rendering layer per utilizzarne uno custom, utilizzando componenti di Flutter, il toolkit di Google per costruire interfacce utente native CrossPlatform.
 Questo modello viene qui citato per completezza, ma al momento non \'e nemmeno presente nella documentazione ufficiale ed \'e solo stato citato da Daniel Roth durante la presentazione dei futuri modelli di Blazor lato client.\cite{blazorNative}
+
+\section{Funzionamento}\label{sez:funzionamento}
+Partendo dal codice, come gi\'a anticipato quando si scrive si utilizza un mix di HTML per lo scheletro, CSS per lo stile del documento e C\# preceduto dal relativo carattere di escape(@) per la parte dinamica del codice.
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=0.7]{figure/RazorFile.png}}
+	\caption{File Razor\cite{ryanNowakNDCSydney}}
+	\label{fig:razorFile}
+\end{figure}
+Si pu\'o scrivere utilizzando questa sintassi solamente nei file che hanno estensione ".razor", il cui esempio si pu\'o vedere in figura 2.7.
+Quando l'applicazione viene compilata, i file .razor vengono utilizzati come base per generare dei file C\#(.cs) equivalenti al codice che si \'e descritto, e saranno poi questi file ad essere effettivamente utilizzati da Roslyn(che \'e il nome del compilatore open-source del linguaggio C\#) e a finire nella DLL generata come output del progetto.
+Un esempio di output di file razor compilato, generato a partire da quello in figura 2.7 \'e visibile in figura 2.8.
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=0.75]{figure/RazorFileCompiled.PNG}}
+	\caption{Output\cite{ryanNowakNDCSydney}}
+	\label{fig:compiledRazorFile}
+\end{figure}
 \pagebreak

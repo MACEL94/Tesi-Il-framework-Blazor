@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  10 DEC 2019 08:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  15 DEC 2019 12:10
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -540,21 +540,33 @@ Overfull \hbox (34.25986pt too wide) in paragraph at lines 127--129
 Weather.Electron
  []
 
-[11 <./figure/BlazorWeatherElectron.png>]) [12]
+[11 <./figure/BlazorWeatherElectron.png>]
+<figure/RazorFile.png, id=71, 473.51906pt x 262.73157pt>
+File: figure/RazorFile.png Graphic file (type png)
+<use figure/RazorFile.png>
+Package pdftex.def Info: figure/RazorFile.png  used on input line 143.
+(pdftex.def)             Requested size: 331.46106pt x 183.91083pt.
+<figure/RazorFileCompiled.PNG, id=72, 472.76625pt x 213.04594pt>
+File: figure/RazorFileCompiled.PNG Graphic file (type png)
+<use figure/RazorFileCompiled.PNG>
+Package pdftex.def Info: figure/RazorFileCompiled.PNG  used on input line 151.
+(pdftex.def)             Requested size: 354.5738pt x 159.78406pt.
+ [12 <./figure/RazorFile.png>])
+[13 <./figure/RazorFileCompiled.PNG>]
 \openout2 = `sorgenti/cap_3.aux'.
 
  (sorgenti/cap_3.tex
 Capitolo 3.
-) [13
+) [14
 
 
 
-] [14]
+] [15]
 \openout2 = `sorgenti/cap_4.aux'.
 
  (sorgenti/cap_4.tex
 Capitolo 4.
-) [15
+) [16
 
 
 
@@ -570,13 +582,13 @@ Underfull \hbox (badness 4967) in paragraph at lines 4--6
 history-of-
  []
 
-) [16
+) [17
 
 
 
 
 
-] [17
+] [18
 
 
 
@@ -588,20 +600,20 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4896 strings out of 492452
- 65709 string characters out of 3129808
- 137962 words of memory out of 3000000
- 9049 multiletter control sequences out of 15000+200000
+ 4914 strings out of 492452
+ 66154 string characters out of 3129808
+ 138000 words of memory out of 3000000
+ 9065 multiletter control sequences out of 15000+200000
  48394 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,12n,49p,800b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,12n,49p,800b,295s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
 r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb>
-Output written on tesi.pdf (21 pages, 1374545 bytes).
+Output written on tesi.pdf (22 pages, 1577141 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
+ 112 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
