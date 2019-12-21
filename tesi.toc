@@ -15,12 +15,16 @@
 \contentsline {subsection}{\numberline {2.3.1}Blazor Hybrid}{11}% 
 \contentsline {subsection}{\numberline {2.3.2}Blazor Native}{12}% 
 \contentsline {section}{\numberline {2.4}Funzionamento}{12}% 
-\contentsline {chapter}{\numberline {3}Scalabilit\'a, Pro e Contro}{14}% 
-\contentsline {section}{\numberline {3.1}Scalabilit\'a}{14}% 
-\contentsline {section}{\numberline {3.2}Pro}{15}% 
-\contentsline {section}{\numberline {3.3}Contro}{15}% 
-\contentsline {chapter}{\numberline {4}Conclusioni}{16}% 
-\contentsline {section}{\numberline {4.1}Conclusioni}{16}% 
-\contentsline {section}{\numberline {4.2}Futuro del progetto}{16}% 
-\contentsline {chapter}{Bibliografia}{17}% 
-\contentsline {chapter}{Ringraziamenti}{18}% 
+\contentsline {chapter}{\numberline {3}Scalabilit\'a, Pro e Contro}{15}% 
+\contentsline {section}{\numberline {3.1}Scalabilit\'a}{15}% 
+\contentsline {section}{\numberline {3.2}Blazor Server}{16}% 
+\contentsline {subsection}{\numberline {3.2.1}Pro}{16}% 
+\contentsline {subsection}{\numberline {3.2.2}Contro}{16}% 
+\contentsline {section}{\numberline {3.3}Blazor WebAssembly}{16}% 
+\contentsline {subsection}{\numberline {3.3.1}Pro}{16}% 
+\contentsline {subsection}{\numberline {3.3.2}Contro}{16}% 
+\contentsline {chapter}{\numberline {4}Conclusioni}{17}% 
+\contentsline {section}{\numberline {4.1}Conclusioni}{17}% 
+\contentsline {section}{\numberline {4.2}Futuro del progetto}{17}% 
+\contentsline {chapter}{Bibliografia}{18}% 
+\contentsline {chapter}{Ringraziamenti}{19}% 

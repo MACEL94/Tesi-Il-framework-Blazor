@@ -6,18 +6,27 @@ Non \'e quindi risolvibile banalmente e non esiste una scelta universalmente giu
 Il problema della scalabilit\'a comunque \'e fondamentalmente diverso tra Blazor Server, e tutti gli altri modelli.
 Questo principalmente per 3 motivi:
 \begin{enumerate}
-	\item Il primo \'e che Blazor Server delega completamente al Server il carico computazionale necessario per gestire ogni singolo evento della UI di ogni utente connesso, compreso il salvataggio temporaneo dello stato di ciascuna UI nel tempo, visto che ad ogni Client connesso (o meglio allo specifico DOM) arrivano solamente le differenze rispetto allo stato precedente, ogni volta che cambia qualcosa.
-	Ci\'o implica che la potenza del server debba tener conto di eventuali picchi di utenze, e debba avere a disposizione sufficiente RAM per poter mantenere in memoria il peso di ciascun utente concorrente connesso.
+	\item Il primo \'e che Blazor Server delega completamente al Server che ospita l'applicazione il carico computazionale necessario per gestire ogni singolo evento della UI di ogni utente connesso, compreso il salvataggio in-memory  dello stato di ciascuna UI nel tempo durante l'utilizzo, visto che ad ogni Client connesso (o meglio allo specifico DOM) arrivano solamente le minime differenze necessarie rispettper generare la ui corretta rispetto al frame precedente, ogni volta che deve cambiare qualcosa.
+	Ci\'o implica che la potenza del server debba tener conto di eventuali picchi di utenze, e debba avere a disposizione sufficiente RAM per poter mantenere in memoria lo stato dell'applicazione di ciascun utente concorrente connesso.
 	
 	\item Il secondo \'e che Blazor Server, necessita di una connessione sempre attiva con ogni utente collegato.
 	
-	\item Il terzo \'e che questo modello sfrutta SignalR, che per funzionare al meglio utilizza il protocollo di trasporto WebSocket, quindi la macchina server sul quale viene ospitata l'applicazione Blazor \'e consigliato che lo supporti, mentre negli altri modelli non non \'e necessario.
+	\item Il terzo \'e che questo modello sfrutta SignalR, che per funzionare al meglio utilizza il protocollo di trasporto WebSocket, quindi la macchina server sul quale viene ospitata l'applicazione Blazor \'e consigliato che lo supporti.
 \end{enumerate}
 
 Gli altri modelli invece sfruttano l'hardware di ogni client connesso, come solitamente avviene per le SPA odierne.
-Sono quindi in linea con il comportamento degli altri framework gi\'a citati e come Angular
+Sono quindi in linea con il comportamento degli altri framework gi\'a citati e come Angular React o Vue.js, in particolare Blazor WebAssembly, che quindi prenderemo in considerazione confrontandolo con Blazor Server.
 
-\section{Pro}\label{sez:pro}
+\section{Blazor Server}\label{sez:scalabilitaBServer}
+
+\subsection{Pro}\label{sez:proBServer}
+
+\subsection{Contro}\label{sez:controBServer}
 
 
-\section{Contro}\label{sez:contro}
+\section{Blazor WebAssembly}\label{sez:scalabilitaBWA}
+
+\subsection{Pro}\label{sez:proBWA}
+
+
+\subsection{Contro}\label{sez:controBWA}

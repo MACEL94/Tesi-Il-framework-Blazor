@@ -144,12 +144,31 @@ Partendo dal codice, come gi\'a anticipato quando si scrive si utilizza un mix d
 	\caption{File Razor\cite{ryanNowakNDCSydney}}
 	\label{fig:razorFile}
 \end{figure}
-Si pu\'o scrivere utilizzando questa sintassi solamente nei file che hanno estensione ".razor", il cui esempio si pu\'o vedere in figura 2.7.
-Quando l'applicazione viene compilata, i file .razor vengono utilizzati come base per generare dei file C\#(.cs) equivalenti al codice che si \'e descritto, e saranno poi questi file ad essere effettivamente utilizzati da Roslyn(che \'e il nome del compilatore open-source del linguaggio C\#) e a finire nella DLL generata come output del progetto.
+Si pu\'o scrivere utilizzando questa sintassi solamente nei file che hanno estensione ".razor", il cui esempio si pu\'o trovare in figura 2.7.
+Quando l'applicazione viene compilata, i file .razor vengono utilizzati come input per generare dei file C\#(quindi con estensione .cs) equivalenti al codice che si \'e descritto.\cite{ryanNowakNDCSydney}
 Un esempio di output di file razor compilato, generato a partire da quello in figura 2.7 \'e visibile in figura 2.8.
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.75]{figure/RazorFileCompiled.PNG}}
 	\caption{Output\cite{ryanNowakNDCSydney}}
 	\label{fig:compiledRazorFile}
 \end{figure}
+
+Saranno poi questi file ad essere effettivamente utilizzati da Roslyn(che \'e il nome del compilatore open-source del linguaggio C\#) e a finire nella DLL generata come output dal progetto nel quale si trova il file .razor di partenza.
+Questo passaggio non \'e solo necessario per fare in modo che si possano generare le DLL compilate relative ai file di partenza, ma \'e anche il momento in cui viene ottimizzato ci\'o che ha scritto il developer per ogni parte relativa alla UI in ogni file .razor del progetto, riducendolo alle sole primitive di Blazor, che sono vibili nella figura 2.9.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=0.7]{figure/BlazorPrimitives.PNG}}
+	\caption{Primitive di Blazor\cite{ryanNowakNDCSydney}}
+	\label{fig:BlazorPrimitives}
+\end{figure}
+
+In ordine quindi possiamo descrivere le primitive:
+\begin{enumerate}
+\item Un elemento \'e ad esempio l'elemento html "div";
+\item Un component \'e un altro componente(file .razor) che viene utilizzato nel file che si sta compilando;
+\item Un attributo \'e appunto un attributo di un elemento html, o un parametro passato in ingresso ad un component;
+\item Un contenuto \'e del testo, costante o basato su un parametro, inserito all'interno di un elemento html;
+\item L'ultima primitiva di un componente Blazor sono sostanzialmente gli eventi che vengono gestiti dal componente che si sta compilando e le direttive di bind che quindi collegano e mantengono sincronizzate due variabili.
+\end{enumerate}
+
 \pagebreak
