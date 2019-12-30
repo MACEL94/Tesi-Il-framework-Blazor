@@ -12,7 +12,7 @@ Anche per questo motivo, React, un nuovo framework pi\`u leggero e modulare mant
 
 Vue infine \`e il terzo dei principali framework moderni per la creazione di interfacce utente che \`e stato fortemente adottato, proponendo una versione intermedia tra il fortemente opinionato Angular e il pi\'u flessibile React, lanciato nel 2014~\cite{vueJs}.
 
-Oltre a questi, ciascuno con la propria semantica, organizzazione logica dei folder, spesso una CLI dedicata, ad un developer frontend viene solitamente richiesto di conoscere HTML, CSS e chiaramente Javascript essendo ci\'o su cui si basano poi i vari framework, jQuery per retrocompatibilit\'a e Bootstrap(versione 3 e 4) per creare componenti pi\'u gradevoli e pi\'u in fretta.
+Oltre a questi, ciascuno con la propria semantica, organizzazione logica dei folder, spesso una CLI dedicata, ad un developer frontend viene solitamente richiesto di conoscere HTML, CSS e chiaramente Javascript essendo ci\`o su cui si basano poi i vari framework, jQuery per retrocompatibilit\'a e Bootstrap(solitamente sia versione 3 che 4) per creare componenti standard pi\'u in fretta.
 
 Oltre a Javascript, se si vuole scrivere degli unit test facilmente mantenibili, bisogna conoscere TypeScript(specialmente se si utilizza Angular, che rende il suo utilizzo obbligatorio).
 TypeScript in particolare \`e un linguaggio di programmazione che estende la sintassi di Javascript, rendendolo tipizzato(e non interpretato), e viene quindi transpilato in javascript per poter essere utilizzato dal browser.
@@ -22,13 +22,13 @@ I continui cambiamenti nei molti framework utilizzati, la diversit\`a degli stru
 
 Oltretutto un web developer ad oggi finisce per essere costretto a scegliere se diventare uno sviluppatore frontend o backend, dato che rimanere al passo e aggiornarsi gi\`a in solo uno di questi due campi richiede molto tempo ed impegno, spesso oltre l'orario di lavoro.
 
-\'E quindi chiaro che per tutti i web developer, e specialmente per una figura mista e pi\'u esperta, spesso identificata con il titolo "Full-Stack Developer", ci sia una continua ricerca del modo per rendere le proprie competenze quanto pi\'u trasversali possibile, anche in termini di tecnologie utilizzate.
+\`E quindi chiaro che da parte di tutti i web developer, e specialmente per una figura mista spesso identificata con il titolo "Full-Stack Developer", ci sia una continua ricerca del modo per rendere le proprie competenze quanto pi\'u trasversali possibile, anche in termini di tecnologie utilizzate.
 
 \pagebreak
 
 \section{Linguaggi General-Purpose}\label{sez:problema}
 Microsoft, nel backend e in ambito applicativo, ha reso nel tempo il framework .NET e le sue implementazioni(.NET Core, .NET Framework e Mono) utilizzabili nei vari linguaggi per sviluppati da Microsoft stessa ovvero C\#, F\# e VB.
-La figura 1.1 di seguito riassume le implementazioni del .NET Standard e le varie tipologie di applicazioni che si possono sviluppare con ciascuna.
+La figura \ref{fig:DotNetImplementations} di seguito riassume le implementazioni del .NET Standard e le varie tipologie di applicazioni che si possono sviluppare con ciascuna.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.2]{figure/DotNetImplementations}}
@@ -36,7 +36,7 @@ La figura 1.1 di seguito riassume le implementazioni del .NET Standard e le vari
 	\label{fig:DotNetImplementations}
 \end{figure}
 
-Scrivendo ad esempio in C\# \`e possibile sviluppare vari tipi di applicazioni come si pu\'o vedere nella figura 1.2, ma se si decide di sviluppare codice per un applicazione web che gestisca eventi del Browser(come click, drag, ...) ad oggi si \`e di fatto costretti a scrivere utilizzando Javascript.
+Scrivendo ad esempio in C\# \`e possibile sviluppare vari tipi di applicazioni come si pu\`o vedere nella figura \ref{fig:DotNetCapabilities}, ma se si decide di sviluppare codice per un'applicazione web che gestisca eventi del Browser(come click, drag, ...) ad oggi si \`e costretti a scriverla utilizzando Javascript.
 Eventualmente utilizzando un framework se si vuole essere pi\'u veloci nello sviluppo e scrivere codice mantenibile specialmente se a livello enterprise.
 
 \begin{figure}[H]
@@ -49,7 +49,7 @@ Gi\'a con Razor\cite{razor}, Microsoft ha permesso la generazione di codice HTML
 
 \section{Blazor}
 Ecco cosa \`e quindi Blazor: la versione pi\'u avanzata di Razor(Browser+Razor\cite{blazorWikiGitHub}), o meglio ancora un Framework per la creazione di User Interfaces(da qui in poi UI) di Single Page Application(da qui in poi SPA) che permette ai developer di gestire anche gli eventi client-side, direttamente in C\# o nel linguaggio scelto tra quelli supportati.
-Questo framework come se il linguaggio scelto fosse effettivamente ci\'o che viene eseguito dal client, mentre in reat\'a ci\'o che viene eseguito lato client cambia a seconda del modello scelto, come poi vedremo pi\'u nel dettaglio.
+Questo framework come se il linguaggio scelto fosse effettivamente ci\`o che viene eseguito dal client, mentre in reat\'a ci\`o che viene eseguito lato client cambia a seconda del modello scelto, come poi vedremo pi\'u nel dettaglio.
 
 Blazor utilizza per i vari modelli, delle tecnologie diverse(ad esempio il WebAssembly) ma che rispettano sempre lo standard del web.
 

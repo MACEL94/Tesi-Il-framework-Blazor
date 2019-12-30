@@ -9,21 +9,22 @@
 \contentsline {section}{\numberline {2.1}Blazor Server}{5}%
 \contentsline {subsection}{\numberline {2.1.1}BlazorPong }{6}%
 \contentsline {section}{\numberline {2.2}Blazor WebAssembly}{8}%
-\contentsline {subsection}{\numberline {2.2.1}WebAssembly}{8}%
-\contentsline {subsection}{\numberline {2.2.2}Blazor PWA}{9}%
+\contentsline {subsection}{\numberline {2.2.1}CLR e WebAssembly}{8}%
+\contentsline {subsection}{\numberline {2.2.2}Blazor PWA}{10}%
 \contentsline {section}{\numberline {2.3}Modelli in roadmap}{11}%
 \contentsline {subsection}{\numberline {2.3.1}Blazor Hybrid}{11}%
-\contentsline {subsection}{\numberline {2.3.2}Blazor Native}{12}%
-\contentsline {section}{\numberline {2.4}Funzionamento}{12}%
-\contentsline {chapter}{\numberline {3}Scalabilit\'a, Pro e Contro}{15}%
-\contentsline {section}{\numberline {3.1}Scalabilit\'a}{15}%
-\contentsline {section}{\numberline {3.2}Blazor Server}{16}%
-\contentsline {subsection}{\numberline {3.2.1}Pro}{16}%
-\contentsline {subsection}{\numberline {3.2.2}Contro}{16}%
-\contentsline {section}{\numberline {3.3}Blazor WebAssembly}{16}%
-\contentsline {subsection}{\numberline {3.3.1}Pro}{16}%
-\contentsline {subsection}{\numberline {3.3.2}Contro}{16}%
-\contentsline {chapter}{\numberline {4}Conclusioni}{17}%
-\contentsline {section}{\numberline {4.1}Conclusioni}{17}%
-\contentsline {section}{\numberline {4.2}Futuro del progetto}{17}%
-\contentsline {chapter}{Bibliografia}{18}%
+\contentsline {subsection}{\numberline {2.3.2}Blazor Native}{13}%
+\contentsline {section}{\numberline {2.4}Funzionamento}{13}%
+\contentsline {chapter}{\numberline {3}Scalabilit\'a, Pro e Contro}{16}%
+\contentsline {section}{\numberline {3.1}Scalabilit\'a}{16}%
+\contentsline {section}{\numberline {3.2}Quando usare Blazor Server}{17}%
+\contentsline {subsection}{\numberline {3.2.1}Pro}{17}%
+\contentsline {subsection}{\numberline {3.2.2}Contro}{18}%
+\contentsline {section}{\numberline {3.3}Quando usare Blazor WebAssembly}{19}%
+\contentsline {subsection}{\numberline {3.3.1}Pro}{19}%
+\contentsline {subsection}{\numberline {3.3.2}Contro}{19}%
+\contentsline {chapter}{\numberline {4}Conclusioni}{20}%
+\contentsline {section}{\numberline {4.1}Conclusioni}{20}%
+\contentsline {section}{\numberline {4.2}Futuro del progetto}{20}%
+\contentsline {chapter}{Bibliografia}{21}%
+\contentsline {chapter}{Ringraziamenti}{23}%

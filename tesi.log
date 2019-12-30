@@ -1,11 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.24)  24 DEC 2019 21:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.30)  30 DEC 2019 17:52
 entering extended mode
 **./tesi.tex
 (tesi.tex
 LaTeX2e <2019-10-01> patch level 3
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\report.cls"
+
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\r
+eport.cls"
 Document Class: report 2019/10/25 v1.4k Standard LaTeX document class
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size11.clo"
+
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\s
+ize11.clo"
 File: size11.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -24,42 +28,42 @@ File: size11.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
 Document Style Option `ia_urb_thesis' for latex2e <$Date: 18/10/2004 $>.
 Fulfill the thesis stile of Applied Computer Science - University of Urbino
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/setspace\setspac
-e.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/setspa
+ce\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphic
-x.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphi
+cs\graphicx.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.
-sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphi
+cs\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphic
-s.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphi
+cs\graphics.sty"
 Package: graphics 2019/11/01 v1.3d Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.st
-y"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphi
+cs\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\gra
-phics.cfg"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphi
+cs-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdf
-tex.def"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphi
+cs-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyhdr\fancyhd
-r.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyh
+dr\fancyhdr.sty"
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip43
@@ -72,74 +76,79 @@ s
 \f@nch@O@olf=\skip50
 \f@nch@O@orf=\skip51
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\i
+fthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifpdf.st
-y"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifte
+x\ifpdf.sty"
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.st
-y"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifte
+x\iftex.sty"
 Package: iftex 2019/11/07 v1.0c TeX engine tests
 )))
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.st
-y"
-Package: babel 2019/12/08 3.37 The Babel package
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babe
+l\babel.sty"
+Package: babel 2019/11/14 3.36 The Babel package
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.d
-ef"
-File: switch.def 2019/12/08 3.37 Babel switching mechanism
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babe
+l\switch.def"
+File: switch.def 2019/11/14 3.36 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
 *
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cf
-g"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\
+bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-italian\it
-alian.ldf"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-
+italian\italian.ldf"
 Language: italian 2019/11/16 v.1.4.03 Italian support for the babel system
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.de
-f"
-File: babel.def 2019/12/08 3.37 Babel common definitions
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babe
+l\babel.def"
+File: babel.def 2019/11/14 3.36 Babel common definitions
 \babel@savecnt=\count89
 \U@D=\dimen105
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel
-.def")
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babe
+l\txtbabel.def")
 \bbl@dirlevel=\count90
 )
 \it@lettering=\count91
 \it@doublequoteactive=\count92
 \it@ISOcompliance=\count93
 ))
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbo
-x.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolb
+ox\etoolbox.sty"
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count94
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.st
-y"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\i
+nputenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\latin1.def"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\l
+atin1.def"
 File: latin1.def 2018/08/11 v1.3c Input encoding file
 ))
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty
-"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\f
+ontenc.sty"
 Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
- ("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1enc.def"
+
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t
+1enc.def"
 File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\lmodern.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\lmo
+dern.sty"
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -174,30 +183,30 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.
-sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmat
+h\amsmath.sty"
 Package: amsmath 2019/11/16 v2.17d AMS math features
 \@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.
-sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmat
+h\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.s
-ty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmat
+h\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
 \ex@=\dimen106
 ))
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.s
-ty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmat
+h\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen107
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.s
-ty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmat
+h\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count95
@@ -238,8 +247,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 LaTeX Info: Redefining \[ on input line 2858.
 LaTeX Info: Redefining \] on input line 2859.
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfont
-s.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfon
+ts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -247,31 +256,31 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb
-.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfon
+ts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/jknappen\mathrsf
-s.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/jknapp
+en\mathrsfs.sty"
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/stmaryrd\stmaryr
-d.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/stmary
+rd\stmaryrd.sty"
 Package: stmaryrd 1994/03/03 St Mary's Road symbol package
 \symstmry=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
 (Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\latexsym.st
-y"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\l
+atexsym.sty"
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lkproof\proof.st
-y"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lkproo
+f\proof.sty"
 \inferLineSkip=\dimen115
 \inferLabelSkip=\dimen116
 \@LeftOffset=\dimen117
@@ -296,23 +305,24 @@ y"
 \@LabelPart=\box31
 \ResultBox=\box32
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\epsfig.
-sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphi
+cs\epsfig.sty"
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 \epsfxsize=\dimen134
 \epsfysize=\dimen135
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\color.s
-ty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphi
+cs\color.sty"
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\col
-or.cfg"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphi
+cs-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\
+float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count107
 \float@exts=\toks22
@@ -320,8 +330,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks23
 \@floatcapt=\box34
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/comment\comment.
-sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/commen
+t\comment.sty"
 \CommentStream=\write3
  Excluding comment 'comment')
 
@@ -333,7 +343,7 @@ LaTeX Warning: Unused global option(s):
 LaTeX Warning: Label `sez:problema' multiply defined.
 
 ) (sorgenti/cap_2.aux) (sorgenti/cap_3.aux) (sorgenti/cap_4.aux)
-(sorgenti/cap_5.aux) (sorgenti/biblio.aux))
+(sorgenti/biblio.aux))
 \openout1 = `tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -351,11 +361,12 @@ LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 25
 .
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1l
+mr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp
--pdf.mkii"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/context/base
+/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count108
 \scratchdimen=\dimen136
@@ -369,44 +380,44 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \makeMPintoPDFobject=\count113
 \everyMPtoPDFconversion=\toks25
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\eps
-topdf-base.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstop
+df-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2019/11/24 v2.7 Base part for package epstopdf
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\infwa
-rerr.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ober
+diek\infwarerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.
-sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdi
+ek\grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvdef
-inekeys.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ober
+diek\kvdefinekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltxcm
-ds.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ober
+diek\ltxcmds.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )))
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoptio
-ns.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdi
+ek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvset
-keys.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ober
+diek\kvsetkeys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\etexc
-mds.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ober
+diek\etexcmds.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifluatex
-.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifte
+x\ifluatex.sty"
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 ))))
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdftexcmds\pdfte
-xcmds.sty"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdftex
+cmds\pdftexcmds.sty"
 Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -425,25 +436,29 @@ LaTeX Info: Redefining \it@ccap on input line 25.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
 2.
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1
+lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
 2.
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\oml
+lmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
 32.
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\oms
+lmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
 32.
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omx
+lmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -455,33 +470,34 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
 
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd
-"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfon
+ts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
 
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
-"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfon
+ts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 32
 .
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/jknappen\ursfs.f
-d"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/jknapp
+en\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 3
 2.
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/stmaryrd\ustmry.
-fd")
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/stmary
+rd\ustmry.fd")
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 32
 .
 
-("C:\Users\Manuela\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ulasy.fd"
+("C:\Users\Giuliano Chietera\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\u
+lasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 <logo-uniurb-2016.jpg, id=1, 595.22375pt x 314.17375pt>
@@ -496,8 +512,8 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 32--32
 
 [1
 
-{C:/Users/Manuela/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./logo-un
-iurb-2016.jpg>] [2
+{C:/Users/Giuliano Chietera/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} 
+<./logo-uniurb-2016.jpg>] [2
 
 ] (tesi.toc)
 \tf@toc=\write4
@@ -515,7 +531,8 @@ iurb-2016.jpg>] [2
 ]
 \openout2 = `sorgenti/cap_1.aux'.
 
- (sorgenti/cap_1.tex
+
+(sorgenti/cap_1.tex
 Capitolo 1.
 [1
 
@@ -543,12 +560,7 @@ line 43.
 (pdftex.def)             Requested size: 359.92505pt x 133.85207pt.
  [3 <./figure/DotNetImplementations.png> <./figure/DotNetFrameworkCapabilities.
 png>]
-
-LaTeX Warning: Citation `blazorWikiGitHub' on page 4 undefined on input line 51
-.
-
-
-Overfull \hbox (8.2689pt too wide) in paragraph at lines 51--53
+Overfull \hbox (7.79752pt too wide) in paragraph at lines 51--53
 \T1/lmr/m/n/10.95 Ecco co-sa è quin-di Bla-zor: la ver-sio-ne piú avan-za-ta di
  Razor(Browser+Razor[[]]),
  []
@@ -579,71 +591,92 @@ File: figure/blazor-WebAssembly.png Graphic file (type png)
 <use figure/blazor-WebAssembly.png>
 Package pdftex.def Info: figure/blazor-WebAssembly.png  used on input line 63.
 (pdftex.def)             Requested size: 104.0696pt x 95.97528pt.
-<figure/WasmVSJavascript.PNG, id=51, 407.27156pt x 231.11343pt>
+<figure/CLR.PNG, id=51, 567.3195pt x 304.13625pt>
+File: figure/CLR.PNG Graphic file (type png)
+<use figure/CLR.PNG>
+Package pdftex.def Info: figure/CLR.PNG  used on input line 82.
+(pdftex.def)             Requested size: 283.65906pt x 152.06775pt.
+ [8 <./figure/blazor-WebAssembly.png>]
+<figure/WasmVSJavascript.PNG, id=56, 407.27156pt x 231.11343pt>
 File: figure/WasmVSJavascript.PNG Graphic file (type png)
 <use figure/WasmVSJavascript.PNG>
-Package pdftex.def Info: figure/WasmVSJavascript.PNG  used on input line 82.
+Package pdftex.def Info: figure/WasmVSJavascript.PNG  used on input line 92.
 (pdftex.def)             Requested size: 285.08813pt x 161.77829pt.
- [8 <./figure/blazor-WebAssembly.png>]
-<figure/ProgressiveWebApp.png, id=56, 595.47469pt x 309.40594pt>
+ [9 <./figure/CLR.PNG> <./figure/WasmVSJavascript.PNG>]
+<figure/ProgressiveWebApp.png, id=63, 595.47469pt x 309.40594pt>
 File: figure/ProgressiveWebApp.png Graphic file (type png)
 <use figure/ProgressiveWebApp.png>
-Package pdftex.def Info: figure/ProgressiveWebApp.png  used on input line 100.
+Package pdftex.def Info: figure/ProgressiveWebApp.png  used on input line 111.
 (pdftex.def)             Requested size: 297.7366pt x 154.70259pt.
- [9 <./figure/WasmVSJavascript.PNG>] [10 <./figure/ProgressiveWebApp.png>]
-<figure/BlazorWeatherElectron.png, id=66, 526.96875pt x 396.7322pt>
+ [10 <./figure/ProgressiveWebApp.png>]
+<figure/BlazorWeatherElectron.png, id=68, 526.96875pt x 396.7322pt>
 File: figure/BlazorWeatherElectron.png Graphic file (type png)
 <use figure/BlazorWeatherElectron.png>
 Package pdftex.def Info: figure/BlazorWeatherElectron.png  used on input line 1
-24.
+40.
 (pdftex.def)             Requested size: 316.18369pt x 238.04114pt.
-
-Overfull \hbox (34.25986pt too wide) in paragraph at lines 129--131
+ [11]
+Overfull \hbox (34.25986pt too wide) in paragraph at lines 145--147
 \T1/lmr/m/n/10.95 https://github.com/danroth27/BlazorWeather/tree/master/Blazor
 Weather.Electron
  []
 
-[11 <./figure/BlazorWeatherElectron.png>]
-<figure/RazorFile.png, id=71, 473.51906pt x 262.73157pt>
+[12 <./figure/BlazorWeatherElectron.png>]
+<figure/RazorFile.png, id=76, 645.16031pt x 359.84438pt>
 File: figure/RazorFile.png Graphic file (type png)
 <use figure/RazorFile.png>
-Package pdftex.def Info: figure/RazorFile.png  used on input line 145.
-(pdftex.def)             Requested size: 331.46106pt x 183.91083pt.
-<figure/RazorFileCompiled.PNG, id=72, 472.76625pt x 213.04594pt>
+Package pdftex.def Info: figure/RazorFile.png  used on input line 159.
+(pdftex.def)             Requested size: 354.83926pt x 197.91501pt.
+<figure/RazorFileCompiled.PNG, id=77, 663.22781pt x 292.09125pt>
 File: figure/RazorFileCompiled.PNG Graphic file (type png)
 <use figure/RazorFileCompiled.PNG>
-Package pdftex.def Info: figure/RazorFileCompiled.PNG  used on input line 153.
-(pdftex.def)             Requested size: 354.5738pt x 159.78406pt.
- [12 <./figure/RazorFile.png>]
-<figure/BlazorPrimitives.PNG, id=77, 438.13687pt x 277.78781pt>
+Package pdftex.def Info: figure/RazorFileCompiled.PNG  used on input line 167.
+(pdftex.def)             Requested size: 364.77643pt x 160.65067pt.
+ [13 <./figure/RazorFile.png>]
+<figure/BlazorPrimitives.PNG, id=82, 438.13687pt x 277.78781pt>
 File: figure/BlazorPrimitives.PNG Graphic file (type png)
 <use figure/BlazorPrimitives.PNG>
-Package pdftex.def Info: figure/BlazorPrimitives.PNG  used on input line 162.
+Package pdftex.def Info: figure/BlazorPrimitives.PNG  used on input line 176.
 (pdftex.def)             Requested size: 306.69371pt x 194.45012pt.
 
-[13 <./figure/RazorFileCompiled.PNG> <./figure/BlazorPrimitives.PNG>]) [14]
+[14 <./figure/RazorFileCompiled.PNG> <./figure/BlazorPrimitives.PNG>]) [15]
 \openout2 = `sorgenti/cap_3.aux'.
 
 
 (sorgenti/cap_3.tex
 Capitolo 3.
-[15
+<figure/ClientServerProCons.png, id=92, 404.26031pt x 213.79875pt>
+File: figure/ClientServerProCons.png Graphic file (type png)
+<use figure/ClientServerProCons.png>
+Package pdftex.def Info: figure/ClientServerProCons.png  used on input line 21.
+
+(pdftex.def)             Requested size: 323.40869pt x 171.03922pt.
+[16
 
 
 
-]) [16]
+] [17 <./figure/ClientServerProCons.png>]
+<figure/Standard_D1_V2.PNG, id=100, 722.7pt x 302.63063pt>
+File: figure/Standard_D1_V2.PNG Graphic file (type png)
+<use figure/Standard_D1_V2.PNG>
+Package pdftex.def Info: figure/Standard_D1_V2.PNG  used on input line 45.
+(pdftex.def)             Requested size: 361.3491pt x 151.31494pt.
+ [18 <./figure/Standard_D1_V2.PNG>]) [19]
 \openout2 = `sorgenti/cap_4.aux'.
 
  (sorgenti/cap_4.tex
 Capitolo 4.
-) [17
+<figure/ModelsSupportedOrNot.png, id=108, 405.01312pt x 216.81pt>
+File: figure/ModelsSupportedOrNot.png Graphic file (type png)
+<use figure/ModelsSupportedOrNot.png>
+Package pdftex.def Info: figure/ModelsSupportedOrNot.png  used on input line 5.
+
+(pdftex.def)             Requested size: 202.50606pt x 108.40472pt.
+) [20
 
 
 
-]
-\openout2 = `sorgenti/cap_5.aux'.
-
- (sorgenti/cap_5.tex)
+ <./figure/ModelsSupportedOrNot.png>]
 \openout2 = `sorgenti/biblio.aux'.
 
  (sorgenti/biblio.tex
@@ -653,55 +686,60 @@ history-of-
  []
 
 
-Underfull \hbox (badness 3635) in paragraph at lines 54--55
+Underfull \hbox (badness 3635) in paragraph at lines 19--20
 []\T1/lmr/m/n/10.95 Disponibile: https://github.com/aspnet/Blazor/wiki/FAQ#q-wh
 ere-
  []
 
-) [18
+
+Overfull \hbox (21.30206pt too wide) in paragraph at lines 47--49
+[]\T1/lmr/m/n/10.95 Disponibile: https://en.wikipedia.org/wiki/Electron_(softwa
+re_framework) 
+ []
+
+
+Overfull \hbox (90.13385pt too wide) in paragraph at lines 51--52
+[]\T1/lmr/m/n/10.95 Disponibile: https://github.com/ElectronNET/Electron.NET/bl
+ob/master/README.md 
+ []
+
+
+Underfull \hbox (badness 6859) in paragraph at lines 67--68
+[]\T1/lmr/m/n/10.95 Disponibile: https://docs.microsoft.com/it-it/aspnet/core/h
+ost-and-
+ []
+
+) [21
 
 
 
+] [22] [23
 
 
-]
-! Undefined control sequence.
-l.49 \ringraziamentiS
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-[19
-
-] (tesi.aux (sorgenti/cap_1.aux) (sorgenti/cap_2.aux) (sorgenti/cap_3.aux)
-(sorgenti/cap_4.aux) (sorgenti/cap_5.aux) (sorgenti/biblio.aux))
-
-LaTeX Warning: There were undefined references.
-
+] (tesi.aux (sorgenti/cap_1.aux) (sorgenti/cap_2.aux)
+(sorgenti/cap_3.aux) (sorgenti/cap_4.aux) (sorgenti/biblio.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4990 strings out of 492483
- 70714 string characters out of 3120682
- 139986 words of memory out of 3000000
- 9122 multiletter control sequences out of 15000+200000
+ 5013 strings out of 492484
+ 72913 string characters out of 3116162
+ 140017 words of memory out of 3000000
+ 9147 multiletter control sequences out of 15000+200000
  48394 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,12n,49p,800b,337s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Manuela/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.
-enc}<C:/Users/Manuela/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
-mbx10.pfb><C:/Users/Manuela/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmbx12.pfb><C:/Users/Manuela/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/lm/lmr10.pfb><C:/Users/Manuela/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/lm/lmr12.pfb>
-Output written on tesi.pdf (23 pages, 1635862 bytes).
+{C:/Users/Giuliano Chietera/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips
+/lm/lm-ec.enc}<C:/Users/Giuliano Chietera/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/lm/lmbx10.pfb><C:/Users/Giuliano Chietera/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Giuliano Chietera/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Giuliano
+ Chietera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb>
+Output written on tesi.pdf (27 pages, 1857361 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
+ 138 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
