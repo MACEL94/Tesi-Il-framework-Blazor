@@ -2,7 +2,7 @@
 \babel@toc {italian}{}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Implementazioni del .NET Standard}}{3}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Possibilit\'a di .NET}}{3}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Possibilit\`a di .NET}}{3}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Blazor Server}}{5}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces BlazorPong}}{6}%
@@ -16,6 +16,6 @@
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Primitive di Blazor\cite {ryanNowakNDCSydney}}}{14}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Confronto Modelli Client-Server}}{17}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Parametri VM utilizzata per il test di carico}}{18}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Parametri VM utilizzata per il test di carico}}{19}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Modelli blazor e supporto}}{20}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Modelli blazor e supporto}}{22}%

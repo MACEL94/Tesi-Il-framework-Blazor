@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.30)  30 DEC 2019 17:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.30)  31 DEC 2019 18:29
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -338,12 +338,8 @@ t\comment.sty"
 LaTeX Warning: Unused global option(s):
     [singleside].
 
-(tesi.aux (sorgenti/cap_1.aux
-
-LaTeX Warning: Label `sez:problema' multiply defined.
-
-) (sorgenti/cap_2.aux) (sorgenti/cap_3.aux) (sorgenti/cap_4.aux)
-(sorgenti/biblio.aux))
+(tesi.aux (sorgenti/cap_1.aux) (sorgenti/cap_2.aux) (sorgenti/cap_3.aux)
+(sorgenti/cap_4.aux) (sorgenti/biblio.aux))
 \openout1 = `tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -550,18 +546,18 @@ This may cause the page layout to be inconsistent, however.
 File: figure/DotNetImplementations.png Graphic file (type png)
 <use figure/DotNetImplementations.png>
 Package pdftex.def Info: figure/DotNetImplementations.png  used on input line 3
-4.
+5.
 (pdftex.def)             Requested size: 317.38013pt x 171.23671pt.
 <figure/DotNetFrameworkCapabilities.png, id=27, 1028.34187pt x 382.42876pt>
 File: figure/DotNetFrameworkCapabilities.png Graphic file (type png)
 <use figure/DotNetFrameworkCapabilities.png>
 Package pdftex.def Info: figure/DotNetFrameworkCapabilities.png  used on input 
-line 43.
+line 44.
 (pdftex.def)             Requested size: 359.92505pt x 133.85207pt.
  [3 <./figure/DotNetImplementations.png> <./figure/DotNetFrameworkCapabilities.
 png>]
-Overfull \hbox (7.79752pt too wide) in paragraph at lines 51--53
-\T1/lmr/m/n/10.95 Ecco co-sa è quin-di Bla-zor: la ver-sio-ne piú avan-za-ta di
+Overfull \hbox (7.79752pt too wide) in paragraph at lines 52--54
+\T1/lmr/m/n/10.95 Ecco co-sa è quin-di Bla-zor: la ver-sio-ne più avan-za-ta di
  Razor(Browser+Razor[[]]),
  []
 
@@ -659,20 +655,105 @@ Package pdftex.def Info: figure/ClientServerProCons.png  used on input line 21.
 <figure/Standard_D1_V2.PNG, id=100, 722.7pt x 302.63063pt>
 File: figure/Standard_D1_V2.PNG Graphic file (type png)
 <use figure/Standard_D1_V2.PNG>
-Package pdftex.def Info: figure/Standard_D1_V2.PNG  used on input line 45.
+Package pdftex.def Info: figure/Standard_D1_V2.PNG  used on input line 49.
 (pdftex.def)             Requested size: 361.3491pt x 151.31494pt.
- [18 <./figure/Standard_D1_V2.PNG>]) [19]
+ [18] [19 <./figure/Standard_D1_V2.PNG>] [20]
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 ...ized for UI rendering scenarios, but isnâ€
+                                                  ™t currently great for run...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 ...zed for UI rendering scenarios, but isnâ€™
+                                                  t currently great for runn...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 ...r to execute your .NET code, which doesnâ€
+                                                  ™t have the same performan...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 ... to execute your .NET code, which doesnâ€™
+                                                  t have the same performanc...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 ...ve .NET runtime with JIT compilation. Weâ€
+                                                  ™re working to better addr...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 ...e .NET runtime with JIT compilation. Weâ€™
+                                                  re working to better addre...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+) [21]
 \openout2 = `sorgenti/cap_4.aux'.
 
  (sorgenti/cap_4.tex
 Capitolo 4.
-<figure/ModelsSupportedOrNot.png, id=108, 405.01312pt x 216.81pt>
+<figure/ModelsSupportedOrNot.png, id=115, 405.01312pt x 216.81pt>
 File: figure/ModelsSupportedOrNot.png Graphic file (type png)
 <use figure/ModelsSupportedOrNot.png>
 Package pdftex.def Info: figure/ModelsSupportedOrNot.png  used on input line 5.
 
-(pdftex.def)             Requested size: 202.50606pt x 108.40472pt.
-) [20
+(pdftex.def)             Requested size: 324.01093pt x 173.44823pt.
+) [22
 
 
 
@@ -709,37 +790,34 @@ Underfull \hbox (badness 6859) in paragraph at lines 67--68
 ost-and-
  []
 
-) [21
+) [23
 
 
 
-] [22] [23
+] [24] [25
 
 
 
 ] (tesi.aux (sorgenti/cap_1.aux) (sorgenti/cap_2.aux)
-(sorgenti/cap_3.aux) (sorgenti/cap_4.aux) (sorgenti/biblio.aux))
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+(sorgenti/cap_3.aux) (sorgenti/cap_4.aux) (sorgenti/biblio.aux)) ) 
 Here is how much of TeX's memory you used:
- 5013 strings out of 492484
- 72913 string characters out of 3116162
- 140017 words of memory out of 3000000
- 9147 multiletter control sequences out of 15000+200000
+ 5015 strings out of 492484
+ 72949 string characters out of 3116162
+ 140988 words of memory out of 3000000
+ 9149 multiletter control sequences out of 15000+200000
  48394 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,12n,49p,800b,337s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Giuliano Chietera/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips
-/lm/lm-ec.enc}<C:/Users/Giuliano Chietera/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/lm/lmbx10.pfb><C:/Users/Giuliano Chietera/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Giuliano Chietera/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Giuliano
- Chietera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb>
-Output written on tesi.pdf (27 pages, 1857361 bytes).
+{C:/Users/Giu
+liano Chietera/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<
+C:/Users/Giuliano Chietera/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/lm/lmbx10.pfb><C:/Users/Giuliano Chietera/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/lm/lmbx12.pfb><C:/Users/Giuliano Chietera/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Giuliano Chietera/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb>
+Output written on tesi.pdf (29 pages, 1862249 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
+ 144 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
