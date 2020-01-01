@@ -77,11 +77,12 @@ Il primo svantaggio di Blazor WebAssembly\`e quindi il peso dell'applicazione, c
 Ci\`o implica anche che quanto pi\`u codice viene scaricato, tanto pi\`u pu\`o essere studiato e utilizzato per capire logiche di business o cercare modi per attaccare il server.
 Questa cosa \`e vera anche per le applicazioni odierne scritte utilizzando Javascript, ma rimane uno svantaggio perch\`e il modello Blazor Server non presenta questa caratteristica.
 
-Un altro punto a sfavore per questo modello e\` sicuramente il fatto che sia ancora immaturo, e non ancora pronto per essere utilizzato in produzione.
-Prima di tutto perch\`e non \`e ancora stato ufficialmente rilasciato, cosa che succeder\`a verso maggio 2020.
-In secondo luogo perch\`e gli strumenti a disposizione sono ancora acerbi e non \`e possibile fare cose fondamentali come eseguire il debug del codice direttamente da Visual Studio 2019 o da Visual Studio Code in modo consistente.
-
 Un ulteriore svantaggio da tenere in considerazione, \`e che come per ogni nuova tecnologia, la documentazione, il supporto della community, e le librerie dedicate, in questo primo momento sono e saranno fortemente limitate rispetto a framework per UI basati su Javascript equivalenti in teoria ma ben pi\`u consolidati e diffusi in pratica.
+Il modello Blazor WebAssembly inoltre, sfruttando il WebAssembly, necessita che il browser di ogni client che vuole poter utilizzare l'applicazione lo supporti.
 
-Blazor WebAssembly richiede un browser che supporti il webassembly.
-Blazor WebAssembly is optimized for UI rendering scenarios, but isn’t currently great for running CPU intensive workloads. Blazor WebAssembly apps today use a .NET IL interpreter to execute your .NET code, which doesn’t have the same performance as a native .NET runtime with JIT compilation. We’re working to better address this scenario in the future by adding support for compiling your .NET code directly to WebAssembly instead of using an interpreter;
+L'ultima grande pecca di questo modello e\` sicuramente il fatto che sia ancora immaturo, e non ancora pronto per essere utilizzato in produzione.
+Prima di tutto perch\`e non \`e ancora stato ufficialmente rilasciato, dato che il rilascio \`e previsto per maggio 2020.
+In secondo luogo perch\`e gli strumenti a disposizione sono ancora acerbi e non \`e possibile fare cose fondamentali come eseguire il debug del codice direttamente da Visual Studio 2019 o da Visual Studio Code in modo consistente.
+Infine perch\`e pur essendo Blazor WebAssembly ottimizzato per essere molto efficiente durante il rendering della UI, c'\`e ancora molto margine di miglioramento quando l'applicazione Blazor scritta \`e CPU intensive.
+Questo semplicemente perch\`e ora come ora il codice viene scaricato sotto forma di DLL ed interpretato dal runtime di Mono tradotto in WASM, e non direttamente eseguito.
+D. Roth ha dichiarato che il team che si occupa di sviluppare Blazor sta lavorando per rendere possibile la compilazione del codice da .NET direttamente in WASM, cos\`i da ottenere performance decisamente migliori\cite{blazorModelsScenarios}.

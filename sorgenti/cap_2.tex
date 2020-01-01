@@ -14,7 +14,7 @@ In particolare SignalR mette a disposizione delle API che permettono al codice c
 \end{figure}
 
 Ci\`o significa che quando un utente scatena un evento, questo viene inviato attraverso la real time connection al server, dove il rispettivo componente di competenza gestisce l'evento.
-Quando l'evento \`e stato gestito, Blazor compara l'output appena generato con quello precedente all'evento, e manda quindi le sole differenze al browser del client, per poi applicarle al DOM.\cite{blazorModelsScenarios}
+Quando l'evento \`e stato gestito, Blazor compara l'output appena generato con quello precedente all'evento, e manda quindi le sole differenze al browser del client, per poi applicarle al DOM\cite{blazorModelsScenarios}.
 
 Blazor Server perci\`o necessita di una connessione stabile e a bassa latenza per funzionare al meglio, e gli scenari offline non sono supportati.
 Ci\`o significa anche che la posizione del server sul quale \`e ospitata l'applicazione non pu\`o essere troppo distante dal client che si sta connettendo per garantire un funzionamento senza lag.
@@ -69,7 +69,7 @@ Vengono quindi scaricati dal client l'applicazione Blazor, le sue dipendenze, ed
 L'applicazione viene quindi eseguita direttamente nel thread della UI del Browser utilizzato, come visibile nella figura \ref{fig:BlazorWebAssembly}.
 
 L'ambito di esecuzione \`e la stessa sandbox di qualsiasi altra applicazione scritta con javascript, ossia il browser che si sta utilizzando.
-Ci\`o \`e importante perch\`e implica(ed \`e cos\'i) che una web app scritta utilizzando Blazor non pu\`o fare niente di pi\`u o di meno di una web app standard.
+Ci\`o \`e importante perch\`e implica(ed \`e cos\`i) che una web app scritta utilizzando Blazor non pu\`o fare niente di pi\`u o di meno di una web app standard.
 Ogni update alla UI e la relativa gestione, avvengono utilizzando lo stesso processo nel browser.
 Per questo modello, blazor.WebAssembly.js \`e il nome dello script Javascript che si occupa di scaricare il .NET runtime compilato in WebAssembly, l'applicazione e le sue dipendenze, come anche dell'inizializzazione dell'applicazione.
 
@@ -86,7 +86,7 @@ Il runtime \`e necessario per poter eseguire i file compilati dell'applicazione 
 
 Il WebAssembly(da qui in poi abbreviato in WASM) \`e un formato per istruzioni binarie creato per essere il target della compilazione di linguaggi ad alto livello come C, C++, Rust\cite{webAssemblyOfficialWebsite}.
 L'estensione .wasm \`e quella che \`e stata scelta per i file WASM.
-Il progetto per la creazione di WASM \`e nato nel 2015, mentre dal 2017 i browser pi\`u diffusi al mondo come Chrome, Firefox, Edge e Safari si sono impegnati per svilupparlo ed adottarlo.\cite{webAssemblySupport}
+Il progetto per la creazione di WASM \`e nato nel 2015, mentre dal 2017 i browser pi\`u diffusi al mondo come Chrome, Firefox, Edge e Safari si sono impegnati per svilupparlo ed adottarlo\cite{webAssemblySupport}.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.7]{figure/WasmVSJavascript.PNG}}
@@ -104,7 +104,7 @@ In questo modello quindi, come visibile dai Chrome Developer Tools, vengono scar
 \subsection{Blazor PWA}\label{sez:bpwa}
 Il passaggio successivo per avvicinarsi al client allontanandosi dal modello server \`e poi Blazor PWA.
 
-\`E cos\'i chiamato perch\`e in questo modello Blazor, permette di sviluppare l'interfaccia utente di una Progressive Web App.
+\`E cos\`i chiamato perch\`e in questo modello Blazor, permette di sviluppare l'interfaccia utente di una Progressive Web App.
 Nella figura \ref{fig:WhatIsAPWA} viene riassunto cosa sia una Progressive Web App.
 
 \begin{figure}[H]
@@ -117,7 +117,7 @@ In particolare queste sono applicazioni web che hanno la capacit\`a di funzionar
 Offrono chiaramente una maggiore velocit\`a di esecuzione e la possibilit\`a di sfruttare alcune API native.
 Ad esempio possono essere utilizzate quando la necessit\`a \`e quella di utilizzare le notifiche push native del sistema operativo che sta utilizzando il client(ad esempio Windows).
 
-Al momento, per realizzare una PWA , bisogna partire dal modello Blazor WebAssembly aggiungendo un manifesto che descriva le capacit\`a dell'applicazione, i permessi richiesti e l'icona da utilizzare una volta installata, oltre chiaramente a dover implementare l'applicazione in modo che possa lavorare anche offline, basandosi su un service worker.\cite{blazorPWA}
+Al momento, per realizzare una PWA , bisogna partire dal modello Blazor WebAssembly aggiungendo un manifesto che descriva le capacit\`a dell'applicazione, i permessi richiesti e l'icona da utilizzare una volta installata, oltre chiaramente a dover implementare l'applicazione in modo che possa lavorare anche offline, basandosi su un service worker\cite{blazorPWA}.
 \pagebreak
 
 \section{Modelli in roadmap}
@@ -149,9 +149,9 @@ Il codice open source di questa applicazione, si pu\`o trovare al seguente link:
 Infine esiste il modello Native che \`e possibile grazie al fatto che Blazor \`e stato architettato per poter renderizzare controlli della UI che non siano obbligatoriamente strumenti web, e pu\`o quindi integrarsi con controlli nativi.
 Il rendering layer \`e infatti intercambiabile, pur essendo quello di default dedicato all'HTML.
 
-Un esempio di applicazione sviluppata utilizzando Blazor per il rendering di controlli nativi nella UI, si pu\`o vedere durante la presentazione di Steve Sanderson all'evento NDC Oslo di quest'anno, pur non essendo stato ancora rilasciato il codice di un esempio ufficiale.\cite{sandersonNDCBlutter}
+Un esempio di applicazione sviluppata utilizzando Blazor per il rendering di controlli nativi nella UI, si pu\`o vedere durante la presentazione di Steve Sanderson all'evento NDC Oslo di quest'anno, pur non essendo stato ancora rilasciato il codice di un esempio ufficiale\cite{sandersonNDCBlutter}.
 In questa applicazione, si \`e scelto di sostituire il default rendering layer per utilizzarne uno personalizzato, utilizzando componenti di Flutter, il toolkit di Google per costruire interfacce utente native CrossPlatform.
-Questo modello viene qui citato per completezza, ma al momento non \`e nemmeno presente nella documentazione ufficiale ed \`e solo stato citato da Daniel Roth durante la presentazione dei futuri modelli di Blazor lato client.\cite{blazorNative}
+Questo modello viene qui citato per completezza, ma al momento non \`e nemmeno presente nella documentazione ufficiale ed \`e solo stato citato da Daniel Roth durante la presentazione dei futuri modelli di Blazor lato client\cite{blazorNative}.
 
 \section{Funzionamento}\label{sez:funzionamento}
 Quando si scrive si utilizza un mix di HTML per lo scheletro, CSS per lo stile del documento e C\# preceduto dal relativo carattere di escape(@) per la parte dinamica del codice.
@@ -161,7 +161,7 @@ Quando si scrive si utilizza un mix di HTML per lo scheletro, CSS per lo stile d
 	\label{fig:razorFile}
 \end{figure}
 Si pu\`o scrivere utilizzando questa sintassi solamente nei file che hanno estensione ".razor", il cui esempio si pu\`o trovare in figura \ref{fig:razorFile}.
-Quando l'applicazione viene compilata, i file .razor vengono utilizzati come input per generare dei file C\#(quindi con estensione .cs) equivalenti al codice che si \`e descritto.\cite{ryanNowakNDCSydney}
+Quando l'applicazione viene compilata, i file .razor vengono utilizzati come input per generare dei file C\#(quindi con estensione .cs) equivalenti al codice che si \`e descritto\cite{ryanNowakNDCSydney}.
 Un esempio di output di file razor compilato, generato a partire da quello in figura \ref{fig:razorFile} \`e visibile in figura \ref{fig:compiledRazorFile}.
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.55]{figure/RazorFileCompiled.PNG}}

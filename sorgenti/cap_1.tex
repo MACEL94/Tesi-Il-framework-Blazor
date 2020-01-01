@@ -2,19 +2,18 @@
 
 \section{Contesto}\label{sez:contesto}
 
-A seguito della crescita esponenziale del web in questo secolo e dell'abituarsi di tutti coloro che ne usufruiscono ad un livello grafico sempre migliore e ad una esperienza mano a mano pi\`u interattiva e vicina all'utente medio, i siti web e le tecnologie utilizzate si sono adattati per permettere uno sviluppo sempre pi\`u rapido di codice pi\`u facilmente testabile e mantenibile.
+In seguito alla crescita esponenziale del web in questo secolo e con l'abituarsi di tutti coloro che ne usufruiscono ad un livello grafico sempre migliore e ad una esperienza mano a mano pi\`u interattiva e studiata per l'utente medio, le tecnologie utilizzate per costruire i siti web si sono adattate per permettere uno sviluppo sempre pi\`u rapido di codice pi\`u facilmente testabile e mantenibile.
 
-Di conseguenza nel frontend si sono susseguiti una serie di framework e di strumenti, a partire da JQuery\cite{jquery} nel 2006, che per primo si \`e occupato di risolvere il problema della compatibilit\`a tra browsers, permettendo ai developers di scrivere una volta, e poter eseguire su tutti i browsers.
+Di conseguenza nel frontend si sono susseguiti una serie di framework e di strumenti in modo molto rapido, a partire da JQuery\cite{jquery} nel 2006, che per primo si \`e occupato di risolvere il problema della compatibilit\`a del codice scritto con i diversi browsers, permettendo ai developers di scrivere una volta, e poter eseguire su tutti i pi\`u diffusi.
 
-AngularJS nel 2010 \`e stato il primo MVC framework ad offrire in un unico pacchetto un insieme di features che hanno facilitato molto la vita agli sviluppatori, come il two-way data binding, la dependency injection, il routing integrato, ed altri strumenti utili per rendere pi\`u standard lo sviluppo nel frontend~\cite{Hoff}.
+Nel 2010 \`e stato creato AngularJS, il primo framework per applicazioni che seguono il pattern architetturale Model-View-Controller(MVC) ad offrire in un unico pacchetto un insieme di features che hanno facilitato molto la vita agli sviluppatori, come il two-way data binding, la dependency injection, il routing integrato, ed altri strumenti utili per rendere pi\`u standard lo sviluppo nel frontend~\cite{Hoff}.
 AngularJS pur essendo stato largamente utilizzato, \`e stato cambiato radicalmente nel 2013 e rinominato in Angular2 (e nelle versioni pi\`u recenti semplicemente Angular) senza mantenere retrocompatibilit\`a e senza offrire un modo preciso per migrare alla nuova versione ai precedenti utilizzatori di AngularJS.
-Anche per questo motivo, React, un nuovo framework pi\`u leggero e modulare mantenuto da Facebook e la cui prima versione risale proprio al 2013, ha mano a mano preso il posto di Angular come framework pi\`u utilizzato nel frontend.
+Anche per questo motivo, React, un altro framework pi\`u leggero e modulare mantenuto da Facebook e la cui prima versione risale al 2013, ha poco a poco preso il posto di Angular come framework pi\`u utilizzato dai developers nel frontend, visibile anche nell'ultimo questionario condotto dal sito StackOverflow nel quale \`e stato chiesto quali tecnologie vengano utilizzate a circa 90000 sviluppatori in tutto il mondo\cite{stackOverflow2019}.
+Infine Vue, lanciato nel 2014, \`e il terzo dei principali framework moderni per la creazione di interfacce utente ed \`e stato fortemente adottato, proponendo una versione intermedia tra il pi\`u opinionato Angular e il pi\`u flessibile React\cite{vueJs}.
 
-Vue infine \`e il terzo dei principali framework moderni per la creazione di interfacce utente che \`e stato fortemente adottato, proponendo una versione intermedia tra il pi\`u opinionato Angular e il pi\`u flessibile React, lanciato nel 2014~\cite{vueJs}.
+Oltre ad almeno uno dei framework citati, ciascuno con la propria semantica, organizzazione logica delle cartelle e spesso una CLI dedicata, un frontend developer dovrebbe conoscere bene HTML, CSS e chiaramente Javascript, jQuery per retrocompatibilit\`a ed almeno Bootstrap per creare componenti standard pi\`u in fretta.
 
-Oltre a questi, ciascuno con la propria semantica, organizzazione logica delle cartelle, spesso una CLI dedicata, ad un developer frontend viene solitamente richiesto di conoscere HTML, CSS e chiaramente Javascript essendo ci\`o su cui si basano poi i vari framework, jQuery per retrocompatibilit\`a e Bootstrap(solitamente sia versione 3 che 4) per creare componenti standard pi\`u in fretta.
-
-Oltre a Javascript, se si vuole scrivere degli unit test facilmente mantenibili, bisogna conoscere TypeScript(specialmente se si utilizza Angular, che rende il suo utilizzo obbligatorio).
+In particolare se si utilizza Angular, come anche se si vuole scrivere codice pi\`u facilmente mantenibile e type-safe, va aggiunto anche TypeScript.
 TypeScript in particolare \`e un linguaggio di programmazione che estende la sintassi di Javascript, rendendolo tipizzato(e non interpretato), e viene quindi compilato e trasformato in codice equivalente nel linguaggio javascript, per poter essere utilizzato dal browser.
 Questo processo di compilazione e traduzione da un linguaggio verso l'altro, prende il nome di transpilazione.
 
