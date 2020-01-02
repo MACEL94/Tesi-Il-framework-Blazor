@@ -4,18 +4,18 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Implementazioni del .NET Standard}}{3}%
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Possibilit\`a di .NET}}{3}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Blazor Server}}{5}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces BlazorPong}}{6}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Blazor WebAssembly}}{8}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Utilizzo del CLR}}{9}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Confronto tra WebAssembly e Javascript}}{9}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Progressive Web Apps}}{10}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Blazor Hybrid Application}}{12}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces File Razor\cite {ryanNowakNDCSydney}}}{13}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Output\cite {ryanNowakNDCSydney}}}{14}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Primitive di Blazor\cite {ryanNowakNDCSydney}}}{14}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Blazor Server}}{6}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces BlazorPong}}{7}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Blazor WebAssembly}}{9}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Utilizzo del CLR}}{10}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Confronto tra WebAssembly e Javascript}}{10}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Progressive Web Apps}}{11}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Blazor Hybrid Application}}{13}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces File Razor\cite {ryanNowakNDCSydney}}}{14}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Output\cite {ryanNowakNDCSydney}}}{15}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Primitive di Blazor\cite {ryanNowakNDCSydney}}}{16}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Confronto Modelli Client-Server}}{17}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Parametri VM utilizzata per il test di carico}}{19}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Confronto Modelli Client-Server}}{18}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Parametri VM utilizzata per il test di carico}}{20}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Modelli blazor e supporto}}{22}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Modelli blazor e supporto}}{23}%

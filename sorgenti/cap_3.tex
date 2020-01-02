@@ -15,7 +15,7 @@ Questo principalmente per 3 motivi:
 \end{enumerate}
 
 Gli altri modelli invece sfruttano l'hardware di ogni client connesso, come solitamente avviene per le SPA odierne.
-Sono quindi in linea con il comportamento degli altri framework basati su Javascript come i gi\`a citati Angular React o Vue.js, in particolare Blazor WebAssembly. 
+Sono quindi in linea con il comportamento degli altri framework basati su Javascript come Angular o React, in particolare Blazor WebAssembly. 
 Di seguito verranno quindi confrontati pro e contro dell'utilizzo del modello Blazor Server e del modello Blazor WebAssembly, partendo dai punti evidenziati nella figura \ref{fig:blazorModelsProCons}.
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.8]{figure/ClientServerProCons.png}}
@@ -42,8 +42,8 @@ Un quinto punto a favore, \`e che essendo questo modello pronto per produzione, 
 Infine il fatto che l'applicazione esegua sul server, implica che si possa utilizzare l'intero runtime di .NET Core, che implementa completamente il .NET Standard 2.0.
 \subsection{Contro}\label{sez:controBServer}
 Il principale punto a sfavore di Blazor Server \`e la gi\`a citata RAM consumata da ogni UI per ogni sessione di ogni utente che utilizza l'applicazione.
-Un benchmark eseguito da Microsoft a tal proposito, ha mostrato come il principale collo di bottiglia di una applicazione Blazor sia proprio la RAM.
-Microsoft ha dichiarato che hanno stimato vengano occupati in media 250 KB in RAM per ogni nuova connessione di un utente ad una applicazione base di tipo "hello world" e consigliano di dedicare almeno 273 KB per utente se non si ha chiaro da dove partire.Durante il test di carico svolto da Microsoft \`e stata utilizzata una sola macchina virtuale Azure di fascia medio-bassa(Standard D1V2)come server per ospitare l'applicazione Blazor, avendo quindi a disposizione 3.5 GB di RAM e le caratteristiche visibili in figura \ref{fig:vmStandardD1V2}.
+Un benchmark eseguito da Microsoft a tal proposito, ha mostrato come il principale collo di bottiglia di un'applicazione Blazor sia proprio la RAM.
+Microsoft ha dichiarato che hanno stimato vengano occupati in media 250 KB in RAM per ogni nuova connessione di un utente ad un'applicazione base di tipo "hello world" e consigliano di dedicare almeno 273 KB per utente se non si ha chiaro da dove partire.Durante il test di carico svolto da Microsoft \`e stata utilizzata una sola macchina virtuale Azure di fascia medio-bassa(Standard D1V2)come server per ospitare l'applicazione Blazor, avendo quindi a disposizione 3.5 GB di RAM e le caratteristiche visibili in figura \ref{fig:vmStandardD1V2}.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.5]{figure/Standard_D1_V2.PNG}}
@@ -67,9 +67,9 @@ Questo modello infatti, dopo lo scaricamento iniziale dell'applicazione, del run
 Altro grande vantaggio, \`e quindi il fatto che dopo lo scaricamento iniziale e l'inizializzazione, l'applicazione sar\`a responsiva senza alcuna latenza, dato che al contrario del modello Blazor Server, la gestione degli eventi da parte dei component di Blazor avviene in locale, senza dover comunicare ogni volta con il server.
 
 Un altro punto a favore al quale prestare attenzione \`e la maggiore facilit\`a con cui si pu\`o trasformare questo modello in una PWA, anche se al momento della scrittura di questo lavoro di tesi non esiste ancora una guida ufficiale pubblicata da Microsoft.
-In alcuni casi questo modello pu\`o essere la scelta giusta e risultare anche pi\`u veloce di una applicazione equivalente con componenti scritti in Javascript, dato che il codice dei componenti Blazor viene compilato nel .NET Intermediate Language come visibile nella figura \ref{fig:CLR}  prima di essere eseguito lato client tramite il runtime Mono tradotto in WebAssembly contenuto nel file mono.wasm.
+In alcuni casi questo modello pu\`o essere la scelta giusta e risultare anche pi\`u veloce di un'applicazione equivalente con componenti scritti in Javascript, dato che il codice dei componenti Blazor viene compilato nel .NET Intermediate Language come visibile nella figura \ref{fig:CLR}  prima di essere eseguito lato client tramite il runtime Mono tradotto in WebAssembly contenuto nel file mono.wasm.
 
-Il fatto stesso di essere equivalente ad una applicazione moderna scritta usando Javascript agli occhi di un utente ma di poter arrivare ad avere prestazioni migliori e di scrivere in un linguaggio diverso dal solo javascript, rende questo modello estremamente importante e indicato per applicazioni dove ad esempio si vuole poter condividere il codice di validazione ed utilizzarlo tra frontend e backend.
+Il fatto stesso di essere equivalente ad un'applicazione moderna scritta usando Javascript agli occhi di un utente ma di poter arrivare ad avere prestazioni migliori e di scrivere in un linguaggio diverso dal solo javascript, rende questo modello estremamente importante e indicato per applicazioni dove ad esempio si vuole poter condividere il codice di validazione ed utilizzarlo tra frontend e backend.
 Un'altra categoria di applicazioni per le quali Blazor WebAssembly pu\`o risultare pi\`u indicato, \`e quella dei videogiochi con alta frequenza di aggiornamento nella UI dell'utente, con particolare enfasi su quelli per i quali la grafica \`e complessa e risulterebbe troppo lento e costoso far avvenire i cambiamenti lato server, causando lag e degradando l'esperienza degli utenti.
  
 \subsection{Contro}\label{sez:controBWA}

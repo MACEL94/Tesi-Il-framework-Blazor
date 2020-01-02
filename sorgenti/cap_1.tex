@@ -11,18 +11,18 @@ AngularJS pur essendo stato largamente utilizzato, \`e stato cambiato radicalmen
 Anche per questo motivo, React, un altro framework pi\`u leggero e modulare mantenuto da Facebook e la cui prima versione risale al 2013, ha poco a poco preso il posto di Angular come framework pi\`u utilizzato dai developers nel frontend, visibile anche nell'ultimo questionario condotto dal sito StackOverflow nel quale \`e stato chiesto quali tecnologie vengano utilizzate a circa 90000 sviluppatori in tutto il mondo\cite{stackOverflow2019}.
 Infine Vue, lanciato nel 2014, \`e il terzo dei principali framework moderni per la creazione di interfacce utente ed \`e stato fortemente adottato, proponendo una versione intermedia tra il pi\`u opinionato Angular e il pi\`u flessibile React\cite{vueJs}.
 
-Oltre ad almeno uno dei framework citati, ciascuno con la propria semantica, organizzazione logica delle cartelle e spesso una CLI dedicata, un frontend developer dovrebbe conoscere bene HTML, CSS e chiaramente Javascript, jQuery per retrocompatibilit\`a ed almeno Bootstrap per creare componenti standard pi\`u in fretta.
+Oltre ad almeno uno dei framework citati, ciascuno con la propria semantica, organizzazione logica delle cartelle e spesso una CLI dedicata, un frontend developer odierno dovrebbe conoscere bene HTML, CSS e chiaramente Javascript, jQuery per retrocompatibilit\`a ed almeno Bootstrap per creare componenti standard pi\`u in fretta.
 
-In particolare se si utilizza Angular, come anche se si vuole scrivere codice pi\`u facilmente mantenibile e type-safe, va aggiunto anche TypeScript.
-TypeScript in particolare \`e un linguaggio di programmazione che estende la sintassi di Javascript, rendendolo tipizzato(e non interpretato), e viene quindi compilato e trasformato in codice equivalente nel linguaggio javascript, per poter essere utilizzato dal browser.
+In particolare se si utilizza Angular, come anche se si vuole scrivere codice pi\`u facilmente mantenibile e type-safe, il developer dovr\`a conoscere anche TypeScript.
+TypeScript \`e un linguaggio di programmazione che estende la sintassi di Javascript, rendendolo tipizzato(e non interpretato), e viene quindi compilato e trasformato in codice equivalente nel linguaggio javascript, per poter essere utilizzato dal browser.
 Questo processo di compilazione e traduzione da un linguaggio verso l'altro, prende il nome di transpilazione.
 
 \section{Problema}\label{sez:problema}
-I continui cambiamenti nei molti framework utilizzati, la diversit\`a degli strumenti tra loro, che spesso realizzano in modo diverso la stessa cosa, rendono sempre pi\`u difficile per un junior developer iniziare a sviluppare, vista l'ampia curva di apprendimento e quindi il tempo e lo studio necessario, per poter essere pronto a lavorare come un professionista.
+I continui aggiornamenti nei molti framework utilizzati e la diversit\`a degli strumenti tra loro, che spesso realizzano in modo diverso la stessa cosa, rendono sempre pi\`u difficile per un junior developer iniziare a sviluppare, vista l'ampia curva di apprendimento e quindi il tempo e lo studio necessario, per poter essere pronto a lavorare come professionista.
 
-Oltretutto un web developer ad oggi finisce per essere costretto a scegliere se diventare uno sviluppatore frontend o backend, dato che rimanere al passo e aggiornarsi gi\`a in solo uno di questi due campi richiede molto tempo ed impegno, spesso oltre l'orario di lavoro.
+Spesso i web developer infatti finiscono per scegliere se diventare uno sviluppatore frontend e concentrarsi su quello stack di tecnologie da conoscere ed approfondire, o se diventare un developer backend, dato che rimanere al passo anche solo uno di questi due campi richiede tempo, oltre all'impegno.
 
-\`E quindi chiaro che da parte di tutti i web developer, e specialmente per una figura mista spesso identificata con il titolo "Full-Stack Developer", ci sia una continua ricerca del modo per rendere le proprie competenze quanto pi\`u trasversali possibile, anche in termini di tecnologie utilizzate.
+\`E quindi chiaro che da parte di tutti i web developer e specialmente per una figura esperta e mista identificata con il titolo "Full-Stack Developer", ci sia una continua ricerca del modo per rendere le proprie competenze quanto pi\`u trasversali possibile, anche in termini di tecnologie utilizzate.
 
 \pagebreak
 
@@ -36,8 +36,8 @@ La figura \ref{fig:DotNetImplementations} di seguito riassume le implementazioni
 	\label{fig:DotNetImplementations}
 \end{figure}
 
-Scrivendo ad esempio in C\# \`e possibile sviluppare vari tipi di applicazioni come si pu\`o vedere nella figura \ref{fig:DotNetCapabilities}, ma se si decide di sviluppare codice per un'applicazione web che gestisca eventi del Browser(click, drag, hover,...) ad oggi si \`e costretti a scriverla utilizzando Javascript.
-Eventualmente sfruttando anche un framework se si vuole essere pi\`u veloci nello sviluppo e scrivere codice mantenibile specialmente se a livello enterprise.
+Se si decide di sviluppare codice per un'applicazione web che gestisca eventi del Browser con prestazioni native(click, drag, hover,...) e senza costringere l'utente a scaricare plugin, si \`e costretti a scriverla utilizzando Javascript(JS).
+Eventualmente sfruttando anche un framework basato su JS se si vuole essere pi\`u veloci nello sviluppo e scrivere codice mantenibile, esigenze fondamentali a livello enterprise.
 
 \begin{figure}[H]
 \centerline{\includegraphics[scale=0.35]{figure/DotNetFrameworkCapabilities}}
@@ -45,13 +45,12 @@ Eventualmente sfruttando anche un framework se si vuole essere pi\`u veloci nell
 \label{fig:DotNetCapabilities}
 \end{figure}
 
-Gi\`a con Razor\cite{razor}, Microsoft ha permesso la generazione di codice HTML e CSS in modo dinamico utilizzando C\#, ma questa tecnologia per il server-side rendering \`e utilizzabile solo lato server e quindi la cattura di un evento client side come il click di un utente su un bottone, senza passare per il server sul quale viene eseguito l'hosting dell'applicazione, non \`e stato possibile utilizzando esclusivamente questa tecnologia.
+Gi\`a con il rilascio di Razor\cite{razor} nel 2011, Microsoft ha permesso la generazione di codice HTML e CSS in modo dinamico utilizzando C\#, ma questa tecnologia \`e stata creata e pensata per il server-side rendering ed \`e quindi utilizzabile solo quando si scrive codice che sar\`a eseguito da un server, non da un browser.
+Ci\`o implica che la cattura di un evento client side come il click di un utente su un bottone, senza dover eseguire una chiamata al server sul quale viene eseguito l'hosting dell'applicazione e l'attesa della relativa una risposta, non risulti possibile senza l'utilizzo di Javascript.
 
 \section{Blazor}
-Ecco cosa \`e quindi Blazor: la versione pi\`u avanzata di Razor(Browser+Razor\cite{blazorWikiGitHub}), o meglio ancora un Framework per la creazione di User Interfaces(da qui in poi UI) di Single Page Application(da qui in poi SPA) che permette ai developer di gestire anche gli eventi client-side, direttamente in C\# o nel linguaggio scelto tra quelli supportati.
-Questo framework come se il linguaggio scelto fosse effettivamente ci\`o che viene eseguito dal client, mentre in realt\`a ci\`o che viene eseguito lato client cambia a seconda del modello scelto, come poi vedremo pi\`u nel dettaglio.
+Ecco cosa \`e quindi Blazor: la versione pi\`u avanzata di Razor(Browser+Razor\cite{blazorWikiGitHub}), o meglio ancora un Framework per la creazione di User Interfaces(UI) di Single Page Application(SPA) che permette ai developer di gestire anche gli eventi client-side, direttamente in C\# o nel linguaggio scelto tra quelli supportati.
+Per SPA si intende un applicazione web che interagisce con l'utente riscrivendo dinamicamente la pagina nel quale l'utente si trova a seconda delle sue azioni, piuttosto che ricaricare nuove pagine di volta in volta richiedendole al server ad ogni click\cite{SPA}.
+Questo framework permette allo sviluppatore di scrivere codice come se il linguaggio scelto(non JS) fosse effettivamente ci\`o che viene eseguito dal client, mentre in realt\`a ci\`o che viene eseguito dal browser dell'utente cambia a seconda del modello scelto, come poi vedremo pi\`u nel dettaglio.
 
-Blazor utilizza per i vari modelli, delle tecnologie diverse(ad esempio il WebAssembly) ma che rispettano sempre lo standard del web.
-
-Non \`e un plugin da installare, e non dipende da un browser specifico.
-Non \`e una tecnologia che sfrutta la transpilazione verso javascript, contrariamente a TypeScript.
+Blazor utilizza per i vari modelli, delle tecnologie diverse(ad esempio il WebAssembly) che rispettano per\`o lo standard del web, in quanto non sfrutta plugin che ogni utente deve appositamente scaricare per poter utilizzare l'applicazione, e non dipende da un browser specifico.
