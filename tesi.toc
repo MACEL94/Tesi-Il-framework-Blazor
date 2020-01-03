@@ -11,7 +11,7 @@
 \contentsline {section}{\numberline {2.2}Blazor WebAssembly}{9}%
 \contentsline {subsection}{\numberline {2.2.1}CLR e WebAssembly}{9}%
 \contentsline {subsection}{\numberline {2.2.2}Blazor PWA}{11}%
-\contentsline {section}{\numberline {2.3}Modelli in roadmap}{12}%
+\contentsline {section}{\numberline {2.3}Modelli Sperimentali}{12}%
 \contentsline {subsection}{\numberline {2.3.1}Blazor Hybrid}{12}%
 \contentsline {subsection}{\numberline {2.3.2}Blazor Native}{14}%
 \contentsline {section}{\numberline {2.4}Funzionamento}{14}%
@@ -26,5 +26,5 @@
 \contentsline {chapter}{\numberline {4}Conclusioni}{23}%
 \contentsline {section}{\numberline {4.1}Conclusioni}{23}%
 \contentsline {section}{\numberline {4.2}Futuro del progetto}{23}%
-\contentsline {chapter}{Bibliografia}{24}%
-\contentsline {chapter}{Ringraziamenti}{26}%
+\contentsline {chapter}{Bibliografia}{25}%
+\contentsline {chapter}{Ringraziamenti}{27}%

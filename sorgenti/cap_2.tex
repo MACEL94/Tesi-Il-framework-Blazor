@@ -1,15 +1,24 @@
 \chapter{Modelli e Funzionamento}\label{cap:modefunz}
 \section{Blazor Server}\label{sez:bserver}
-Il primo dei modelli ufficialmente rilasciati e per il quale si pu\`o gi\`a ricevere supporto in produzione, rilasciato a settembre 2019\cite{blazorServerRelease}, \`e Blazor Server.
+Il primo dei modelli ufficialmente rilasciati e per il quale si pu\`o gi\`a ricevere supporto in produzione, sin da settembre 2019\cite{blazorServerRelease}, \`e Blazor Server.
 
 Un'applicazione Blazor Server ospita i componenti Blazor lato Server e gestisce le interazioni dell'utente con la UI attraverso una connessione in tempo reale sfruttando SignalR, come visibile nella figura \ref{fig:BlazorServer}.
 
 Per "componente" si intende un pezzo di UI autonomo, come una pagina, una finestra modale o un form da compilare.
-Un componente, include quindi HTML e la logica necessaria per iniettarci dei dati o per rispondere ad eventi della UI. 
+Un componente include quindi sia HTML che la logica necessaria per iniettarci dei dati o per rispondere ad eventi della UI. 
 I componenti sono flessibili e leggeri. Possono essere annidati, riutilizzati, e condivisi tra progetti\cite{whatIsAComponent}.
 
 SignalR invece \`e una libreria di software open-source sviluppata da Microsoft, che facilita l'interazione tra Client e Server, specialmente quando si necessita di mandare messaggi dal server ad uno o pi\`u client con un'alta frequenza~\cite{signalR}.
-In particolare SignalR mette a disposizione delle API che permettono al codice che viene eseguito sul server di mandare messaggi real-time ad uno o pi\`u client connessi contemporaneamente, e questa libreria viene sfruttata dal modello Blazor Server per trasmettere al browser di ciascun utente connesso quali modifiche debbano essere applicate al Document Object Model(DOM) perch\`e la UI di ciascun Client rispetti la UI che il server mantiene in memoria.
+SignalR mette a disposizione delle API che permettono al codice del server di eseguire Remote Procedure Calls(RPC), in particolare \`e utilizzato per inviare messaggi real-time ad uno o pi\`u client connessi all'applicazione contemporaneamente(e.g. in una chat room).
+Questa libreria viene sfruttata dal modello Blazor Server per trasmettere al browser di ciascun utente connesso quali modifiche debbano essere applicate al Document Object Model(DOM) perch\`e la UI di ciascun Client rispetti la UI che il server mantiene in memoria.
+SignalR supporta le seguenti tre tecniche di gestione per comunicare in tempo reale, in ordine di fallback:
+\begin{enumerate}
+	\item WebSockets
+	\item Server-Sent Events
+	\item Long Polling
+\end{enumerate}
+
+SignalR sceglie automaticamente il miglior metodo di trasporto disponibile a seconda delle capacit\`a di client e server che stabiliscono la connessione\cite{signalR-ASP.NET}.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.6]{figure/blazor-server.png}}
@@ -39,14 +48,16 @@ Un esempio di applicazione scritta utilizzando questo modello, \`e BlazorPong, a
 Questa applicazione, visibile nella figura \ref{fig:BlazorPong} permette a due giocatori che si collegano al sito contemporaneamente di giocare, e ai successivi utenti che si collegano di seguire la partita in corso come spettatori in tempo reale.
 In questa applicazione \`e stato utilizzato il modello Blazor Server side per vari motivi:
 \begin{enumerate}
-	\item Il service worker che si occupa di aggiornare la posizione della pallina su tutti i client connessi, deve essere eseguito in un unico thread utilizzato per tutti i client connessi al server, ad ognuno dei quali invece devono arrivare gli aggiornamenti.
-	\item Il calcolo delle differenze da applicare a ciascun DOM di ciascun utente connesso, per quanto avvenga continuamente(60 fps circa), conviene avvenga direttamente lato server poich\'e l'applicazione \`e molto semplice e infatti anche un host di livello gratuito come quello che si \`e scelto di utilizzare riesce a far giocare senza problemi due persone con diversi spettatori(i test che sono stati fatti sono tutti stati eseguiti dall'interno dell'europa, poich\'e il server utilizzato si trova in Francia).
+	\item Il background worker del server che si occupa di aggiornare la posizione della pallina su tutti i client connessi, deve essere eseguito in un unico thread utilizzato per tutti i client.
+	\item Il calcolo delle differenze da applicare a ciascun DOM di ciascun utente connesso, per quanto avvenga molto spesso(\`e stato limitato per rendere 60 fps circa), non ha un peso tale da non poter essere eseguito lato server poich\'e l'applicazione \`e molto semplice e di conseguenza leggera.
+	Una sola macchina host gratuita come quella che \`e stata utilizzata(su Azure), riesce a far giocare senza problemi due persone con diversi spettatori.
+	\`E comunque bene specificare che tutti i test di performance che sono stati fatti sono stati eseguiti in Europa, e che il server utilizzato si trova in Francia.
 	\item Essendo la gestione degli eventi server side, il gioco pu\`o essere visualizzato in modalit\`a spettatore senza problemi anche su cellulari non performanti.
 \end{enumerate}
 
-Il funzionamento \`e piuttosto semplice: quando almeno due utenti si collegano all'applicazione e ciascuno ha cliccato play, inizia la partita.
+Il funzionamento di BlazorPong \`e piuttosto semplice: quando almeno due utenti si collegano all'applicazione e ciascuno ha cliccato play, inizia la partita.
 Lato server viene gestito lo spostamento costante della pallina ed eventuali collisioni con muri verticali, orizzontali o con il blocco di uno dei player.
-Rispettivamente gli eventi gestiti dall'unico background worker che viene eseguito sul server, quindi condiviso tra tutti gli utenti connessi, sono i seguenti:
+Rispettivamente gli eventi gestiti dal background worker eseguito sul server sono i seguenti:
 \begin{enumerate}
 	\item Collisione con un muro verticale con conseguente punto per il player che si trova dal lato opposto di quello in cui avviene la collisione;
 	\item Collisione con un muro orizzontale con conseguente inversione della velocit\`a di spostamento della pallina sull'asse y;
@@ -56,14 +67,14 @@ Rispettivamente gli eventi gestiti dall'unico background worker che viene esegui
 
 Ci\`o che invece avviene grazie all'utente, \`e lo spostamento del proprio player attraverso la cattura dell'evento di drag eseguito sul proprio blocco quando lo si trascina.
 Ad ogni evento scatenato dall'utente, la connessione SignalR invia l'evento al server, che lo processa e restituisce a tutti gli utenti connessi la nuova posizione.
-Viene escluso dall'aggiornamento di posizione del blocco inviato dal server, il solo player che ha scatenato l'evento, poich\`e l'invio delle differenze necessarie per renderizzare la UI aggiornata, viene gestito gi\`a da Blazor Server.
+Viene escluso dall'aggiornamento di posizione del blocco inviato dal server, il solo player che ha scatenato l'evento, poich\'e l'invio delle differenze necessarie per renderizzare la UI aggiornata viene gestito gi\`a da Blazor Server.
 
 \pagebreak
 
 \section{Blazor WebAssembly}\label{sez:bwa}
 Blazor WebAssembly \`e un modello attualmente in anteprima, e sar\`a ufficialmente rilasciato verso maggio del 2020.
 
-In questo modello il codice della SPA viene scaricato ed eseguito nel browser del client che si collega alla SPA, come solitamente avviene quando si utilizza un framework moderno per UI come i gi\`a citati Angular, React e Vue.
+In questo modello il codice della SPA viene scaricato ed eseguito nel browser del client che si collega, come solitamente avviene quando si utilizza un framework moderno per UI come i gi\`a citati Angular, React e Vue.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.6]{figure/blazor-WebAssembly.png}}
@@ -71,13 +82,13 @@ In questo modello il codice della SPA viene scaricato ed eseguito nel browser de
 	\label{fig:BlazorWebAssembly}
 \end{figure}
 
-Vengono quindi scaricati dal client l'applicazione Blazor, le sue dipendenze, ed il runtime del .NET scelto come target per l'applicazione.
+Vengono quindi scaricati dal client l'applicazione Blazor, le sue dipendenze, ed il runtime .NET necessario per eseguire le DLL.
 L'applicazione viene quindi eseguita direttamente nel thread della UI del Browser utilizzato per collegarsi all'applicazione, come visibile nella figura \ref{fig:BlazorWebAssembly}.
 
 L'ambito di esecuzione \`e la stessa sandbox di qualsiasi altra applicazione scritta con javascript, ossia il browser che si sta utilizzando.
-Ci\`o \`e molto importante perch\`e significa che un'applicazione web scritta utilizzando Blazor non pu\`o fare niente di pi\`u o di meno di un'applicazione web standard.
+Ci\`o \`e molto importante perch\`e significa che potenzialmente un'applicazione web scritta utilizzando Blazor non pu\`o fare niente di pi\`u o di meno di un'applicazione web standard(come ad esempio accedere al file system).
 Ogni update alla UI e la relativa gestione, avvengono utilizzando lo stesso processo nel browser.
-Per questo modello, blazor.WebAssembly.js \`e il nome dello script Javascript che si occupa di scaricare il .NET runtime compilato in WebAssembly, l'applicazione e le sue dipendenze, come anche dell'inizializzazione dell'applicazione.
+Per questo modello, blazor.WebAssembly.js \`e il nome dello script Javascript che all'apertura della pagina index si occupa di scaricare il .NET runtime compilato in WebAssembly, l'applicazione e le sue dipendenze, come anche dell'inizializzazione dell'applicazione.
 
 \subsection{CLR e WebAssembly}\label{sez:webAssembly}
 In particolare il nome Blazor WebAssembly per questo modello \`e stato scelto perch\`e nel browser di ciascun client che utilizza un'applicazione di questo tipo, viene scaricato ed utilizzato il file "mono.wasm".
@@ -90,7 +101,7 @@ Il runtime \`e necessario per poter interpretare ed eseguire i file compilati de
 	\label{fig:CLR}
 \end{figure}
 
-Il WebAssembly(da qui in poi abbreviato in WASM) \`e un formato per istruzioni binarie creato per essere il target della compilazione di linguaggi ad alto livello come C, C++, Rust\cite{webAssemblyOfficialWebsite}.
+Il WebAssembly(WASM) \`e un formato per istruzioni binarie creato per essere il target della compilazione di linguaggi ad alto livello come C, C++, Rust\cite{webAssemblyOfficialWebsite}.
 L'estensione .wasm \`e quella che \`e stata scelta per i file WASM.
 Il progetto per la creazione di WASM \`e nato nel 2015, mentre dal 2017 i browser pi\`u diffusi al mondo come Chrome, Firefox, Edge e Safari si sono impegnati per svilupparlo ed adottarlo\cite{webAssemblySupport}.
 
@@ -100,18 +111,14 @@ Il progetto per la creazione di WASM \`e nato nel 2015, mentre dal 2017 i browse
 	\label{fig:WasmVSJavascript}
 \end{figure}
 
-Come si pu\`o vedere nella figura \ref{fig:WasmVSJavascript}, uno dei motivi per cui WASM \`e pi\`u veloce di Javascript \`e che non deve essere processato e compilato prima di poter essere interpretato, ma solamente scompattato ed eseguito e per questo motivo spesso viene definito il byte code per il web.
+Come si pu\`o vedere nella figura \ref{fig:WasmVSJavascript}, uno dei motivi per cui WASM \`e pi\`u veloce di Javascript \`e che non deve essere analizzato e compilato prima di poter essere interpretato, va solamente decompresso e per questo motivo spesso viene definito il byte code per il web.
 
-La compilazione avviene in modalit\`a AOT(Ahead of Time) e non pi\`u JIT(Just in Time), il che si traduce in un sensibile miglioramento delle prestazioni del codice dinamico.
+La compilazione pu\`o avvenire in modalit\`a AOT(Ahead of Time) e non solamente JIT(Just in Time) come per JS, il che si traduce in un sensibile miglioramento delle prestazioni del codice dinamico.
 Questa tecnologia \`e ci\`o che rende possibile il funzionamento di Blazor WebAssembly.
 
-In questo modello quindi, come visibile dai Chrome Developer Tools, vengono scaricate le DLL dell'applicazione direttamente nel browser dell'utente.
-
 \subsection{Blazor PWA}\label{sez:bpwa}
-Il passaggio successivo per avvicinarsi al client allontanandosi dal modello server \`e poi Blazor PWA.
-
-\`E cos\`i chiamato perch\`e in questo modello Blazor, permette di sviluppare l'interfaccia utente di una Progressive Web App.
-Nella figura \ref{fig:WhatIsAPWA} viene riassunto cosa sia una Progressive Web App.
+Il passaggio successivo per avvicinarsi a prestazioni e interazioni native per il client, allontanandosi ulteriormente dal modello Blazor Server, \`e chiamato Blazor PWA.
+\`E cos\`i chiamato perch\`e in questo modello Blazor, permette di sviluppare l'interfaccia utente di una Progressive Web-App(PWA).
 
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.5]{figure/ProgressiveWebApp.png}}
@@ -119,25 +126,31 @@ Nella figura \ref{fig:WhatIsAPWA} viene riassunto cosa sia una Progressive Web A
 	\label{fig:WhatIsAPWA}
 \end{figure}
 
-In particolare queste sono applicazioni web che hanno la capacit\`a di funzionare anche offline, e che spesso possono essere scaricate in modo persistente sulla macchina dell'utente che le esegue.
-Offrono chiaramente una maggiore velocit\`a di esecuzione e la possibilit\`a di sfruttare alcune API native.
-Ad esempio possono essere utilizzate quando la necessit\`a \`e quella di utilizzare le notifiche push native del sistema operativo che sta utilizzando il client(ad esempio Windows).
+Nella figura \ref{fig:WhatIsAPWA} viene riassunto cosa siano le PWA ovvero applicazioni web che hanno la capacit\`a di funzionare anche offline, possono essere scaricate in modo persistente sulla macchina dell'utente che le esegue.
+Offrono il vantaggio di una maggiore velocit\`a di esecuzione e la possibilit\`a di sfruttare alcune API native.
+Questo modello quindi, pu\`o tornare utile quando la necessit\`a dell'applicazione che si vuole sviluppare \`e quella di utilizzare le notifiche push native del sistema operativo che sta utilizzando il client(al momento solo Windows).
 
-Al momento, per realizzare una PWA , bisogna partire dal modello Blazor WebAssembly aggiungendo un manifesto che descriva le capacit\`a dell'applicazione, i permessi richiesti e l'icona da utilizzare una volta installata, oltre chiaramente a dover implementare l'applicazione in modo che possa lavorare anche offline, basandosi su un service worker\cite{blazorPWA}.
+Al momento, per realizzare una PWA utilizzando Blazor, bisogna partire dal modello Blazor WebAssembly aggiungendo un manifesto che descriva le capacit\`a dell'applicazione, i permessi richiesti e l'icona da utilizzare una volta installata, oltre chiaramente a dover implementare l'applicazione in modo che possa lavorare anche offline, basandosi su un service worker\cite{blazorPWA}.
+
+Un service worker è uno script che viene eseguito in background ed è delegato a gestire le attività di caching del sito.
+
+Una cosa molto importante da tenere presente, \`e che le demo esistenti al momento per le PWA scritte in Blazor si basano sul browser Chrome e sul sistema operativo Windows.
+Per ora non risultano cross-browser e cross-platform.
+
 \pagebreak
 
-\section{Modelli in roadmap}
+\section{Modelli Sperimentali}
 \subsection{Blazor Hybrid}\label{sez:bhybrid}
-Blazor Hybrid permette di sviluppare applicazioni native.
+Blazor Hybrid permette di sviluppare applicazioni parzialmente native.
 Nel modello Hybrid, l'applicazione sviluppata non \`e quindi pi\`u considerabile un'applicazione web ma rimane ibrida perch\`e pur essendo un'applicazione con capacit\`a native, utilizza tecnologie web per effettuare il rendering della UI.
 
-Esempi di Hybrid Apps possono essere applicazioni mobile native, che hanno accesso alle API esposte ad esempio da Android, ma che utilizzano delle WebViews per la gestione dell'interazione dell'utente con la UI.
+Esempi di Hybrid Apps possono essere quelle applicazioni mobile native che hanno accesso alle API esposte da Android, ma che utilizzano delle WebViews per la gestione dell'interazione dell'utente con la UI.
 Un altro esempio molto interessante sono le applicazioni, scritte in Blazor, che sfruttano Electron.
 
-Electron \`e un framework open-source sviluppato e mantenuto da GitHub, precedentemente noto come Atom Shell.
+Electron, precedentemente noto come Atom Shell, \`e un framework open-source sviluppato e mantenuto da GitHub.
 In particolare Electron permette di sviluppare interfacce grafiche per desktop eseguibili su Windows, Linux e macOS utilizzando tecnologie web\cite{electronWiki}.
 Electron combina il motore di rendering del browser Chromium ed il runtime Node.js, che vengono inclusi in ogni applicazione sviluppata utilizzando questo framework.
-Utilizzando quindi il pacchetto Electron.NET, si pu\`o fare in modo di eseguire un'applicazione .NET Core nell'ambiente(browser e runtime) esposto da Electron, utilizzando Blazor in fase di sviluppo\cite{electronDotNet}.
+Utilizzando quindi il pacchetto NuGet Electron.NET, si pu\`o fare in modo di eseguire un'applicazione .NET Core nell'ambiente(browser e runtime) garantito da Electron, utilizzando Blazor in fase di sviluppo\cite{electronDotNet}.
 
 In questo modo si pu\`o ottenere un'applicazione con capacit\`a native, che sia cross-platform, la cui interfaccia sia stata scritta utilizzando Blazor.
 Nella figura \ref{fig:BlazorHybridApplication} si pu\`o vedere una Web Application compilata nativamente con Electron(con target Windows), e quindi eseguita come applicazione desktop:
@@ -155,16 +168,16 @@ Il codice open source di questa applicazione, si pu\`o trovare al seguente link:
 Grazie a Blazor Native \`e possibile sviluppare applicazioni completamente native, sfruttando il fatto che Blazor \`e stato architettato per poter renderizzare controlli della UI che non siano obbligatoriamente strumenti web, e pu\`o quindi integrarsi con controlli nativi.
 Il rendering layer \`e infatti intercambiabile, pur essendo quello di default dedicato all'HTML.
 
-Un esempio di applicazione sviluppata utilizzando Blazor per il rendering di controlli nativi nella UI, si pu\`o vedere durante la presentazione di Steve Sanderson all'evento NDC Oslo di quest'anno, pur non essendo stato ancora rilasciato il codice di un esempio ufficiale\cite{sandersonNDCBlutter}.
+Un esempio di applicazione sviluppata utilizzando Blazor per il rendering di controlli nativi nella UI, si pu\`o vedere durante la presentazione di Steve Sanderson all'evento NDC ad Oslo del 2019, pur non essendo stato ancora rilasciato il codice di un esempio ufficiale\cite{sandersonNDCBlutter}.
 In questa applicazione, si \`e scelto di sostituire il default rendering layer per utilizzarne uno personalizzato, utilizzando componenti di Flutter, il toolkit di Google per costruire interfacce utente native CrossPlatform.
-Questo modello viene qui citato per completezza, ma al momento non \`e nemmeno presente nella documentazione ufficiale ed \`e solo stato citato da Daniel Roth durante la presentazione dei futuri modelli di Blazor lato client\cite{blazorNative}.
-\`E quindi da considerare fortemente sperimentale.
+Questo modello viene qui citato per completezza, ma al momento non \`e presente nella documentazione ufficiale ed \`e solo stato citato da Daniel Roth durante la presentazione dei futuri modelli di Blazor sul client\cite{blazorNative}.
+Blazor Native \`e quindi da considerare del tutto sperimentale.
 
 \section{Funzionamento}\label{sez:funzionamento}
-Quando si scrive si utilizza un mix di HTML per lo scheletro, CSS per lo stile del documento e C\# preceduto dal relativo carattere di escape(@) per la parte dinamica del codice.
+Quando si scrive codice nei component Blazor, si utilizza un mix di HTML per lo scheletro, CSS per lo stile del documento e C\# preceduto dal relativo carattere di escape(@) per la parte dinamica del codice.
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.55]{figure/RazorFile.png}}
-	\caption{File Razor\cite{ryanNowakNDCSydney}}
+	\caption{File Razor}
 	\label{fig:razorFile}
 \end{figure}
 Si pu\`o scrivere utilizzando questa sintassi solamente nei file che hanno estensione ".razor", il cui esempio si pu\`o trovare in figura \ref{fig:razorFile}.
@@ -173,7 +186,7 @@ Quando l'applicazione viene compilata, i file .razor vengono utilizzati come inp
 Un esempio di output di file razor compilato, generato a partire da quello in figura \ref{fig:razorFile} \`e visibile in figura \ref{fig:compiledRazorFile}.
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.55]{figure/RazorFileCompiled.PNG}}
-	\caption{Output\cite{ryanNowakNDCSydney}}
+	\caption{Output}
 	\label{fig:compiledRazorFile}
 \end{figure}
 
@@ -182,7 +195,7 @@ Questo passaggio non \`e solo necessario per fare in modo che si possano generar
 
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.7]{figure/BlazorPrimitives.PNG}}
-	\caption{Primitive di Blazor\cite{ryanNowakNDCSydney}}
+	\caption{Primitive di Blazor}
 	\label{fig:BlazorPrimitives}
 \end{figure}
 
