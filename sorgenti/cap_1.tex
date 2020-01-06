@@ -36,7 +36,7 @@ La figura \ref{fig:DotNetImplementations} di seguito riassume le implementazioni
 	\label{fig:DotNetImplementations}
 \end{figure}
 
-Se si decide di sviluppare codice per un'applicazione web che gestisca eventi del Browser con prestazioni native(click, drag, hover,...) e senza costringere l'utente a scaricare plugin, si \`e costretti a scriverla utilizzando Javascript(JS).
+Se si decide di sviluppare codice per un'applicazione web che gestisca eventi del Browser con prestazioni native(click, drag, hover,...) e non si vuole costringere gli utenti che la dovranno utilizzare a scaricare dei plugin, si \`e costretti a scriverla utilizzando Javascript(JS).
 Eventualmente sfruttando anche un framework basato su JS se si vuole essere pi\`u veloci nello sviluppo e scrivere codice mantenibile, esigenze fondamentali a livello enterprise.
 
 \begin{figure}[H]
@@ -46,11 +46,13 @@ Eventualmente sfruttando anche un framework basato su JS se si vuole essere pi\`
 \end{figure}
 
 Gi\`a con il rilascio di Razor\cite{razor} nel 2011, Microsoft ha permesso la generazione di codice HTML e CSS in modo dinamico utilizzando C\#, ma questa tecnologia \`e stata creata e pensata per il server-side rendering ed \`e quindi utilizzabile solo quando si scrive codice che sar\`a eseguito da un server, non da un browser.
-Ci\`o implica che la cattura di un evento client side come il click di un utente su un bottone, senza dover eseguire una chiamata al server sul quale viene eseguito l'hosting dell'applicazione e l'attesa della relativa una risposta, non risulti possibile senza l'utilizzo di Javascript.
+Ci\`o implica che la cattura di un evento client side come il click di un utente su un bottone, senza dover eseguire una chiamata al server sul quale viene eseguito l'hosting dell'applicazione e l'attesa della relativa una risposta, non risulti possibile senza l'utilizzo di JS.
 
 \section{Blazor}
-Ecco cosa \`e quindi Blazor: la versione pi\`u avanzata di Razor(Browser+Razor\cite{blazorWikiGitHub}), o meglio ancora un Framework per la creazione di User Interfaces(UI) di Single Page Application(SPA) che permette ai developer di gestire anche gli eventi client-side, direttamente in C\# o nel linguaggio scelto tra quelli supportati.
+Ecco cosa \`e quindi Blazor: la versione pi\`u avanzata di Razor(Browser+Razor\cite{blazorWikiGitHub}), o meglio un Framework per la creazione di User Interfaces(UI) di Single Page Application(SPA) che permette ai developer di gestire anche gli eventi client-side, sviluppando in C\# o nel linguaggio scelto tra quelli supportati.
 Per SPA si intende un applicazione web che interagisce con l'utente riscrivendo dinamicamente la pagina nel quale l'utente si trova a seconda delle sue azioni, piuttosto che ricaricare nuove pagine di volta in volta richiedendole al server ad ogni click\cite{SPA}.
 Questo framework permette allo sviluppatore di scrivere codice come se il linguaggio scelto(non JS) fosse effettivamente ci\`o che viene eseguito dal client, mentre in realt\`a ci\`o che viene eseguito dal browser dell'utente cambia a seconda del modello scelto, come poi vedremo pi\`u nel dettaglio.
 
-Blazor utilizza per i vari modelli, delle tecnologie diverse(ad esempio il WebAssembly) che rispettano per\`o lo standard del web, in quanto non sfrutta plugin che ogni utente deve appositamente scaricare per poter utilizzare l'applicazione, e non dipende da un browser specifico.
+Blazor utilizza per i vari modelli, delle tecnologie diverse che rispettano lo standard del web, in quanto non sfrutta componenti che ogni utente deve appositamente scaricare per poter utilizzare l'applicazione, e non dipende da un browser specifico.
+
+Lo scopo di questa tesi \`e quindi di provare a spiegare che cosa sia Blazor, come e perch\`e funzioni diversamente nei suoi vari modelli, spiegare come mai non esiste un unico modello mettendo a confronto quelli disponibili e provando a trovare il migliore, se ne esiste uno.

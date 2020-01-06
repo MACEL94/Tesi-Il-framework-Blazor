@@ -37,7 +37,7 @@ Questo modello \`e particolarmente indicato quando si vuole delegare il costo co
 Ci\`o rende molto veloce ed efficiente il download iniziale e l'avvio dell'applicazione per gli utenti, il che lo rende il modello pi\`u adatto se le macchine che devono utilizzare l'applicazione sono apparecchi a basso costo, ammesso che siano sempre essere connessi ad internet.
 
 \subsection{BlazorPong }\label{sez:bpong}
-Un esempio di applicazione scritta utilizzando questo modello, \`e BlazorPong, appositamente implementata per questo lavoro di tesi e la cui demo \`e disponibile nel relativo repository su GitHub\cite{blazorPong}.
+Un esempio di applicazione scritta utilizzando questo modello, \`e BlazorPong, appositamente implementata per questo lavoro di tesi e la cui demo e il codice sviluppato sono disponibili nel seguente repository su GitHub: "https://github.com/MACEL94/BlazorPong".
 
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.3]{figure/BlazorPong.PNG}}
@@ -68,6 +68,8 @@ Rispettivamente gli eventi gestiti dal background worker eseguito sul server son
 Ci\`o che invece avviene grazie all'utente, \`e lo spostamento del proprio player attraverso la cattura dell'evento di drag eseguito sul proprio blocco quando lo si trascina.
 Ad ogni evento scatenato dall'utente, la connessione SignalR invia l'evento al server, che lo processa e restituisce a tutti gli utenti connessi la nuova posizione.
 Viene escluso dall'aggiornamento di posizione del blocco inviato dal server, il solo player che ha scatenato l'evento, poich\'e l'invio delle differenze necessarie per renderizzare la UI aggiornata viene gestito gi\`a da Blazor Server.
+
+\`E importante notare che gi\`a per questa semplice applicazione, il cui sviluppo \`e avvenuto mentre Blazor Server era ancora in preview, Blazor Server ha permesso di utilizzare pochissimo codice Javascript, che tuttavia \`e stato utilizzato per gestire gli eventi client-side che non sono ancora supportati da questo framework, come l'evento "onbeforeunload", che viene scatenato quando il documento che costituisce la pagina sta per essere 
 
 \pagebreak
 

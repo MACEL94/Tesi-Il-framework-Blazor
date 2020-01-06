@@ -25,6 +25,5 @@
 \contentsline {subsection}{\numberline {3.3.2}Contro}{21}%
 \contentsline {chapter}{\numberline {4}Conclusioni}{23}%
 \contentsline {section}{\numberline {4.1}Conclusioni}{23}%
-\contentsline {section}{\numberline {4.2}Futuro del progetto}{23}%
-\contentsline {chapter}{Bibliografia}{25}%
-\contentsline {chapter}{Ringraziamenti}{27}%
+\contentsline {chapter}{Bibliografia}{27}%
+\contentsline {chapter}{Ringraziamenti}{29}%
