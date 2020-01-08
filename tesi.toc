@@ -1,29 +1,29 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
-\contentsline {chapter}{\numberline {1}Introduzione}{1}%
-\contentsline {section}{\numberline {1.1}Contesto}{1}%
-\contentsline {section}{\numberline {1.2}Problema}{2}%
-\contentsline {section}{\numberline {1.3}Linguaggi General-Purpose}{3}%
-\contentsline {section}{\numberline {1.4}Blazor}{4}%
-\contentsline {chapter}{\numberline {2}Modelli e Funzionamento}{5}%
-\contentsline {section}{\numberline {2.1}Blazor Server}{5}%
-\contentsline {subsection}{\numberline {2.1.1}BlazorPong }{6}%
-\contentsline {section}{\numberline {2.2}Blazor WebAssembly}{9}%
-\contentsline {subsection}{\numberline {2.2.1}CLR e WebAssembly}{9}%
-\contentsline {subsection}{\numberline {2.2.2}Blazor PWA}{11}%
-\contentsline {section}{\numberline {2.3}Modelli Sperimentali}{12}%
-\contentsline {subsection}{\numberline {2.3.1}Blazor Hybrid}{12}%
-\contentsline {subsection}{\numberline {2.3.2}Blazor Native}{14}%
-\contentsline {section}{\numberline {2.4}Funzionamento}{14}%
-\contentsline {chapter}{\numberline {3}Confronto tra Client e Server}{17}%
-\contentsline {section}{\numberline {3.1}Scalabilit\`a}{17}%
-\contentsline {section}{\numberline {3.2}Blazor Server}{18}%
-\contentsline {subsection}{\numberline {3.2.1}Pro}{18}%
-\contentsline {subsection}{\numberline {3.2.2}Contro}{19}%
-\contentsline {section}{\numberline {3.3}Blazor WebAssembly}{20}%
-\contentsline {subsection}{\numberline {3.3.1}Pro}{20}%
-\contentsline {subsection}{\numberline {3.3.2}Contro}{21}%
-\contentsline {chapter}{\numberline {4}Conclusioni}{23}%
-\contentsline {section}{\numberline {4.1}Conclusioni}{23}%
-\contentsline {chapter}{Bibliografia}{27}%
-\contentsline {chapter}{Ringraziamenti}{29}%
+\contentsline {chapter}{\numberline {1}Introduzione}{1}% 
+\contentsline {section}{\numberline {1.1}Contesto}{1}% 
+\contentsline {section}{\numberline {1.2}Problema}{2}% 
+\contentsline {section}{\numberline {1.3}Linguaggi General-Purpose}{3}% 
+\contentsline {section}{\numberline {1.4}Blazor}{4}% 
+\contentsline {chapter}{\numberline {2}Modelli e Funzionamento}{5}% 
+\contentsline {section}{\numberline {2.1}Blazor Server}{5}% 
+\contentsline {subsection}{\numberline {2.1.1}BlazorPong }{6}% 
+\contentsline {section}{\numberline {2.2}Blazor WebAssembly}{9}% 
+\contentsline {subsection}{\numberline {2.2.1}CLR e WebAssembly}{9}% 
+\contentsline {subsection}{\numberline {2.2.2}Blazor PWA}{11}% 
+\contentsline {section}{\numberline {2.3}Modelli Sperimentali}{12}% 
+\contentsline {subsection}{\numberline {2.3.1}Blazor Hybrid}{12}% 
+\contentsline {subsection}{\numberline {2.3.2}Blazor Native}{14}% 
+\contentsline {section}{\numberline {2.4}Funzionamento}{14}% 
+\contentsline {chapter}{\numberline {3}Confronto tra Client e Server}{17}% 
+\contentsline {section}{\numberline {3.1}Scalabilit\`a}{17}% 
+\contentsline {section}{\numberline {3.2}Blazor Server}{18}% 
+\contentsline {subsection}{\numberline {3.2.1}Pro}{18}% 
+\contentsline {subsection}{\numberline {3.2.2}Contro}{19}% 
+\contentsline {section}{\numberline {3.3}Blazor WebAssembly}{20}% 
+\contentsline {subsection}{\numberline {3.3.1}Pro}{20}% 
+\contentsline {subsection}{\numberline {3.3.2}Contro}{21}% 
+\contentsline {chapter}{\numberline {4}Conclusioni}{23}% 
+\contentsline {section}{\numberline {4.1}Conclusioni}{23}% 
+\contentsline {chapter}{Bibliografia}{27}% 
+\contentsline {chapter}{Ringraziamenti}{29}% 

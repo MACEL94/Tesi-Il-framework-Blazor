@@ -1,12 +1,13 @@
 \chapter{Confronto tra Client e Server}\label{cap:scalprocont}
 \section{Scalabilit\`a}\label{sez:scalabilita}
 La Scalabilit\`a, ossia la capacit\`a dell'applicazione di resistere all'aumentare del numero di utenti concorrenti che ne usufruiscono, dipende fortemente dal modello scelto, come anche dalla tipologia di applicazione sviluppata.
-Quindi scegliere il modello pi\`u adatto non \`e banale e non ne esiste uno standard sempre corretto.
+Quindi scegliere il modello pi\`u adatto non \`e banale e non esiste una soluzione univoca.
 
 Il problemi introdotti dalla scalabilit\`a comunque sono fondamentalmente diversi tra Blazor Server, e tutti gli altri modelli.
 Questo principalmente per 3 motivi:
 \begin{enumerate}
-	\item Blazor Server delega completamente al server che ospita l'applicazione il carico computazionale necessario per gestire ogni singolo evento della UI di ogni sessione per ogni utente connesso, compreso il salvataggio in memoria RAM dello stato di ciascuna UI durante l'utilizzo dell'applicazione, visto che ad ogni browser coinvolto, dopo l'inizializzazione, arrivano solamente le minime differenze necessarie per effettuare il render della UI rispetto al frame precedente, ogni volta che deve cambiare qualcosa.
+	\item Blazor Server delega completamente al server che ospita l'applicazione il carico computazionale necessario per gestire ogni singolo evento della UI di ogni sessione per ogni utente connesso, compreso il salvataggio in memoria RAM dello stato di ciascuna UI durante l'utilizzo dell'applicazione.
+	Infatti ad ogni browser, per ogni sessione, dopo l'inizializzazione arrivano solamente le minime differenze necessarie per effettuare il render della UI rispetto al frame precedente, ogni volta che deve cambiare qualcosa.
 	Ci\`o implica che la potenza del server debba tener conto di eventuali picchi di utenze, e debba avere a disposizione sufficiente RAM per poter mantenere in memoria lo stato dell'applicazione di ciascun utente concorrente connesso.
 	
 	\item Il secondo \`e che Blazor Server, necessita di almeno una connessione costante ed affidabile con ogni sessione di ogni utente collegato.
@@ -31,9 +32,9 @@ In questo modo si possono continuare a sfruttare le pagine completamente renderi
 
 Un altro grande pro di questo modello \`e il fatto di poter delegare al server la responsabilit\`a di dover sopportare un peso maggiore, al crescere dell'applicazione, mentre il client non deve scaricare pi\`u dati.
 Infatti i file scaricati lato client sono solo quelli necessari all'inizializzazione della UI e allo stabilimento di una connessione con il server, che quindi al crescere del peso dell'applicazione, non invia dati in pi\`u ai client, ma continua solamente a inviare le differenze della UI rispetto allo stato precedente.
-Questo secondo vantaggio, rende il modello ideale per i casi in cui si deve creare un'applicazione per nella quale i client che la utilizzeranno potrebbero avere a disposizione computer o cellulari a basso costo.
+Questo secondo vantaggio, rende il modello ideale per i casi in cui si deve creare un'applicazione per quale i client che la utilizzeranno potrebbero avere a disposizione computer o cellulari a basso costo.
 
-Il terzo punto a favore, molto utile durante lo sviluppo di applicazioni \`e che il codice dinamico relativo alla logica dell'applicazione sviluppata, comprese eventuali logiche di business, non escono mai dal server, in quanto tutto viene eseguito lato server dopo la connessione iniziale.
+Il terzo punto a favore, molto utile durante lo sviluppo di applicazioni per le quali la segretezza del codice sorgente risulta critica, \`e che il codice dinamico dell'applicazione sviluppata comprese eventuali logiche di business, non arrivano mai al client che riceve solamente i risultati delle interazioni, in quanto tutto il codice sviluppato viene eseguito(e rimane) lato server dopo la connessione iniziale.
 
 Il quarto punto a favore, \`e che se si vuole sviluppare un'applicazione Blazor da utilizzare in produzione, fino a maggio 2020 questo modello \`e l'unico ad essere ufficialmente supportato e che si pu\`o quindi cominciare gi\`a ad utilizzare.
 
@@ -43,7 +44,7 @@ Infine il fatto che l'applicazione esegua sul server, implica che si possa utili
 \subsection{Contro}\label{sez:controBServer}
 Il principale punto a sfavore di Blazor Server \`e la gi\`a citata RAM consumata da ogni UI per ogni sessione di ogni utente che utilizza l'applicazione.
 Un benchmark eseguito da Microsoft a tal proposito, ha mostrato come il principale collo di bottiglia di un'applicazione Blazor sia proprio la RAM.
-Microsoft ha dichiarato che hanno stimato vengano occupati in media 250 KB in RAM per ogni nuova connessione di un utente ad un'applicazione base di tipo "hello world" e consigliano di dedicare almeno 273 KB per utente se non si ha chiaro da dove partire.Durante il test di carico svolto da Microsoft \`e stata utilizzata una sola macchina virtuale Azure di fascia medio-bassa(Standard D1V2)come server per ospitare l'applicazione Blazor, avendo quindi a disposizione 3.5 GB di RAM e le caratteristiche visibili in figura \ref{fig:vmStandardD1V2}.
+Microsoft ha dichiarato che hanno stimato vengano occupati in media 250 KB in RAM per ogni nuova connessione di un utente ad un'applicazione base di tipo "hello world" e consigliano di dedicare almeno 273 KB per utente se non si ha chiaro da dove partire. Durante il test di carico svolto da Microsoft \`e stata utilizzata una sola macchina virtuale Azure di fascia medio-bassa(Standard D1V2)come server per ospitare l'applicazione Blazor, avendo quindi a disposizione 3.5 GB di RAM e le caratteristiche visibili in figura \ref{fig:vmStandardD1V2}.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.5]{figure/Standard_D1_V2.PNG}}
@@ -73,14 +74,14 @@ Il fatto stesso di essere equivalente ad un'applicazione moderna scritta usando 
 Un'altra categoria di applicazioni per le quali Blazor WebAssembly pu\`o risultare pi\`u indicato, \`e quella dei videogiochi con alta frequenza di aggiornamento nella UI dell'utente, con particolare enfasi su quelli per i quali la grafica \`e complessa e risulterebbe troppo lento e costoso far avvenire i cambiamenti lato server, causando lag e degradando l'esperienza degli utenti.
  
 \subsection{Contro}\label{sez:controBWA}
-Il primo svantaggio di Blazor WebAssembly\`e quindi il peso dell'applicazione, che influisce negativamente sullo scaricamento iniziale.
+Il primo svantaggio di Blazor WebAssembly \`e quindi il peso dell'applicazione, che influisce negativamente sullo scaricamento iniziale.
 Ci\`o implica anche che quanto pi\`u codice viene scaricato, tanto pi\`u pu\`o essere studiato e utilizzato per capire logiche di business o cercare modi per attaccare il server.
 Questa cosa \`e vera anche per le applicazioni odierne scritte utilizzando Javascript, ma rimane uno svantaggio perch\`e il modello Blazor Server non presenta questa caratteristica.
 
 Un ulteriore svantaggio da tenere in considerazione, \`e che come per ogni nuova tecnologia, la documentazione, il supporto della community, e le librerie dedicate, in questo primo momento sono e saranno fortemente limitate rispetto a framework per UI basati su Javascript equivalenti in teoria ma ben pi\`u consolidati e diffusi in pratica.
 Il modello Blazor WebAssembly inoltre, sfruttando il WebAssembly, necessita che il browser di ogni client che vuole poter utilizzare l'applicazione lo supporti.
 
-L'ultima grande pecca di questo modello e\` sicuramente il fatto che sia ancora immaturo, e non ancora pronto per essere utilizzato in produzione.
+L'ultima grande pecca di questo modello \`e sicuramente il fatto che sia ancora immaturo, e non ancora pronto per essere utilizzato in produzione.
 Prima di tutto perch\`e non \`e ancora stato ufficialmente rilasciato, dato che il rilascio \`e previsto per maggio 2020.
 In secondo luogo perch\`e gli strumenti a disposizione sono ancora acerbi e non \`e possibile fare cose fondamentali come eseguire il debug del codice direttamente da Visual Studio 2019 o da Visual Studio Code in modo consistente.
 Infine perch\`e pur essendo Blazor WebAssembly ottimizzato per essere molto efficiente durante il rendering della UI, c'\`e ancora molto margine di miglioramento quando l'applicazione Blazor scritta \`e CPU intensive.
