@@ -1,21 +1,26 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Implementazioni del .NET Standard}}{3}% 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Possibilit\`a di .NET}}{3}% 
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Implementazioni del .NET Standard}}{3}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Possibilit\`a di .NET}}{3}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Blazor Server}}{6}% 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces BlazorPong}}{7}% 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Blazor WebAssembly}}{9}% 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Utilizzo del CLR}}{10}% 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Confronto tra WebAssembly e Javascript}}{10}% 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Progressive Web Apps}}{11}% 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Blazor Hybrid Application}}{13}% 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces File Razor}}{14}% 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Output}}{15}% 
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Primitive di Blazor}}{16}% 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Blazor Server}}{6}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces BlazorPong}}{7}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Blazor WebAssembly}}{9}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Utilizzo del CLR}}{10}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Confronto tra WebAssembly e Javascript}}{10}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Progressive Web Apps}}{11}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces L'utente pu\`o decidere di installare l'applicazione.}}{12}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces L'applicazione installata \`e ricercabile dal men\`u start.}}{13}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces L'applicazione installata ha una sua form dedicata e sembra nativa.}}{13}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Blazor Hybrid Application}}{15}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces File Razor}}{16}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Output}}{17}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Primitive di Blazor}}{18}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Confronto Modelli Client-Server}}{18}% 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Parametri VM utilizzata per il test di carico}}{20}% 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Confronto Modelli Client-Server}}{20}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Parametri VM utilizzata per il test di carico}}{22}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Peso primo avvio blazorpong server.}}{25}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Peso primo avvio blazorpong client.}}{26}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Modelli Blazor}}{23}% 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Modelli Blazor}}{27}%

@@ -60,6 +60,8 @@ Questo avviene perch\`e ogni update della UI deve prima avvenire sul server, qui
 
 Infine bisogna tener conto che ogni utente che vuole poter utilizzare l'applicazione, deve potersi connettere ad essa, e restarci connesso per tutta la durata del suo utilizzo, dato che se la connessione SignalR sulla quale si basa Blazor Server per funzionare viene a mancare, in automatico Blazor prover\`a a ricollegarsi al server, ma fino a quando non ci riuscir\`a l'applicazione sar\`a inutilizzabile.
 
+\pagebreak
+
 \section{Blazor WebAssembly}\label{sez:scalabilitaBWA}
 \subsection{Pro}\label{sez:proBWA}
 Il principale vantaggio di Blazor WebAssembly, specialmente in applicazioni complesse, \`e quello di poter sfruttare le risorse dei client che vogliono utilizzare l'applicazione, senza sovraccaricare il server, specialmente quando il numero di utilizzatori \`e molto alto.
@@ -67,8 +69,8 @@ Questo modello infatti, dopo lo scaricamento iniziale dell'applicazione, del run
 
 Altro grande vantaggio, \`e quindi il fatto che dopo lo scaricamento iniziale e l'inizializzazione, l'applicazione sar\`a responsiva senza alcuna latenza, dato che al contrario del modello Blazor Server, la gestione degli eventi da parte dei component di Blazor avviene in locale, senza dover comunicare ogni volta con il server.
 
-Un altro punto a favore al quale prestare attenzione \`e la maggiore facilit\`a con cui si pu\`o trasformare questo modello in una PWA, anche se al momento della scrittura di questo lavoro di tesi non esiste ancora una guida ufficiale pubblicata da Microsoft.
-In alcuni casi questo modello pu\`o essere la scelta giusta e risultare anche pi\`u veloce di un'applicazione equivalente con componenti scritti in Javascript, dato che il codice dei componenti Blazor viene compilato nel .NET Intermediate Language come visibile nella figura \ref{fig:CLR}  prima di essere eseguito lato client tramite il runtime Mono tradotto in WebAssembly contenuto nel file mono.wasm.
+Un altro punto a favore al quale prestare attenzione \`e la maggiore facilit\`a con cui si pu\`o trasformare questo modello in una PWA.
+In alcuni casi questo modello pu\`o essere la scelta giusta e in futuro un'applicazione di questo tipo potrebbe risultare anche pi\`u veloce di un'applicazione equivalente con componenti scritti in Javascript, dato che il codice dei componenti Blazor per ora viene compilato nel .NET Intermediate Language come visibile nella figura \ref{fig:CLR} e poi interpretato lato client dal runtime Mono tradotto in WebAssembly contenuto nel file mono.wasm.
 
 Il fatto stesso di essere equivalente ad un'applicazione moderna scritta usando Javascript agli occhi di un utente ma di poter arrivare ad avere prestazioni migliori e di scrivere in un linguaggio diverso dal solo javascript, rende questo modello estremamente importante e indicato per applicazioni dove ad esempio si vuole poter condividere il codice di validazione ed utilizzarlo tra frontend e backend.
 Un'altra categoria di applicazioni per le quali Blazor WebAssembly pu\`o risultare pi\`u indicato, \`e quella dei videogiochi con alta frequenza di aggiornamento nella UI dell'utente, con particolare enfasi su quelli per i quali la grafica \`e complessa e risulterebbe troppo lento e costoso far avvenire i cambiamenti lato server, causando lag e degradando l'esperienza degli utenti.
@@ -87,3 +89,27 @@ In secondo luogo perch\`e gli strumenti a disposizione sono ancora acerbi e non 
 Infine perch\`e pur essendo Blazor WebAssembly ottimizzato per essere molto efficiente durante il rendering della UI, c'\`e ancora molto margine di miglioramento quando l'applicazione Blazor scritta \`e CPU intensive.
 Questo semplicemente perch\`e ora come ora il codice viene scaricato sotto forma di DLL ed interpretato dal runtime di Mono tradotto in WASM, e non direttamente eseguito.
 D. Roth ha dichiarato che il team che si occupa di sviluppare Blazor sta lavorando per rendere possibile la compilazione del codice da .NET direttamente in WASM, cos\`i da ottenere performance decisamente migliori\cite{blazorModelsScenarios}.
+
+\section{BlazorPong a confronto}\label{sez:scalabilitaBWA}
+Il miglior modello, per questa tipologia di applicazione, \`e Blazor Server, ammesso che si abbiano a disposizione le risorse per poterlo supportare(in questo caso le risorse sono gratuite ma sufficienti per supportare la tesi).
+Questo \`e visibile specialmente in termini di prestazioni dei due progetti le cui demo sono disponibili nel repository github BlazorPong.
+
+Principalmente possiamo ridurre il vantaggio di Blazor Server a:
+Un avvio molto pi\`u rapido e una giocabilit\`a migliore e il raggiungimento di un pubblico pi\`u vasto vista la possibilit\`a di giocare anche con apparecchi meno potenti di quelli necessari per eseguire la computazione del codice lato Client.
+Un altro punto importante \`e anche che in Blazor WASM il codice per poi poter effettuare il render della UI(e quindi i component) viene scaricato durante il primo download dell'applicazione, che risulta quindi, solo la prima volta, estremamente pi\`u lento se ci si trova con una velocità di connessione limitata.
+
+In particolare la quantit\`a di dati scaricati al primo avvio di BlazorPong Server \`e meno di 200 kilobyte come visibile nella figura \ref{fig:blazorpongServerWeigth}.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=0.5]{figure/blazorpongServerWeigth.PNG}}
+	\caption{Peso primo avvio blazorpong server.}
+	\label{fig:blazorpongServerWeigth}
+\end{figure}
+
+Il peso dell'applicazione versione WASM \`e invece circa 20 megabyte come visibile in figura \ref{fig:blazorpongClientWeigth}.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=0.5]{figure/blazorpongClientWeigth.PNG}}
+	\caption{Peso primo avvio blazorpong client.}
+	\label{fig:blazorpongClientWeigth}
+\end{figure}

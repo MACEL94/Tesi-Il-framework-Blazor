@@ -1,122 +1,141 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  8 JAN 2020 20:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.6)  8 JUN 2020 08:37
 entering extended mode
 **./tesi.tex
 (tesi.tex
-LaTeX2e <2019-10-01>
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\report.cls"
-Document Class: report 2019/08/27 v1.4j Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\size11.clo"
-File: size11.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-06-03>
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\report.cls"
+Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size11.clo"
+File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count80
-\c@chapter=\count81
-\c@section=\count82
-\c@subsection=\count83
-\c@subsubsection=\count84
-\c@paragraph=\count85
-\c@subparagraph=\count86
-\c@figure=\count87
-\c@table=\count88
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen102
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
 ) (ia_urb_thesis.sty
 Document Style Option `ia_urb_thesis' for latex2e <$Date: 18/10/2004 $>.
 Fulfill the thesis stile of Applied Computer Science - University of Urbino
-("C:\Program Files\MiKTeX 2.9\tex/latex/setspace\setspace.sty"
+
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/setspace\setspac
+e.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphic
+x.sty"
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.
+sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks15
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
-Package: graphics 2019/07/20 v1.3b Standard LaTeX Graphics (DPC,SPQR)
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphic
+s.sty"
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.st
+y"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\gra
+phics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdf
+tex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen103
-\Gin@req@width=\dimen104
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/fancyhdr\fancyhdr.sty"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyhdr\fancyhd
+r.sty"
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip43
-\f@nch@O@elh=\skip44
-\f@nch@O@erh=\skip45
-\f@nch@O@olh=\skip46
-\f@nch@O@orh=\skip47
-\f@nch@O@elf=\skip48
-\f@nch@O@erf=\skip49
-\f@nch@O@olf=\skip50
-\f@nch@O@orf=\skip51
+\f@nch@headwidth=\skip49
+\f@nch@O@elh=\skip50
+\f@nch@O@erh=\skip51
+\f@nch@O@olh=\skip52
+\f@nch@O@orh=\skip53
+\f@nch@O@elf=\skip54
+\f@nch@O@erf=\skip55
+\f@nch@O@olf=\skip56
+\f@nch@O@orf=\skip57
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.sty"
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-))
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
-Package: babel 2019/09/27 3.34 The Babel package
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifpdf.st
+y"
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\switch.def"
-File: switch.def 2019/09/27 3.34 Babel switching mechanism
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.st
+y"
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)))
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.st
+y"
+Package: babel 2020/05/13 3.44 The Babel package
+
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.de
+f"
+File: babel.def 2020/05/13 3.44 Babel common definitions
+\babel@savecnt=\count176
+\U@D=\dimen137
+\l@babelnohyphens=\language79
+
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel
+.def")
+\bbl@readstream=\read2
 )
+\bbl@dirlevel=\count177
+
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
+
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cf
+g"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/babel-italian\italian.ldf"
-Language: italian 2019/01/05 v.1.4.01 Italian support for the babel system
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
-File: babel.def 2019/09/27 3.34 Babel common definitions
-\babel@savecnt=\count89
-\U@D=\dimen105
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
-\bbl@dirlevel=\count90
-)
-\it@lettering=\count91
-\it@doublequoteactive=\count92
-\it@ISOcompliance=\count93
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-italian\it
+alian.ldf"
+Language: italian 2020/05/21 v.1.4.04 Italian support for the babel system
+\it@lettering=\count178
+\it@doublequoteactive=\count179
+\it@ISOcompliance=\count180
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbo
+x.sty"
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count94
+\etb@tempcnta=\count181
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.st
+y"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks15
-\inpenc@posthook=\toks16
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\latin1.def"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\latin1.def"
 File: latin1.def 2018/08/11 v1.3c Input encoding file
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\fontenc.sty"
-Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\t1enc.def"
-File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-))
-("C:\Program Files\MiKTeX 2.9\tex/latex/lm\lmodern.sty"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty
+"
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+) ("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\lmodern.sty
+"
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -151,65 +170,72 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
-Package: amsmath 2019/04/01 v2.17c AMS math features
-\@mathmargin=\skip52
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.
+sty"
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip58
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.
+sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.s
+ty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks17
-\ex@=\dimen106
+\@emptytoks=\toks18
+\ex@=\dimen138
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.s
+ty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen107
+\pmbraise@=\dimen139
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.s
+ty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count95
+\inf@bad=\count182
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count96
-\leftroot@=\count97
+\uproot@=\count183
+\leftroot@=\count184
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count98
-\DOTSCASE@=\count99
+\classnum@=\count185
+\DOTSCASE@=\count186
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box27
-\strutbox@=\box28
-\big@size=\dimen108
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen140
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count100
-\c@MaxMatrixCols=\count101
-\dotsspace@=\muskip10
-\c@parentequation=\count102
-\dspbrk@lvl=\count103
-\tag@help=\toks18
-\row@=\count104
-\column@=\count105
-\maxfields@=\count106
-\andhelp@=\toks19
-\eqnshift@=\dimen109
-\alignsep@=\dimen110
-\tagshift@=\dimen111
-\tagwidth@=\dimen112
-\totwidth@=\dimen113
-\lineht@=\dimen114
-\@envbody=\toks20
-\multlinegap=\skip53
-\multlinetaggap=\skip54
-\mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2855.
-LaTeX Info: Redefining \] on input line 2856.
+\macc@depth=\count187
+\c@MaxMatrixCols=\count188
+\dotsspace@=\muskip16
+\c@parentequation=\count189
+\dspbrk@lvl=\count190
+\tag@help=\toks19
+\row@=\count191
+\column@=\count192
+\maxfields@=\count193
+\andhelp@=\toks20
+\eqnshift@=\dimen141
+\alignsep@=\dimen142
+\tagshift@=\dimen143
+\tagwidth@=\dimen144
+\totwidth@=\dimen145
+\lineht@=\dimen146
+\@envbody=\toks21
+\multlinegap=\skip59
+\multlinetaggap=\skip60
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.sty"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfont
+s.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -217,90 +243,109 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amssymb.sty"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb
+.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/jknappen\mathrsfs.sty"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/jknappen\mathrsf
+s.sty"
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/stmaryrd\stmaryrd.sty"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/stmaryrd\stmaryr
+d.sty"
 Package: stmaryrd 1994/03/03 St Mary's Road symbol package
 \symstmry=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
 (Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\latexsym.sty"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\latexsym.st
+y"
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/lkproof\proof.sty"
-\inferLineSkip=\dimen115
-\inferLabelSkip=\dimen116
-\@LeftOffset=\dimen117
-\@RightOffset=\dimen118
-\@SavedLeftOffset=\dimen119
-\UpperWidth=\dimen120
-\LowerWidth=\dimen121
-\LowerHeight=\dimen122
-\UpperLeftOffset=\dimen123
-\UpperRightOffset=\dimen124
-\UpperCenter=\dimen125
-\LowerCenter=\dimen126
-\UpperAdjust=\dimen127
-\RuleAdjust=\dimen128
-\LowerAdjust=\dimen129
-\RuleWidth=\dimen130
-\HLabelAdjust=\dimen131
-\VLabelAdjust=\dimen132
-\WidthAdjust=\dimen133
-\@UpperPart=\box29
-\@LowerPart=\box30
-\@LabelPart=\box31
-\ResultBox=\box32
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lkproof\proof.st
+y"
+\inferLineSkip=\dimen147
+\inferLabelSkip=\dimen148
+\@LeftOffset=\dimen149
+\@RightOffset=\dimen150
+\@SavedLeftOffset=\dimen151
+\UpperWidth=\dimen152
+\LowerWidth=\dimen153
+\LowerHeight=\dimen154
+\UpperLeftOffset=\dimen155
+\UpperRightOffset=\dimen156
+\UpperCenter=\dimen157
+\LowerCenter=\dimen158
+\UpperAdjust=\dimen159
+\RuleAdjust=\dimen160
+\LowerAdjust=\dimen161
+\RuleWidth=\dimen162
+\HLabelAdjust=\dimen163
+\VLabelAdjust=\dimen164
+\WidthAdjust=\dimen165
+\@UpperPart=\box47
+\@LowerPart=\box48
+\@LabelPart=\box49
+\ResultBox=\box50
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\epsfig.sty"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\epsfig.
+sty"
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
-\epsfxsize=\dimen134
-\epsfysize=\dimen135
+\epsfxsize=\dimen166
+\epsfysize=\dimen167
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\color.sty"
-Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\color.s
+ty"
+Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\col
+or.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count107
-\float@exts=\toks22
-\float@box=\box33
-\@float@everytoks=\toks23
-\@floatcapt=\box34
+\c@float@type=\count194
+\float@exts=\toks23
+\float@box=\box51
+\@float@everytoks=\toks24
+\@floatcapt=\box52
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/comment\comment.sty"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/comment\comment.
+sty"
 \CommentStream=\write3
-
-Excluding comment 'comment')
+ Excluding comment 'comment')
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3back
+end-pdfmode.def"
+File: l3backend-pdfmode.def 2020-06-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count195
+\l__pdf_internal_box=\box53
+)
 
 LaTeX Warning: Unused global option(s):
     [singleside].
 
-(tesi.aux (sorgenti/cap_1.aux) (sorgenti/cap_2.aux) (sorgenti/cap_3.aux)
-(sorgenti/cap_4.aux) (sorgenti/biblio.aux))
+(tesi.aux (sorgenti/cap_1.aux) (sorgenti/cap_2.aux) (sorgenti/cap_3.aux
+
+LaTeX Warning: Label `sez:scalabilitaBWA' multiply defined.
+
+) (sorgenti/cap_4.aux) (sorgenti/biblio.aux))
 \openout1 = `tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
@@ -309,89 +354,54 @@ LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 25
 .
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp
+-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
-\scratchdimen=\dimen136
-\scratchbox=\box35
-\nofMPsegments=\count109
-\nofMParguments=\count110
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count111
-\MPscratchDim=\dimen137
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
-\everyMPtoPDFconversion=\toks25
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\infwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+\scratchcounter=\count196
+\scratchdimen=\dimen168
+\scratchbox=\box54
+\nofMPsegments=\count197
+\nofMParguments=\count198
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count199
+\MPscratchDim=\dimen169
+\MPnumerator=\count266
+\makeMPintoPDFobject=\count267
+\everyMPtoPDFconversion=\toks26
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-))))
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\eps
+topdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
+85.
 )
 LaTeX Info: Redefining \it@ocap on input line 25.
 LaTeX Info: Redefining \it@ccap on input line 25.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
 2.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
 2.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
 32.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
 32.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -403,29 +413,33 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
 
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd
+"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
 
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
+"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 32
 .
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/jknappen\ursfs.fd"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/jknappen\ursfs.f
+d"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 3
 2.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/stmaryrd\ustmry.fd")
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/stmaryrd\ustmry.
+fd")
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 32
 .
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\ulasy.fd"
+("C:\Users\UT0T222\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 <logo-uniurb-2016.jpg, id=1, 595.22375pt x 314.17375pt>
@@ -440,8 +454,8 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 32--32
 
 [1
 
-{C:/Users/franc/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./logo-uniu
-rb-2016.jpg>] [2
+{C:/Users/UT0T222/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./logo-un
+iurb-2016.jpg>] [2
 
 ] (tesi.toc)
 \tf@toc=\write4
@@ -477,17 +491,17 @@ This may cause the page layout to be inconsistent, however.
 File: figure/DotNetImplementations.png Graphic file (type png)
 <use figure/DotNetImplementations.png>
 Package pdftex.def Info: figure/DotNetImplementations.png  used on input line 3
-4.
+5.
 (pdftex.def)             Requested size: 317.38013pt x 171.23671pt.
 <figure/DotNetFrameworkCapabilities.png, id=27, 1028.34187pt x 382.42876pt>
 File: figure/DotNetFrameworkCapabilities.png Graphic file (type png)
 <use figure/DotNetFrameworkCapabilities.png>
 Package pdftex.def Info: figure/DotNetFrameworkCapabilities.png  used on input 
-line 43.
+line 44.
 (pdftex.def)             Requested size: 359.92505pt x 133.85207pt.
  [3 <./figure/DotNetImplementations.png> <./figure/DotNetFrameworkCapabilities.
 png>]
-Overfull \hbox (7.79752pt too wide) in paragraph at lines 52--55
+Overfull \hbox (7.79752pt too wide) in paragraph at lines 53--56
 \T1/lmr/m/n/10.95 Ecco co-sa è quin-di Bla-zor: la ver-sio-ne più avan-za-ta di
  Razor(Browser+Razor[[]]),
  []
@@ -508,8 +522,7 @@ Package pdftex.def Info: figure/blazor-server.png  used on input line 24.
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 40--41
-\T1/lmr/m/n/10.95 svi-lup-pa-to so-no di-spo-ni-bi-li nel se-guen-te re-po-si-t
-o-ry su Gi-tHub:
+\T1/lmr/m/n/10.95 su Gi-tHub:
  []
 
 <figure/BlazorPong.PNG, id=41, 1017.04968pt x 505.13719pt>
@@ -521,98 +534,134 @@ Package pdftex.def Info: figure/BlazorPong.PNG  used on input line 43.
 <figure/blazor-WebAssembly.png, id=53, 173.448pt x 159.9576pt>
 File: figure/blazor-WebAssembly.png Graphic file (type png)
 <use figure/blazor-WebAssembly.png>
-Package pdftex.def Info: figure/blazor-WebAssembly.png  used on input line 82.
+Package pdftex.def Info: figure/blazor-WebAssembly.png  used on input line 83.
 (pdftex.def)             Requested size: 104.0696pt x 95.97528pt.
 <figure/CLR.PNG, id=54, 567.3195pt x 304.13625pt>
 File: figure/CLR.PNG Graphic file (type png)
 <use figure/CLR.PNG>
-Package pdftex.def Info: figure/CLR.PNG  used on input line 101.
+Package pdftex.def Info: figure/CLR.PNG  used on input line 102.
 (pdftex.def)             Requested size: 283.65906pt x 152.06775pt.
  [9 <./figure/blazor-WebAssembly.png>]
 <figure/WasmVSJavascript.PNG, id=60, 407.27156pt x 231.11343pt>
 File: figure/WasmVSJavascript.PNG Graphic file (type png)
 <use figure/WasmVSJavascript.PNG>
-Package pdftex.def Info: figure/WasmVSJavascript.PNG  used on input line 111.
+Package pdftex.def Info: figure/WasmVSJavascript.PNG  used on input line 112.
 (pdftex.def)             Requested size: 285.08813pt x 161.77829pt.
  [10 <./figure/CLR.PNG> <./figure/WasmVSJavascript.PNG>]
 <figure/ProgressiveWebApp.png, id=66, 595.47469pt x 309.40594pt>
 File: figure/ProgressiveWebApp.png Graphic file (type png)
 <use figure/ProgressiveWebApp.png>
-Package pdftex.def Info: figure/ProgressiveWebApp.png  used on input line 126.
+Package pdftex.def Info: figure/ProgressiveWebApp.png  used on input line 127.
 (pdftex.def)             Requested size: 297.7366pt x 154.70259pt.
  [11 <./figure/ProgressiveWebApp.png>]
-Overfull \hbox (0.1012pt too wide) in paragraph at lines 146--148
+<figure/installableBlazorPongWasm.png, id=71, 627.09282pt x 268.00125pt>
+File: figure/installableBlazorPongWasm.png Graphic file (type png)
+<use figure/installableBlazorPongWasm.png>
+Package pdftex.def Info: figure/installableBlazorPongWasm.png  used on input li
+ne 157.
+(pdftex.def)             Requested size: 376.25859pt x 160.80197pt.
+<figure/searchingBlazorPongWasm.png, id=72, 642.14906pt x 515.67656pt>
+File: figure/searchingBlazorPongWasm.png Graphic file (type png)
+<use figure/searchingBlazorPongWasm.png>
+Package pdftex.def Info: figure/searchingBlazorPongWasm.png  used on input line
+ 163.
+(pdftex.def)             Requested size: 321.07375pt x 257.83765pt.
+ [12 <./figure/installableBlazorPongWasm.png>]
+<figure/installedBlazorPongWasm.png, id=77, 1445.4pt x 583.42969pt>
+File: figure/installedBlazorPongWasm.png Graphic file (type png)
+<use figure/installedBlazorPongWasm.png>
+Package pdftex.def Info: figure/installedBlazorPongWasm.png  used on input line
+ 169.
+(pdftex.def)             Requested size: 361.34912pt x 145.85706pt.
+ [13 <./figure/searchingBlazorPongWasm.png> <./figure/installedBlazorPongWasm.p
+ng>]
+Overfull \hbox (0.1012pt too wide) in paragraph at lines 178--180
 \T1/lmr/m/n/10.95 mo-del-lo Hy-brid, l'ap-pli-ca-zio-ne svi-lup-pa-ta non è qui
 n-di più con-si-de-ra-bi-le un'ap-
  []
 
-<figure/BlazorWeatherElectron.png, id=71, 526.96875pt x 396.7322pt>
+<figure/BlazorWeatherElectron.png, id=83, 526.96875pt x 396.7322pt>
 File: figure/BlazorWeatherElectron.png Graphic file (type png)
 <use figure/BlazorWeatherElectron.png>
 Package pdftex.def Info: figure/BlazorWeatherElectron.png  used on input line 1
-61.
+93.
 (pdftex.def)             Requested size: 316.18369pt x 238.04114pt.
-[12]
-Overfull \hbox (34.25986pt too wide) in paragraph at lines 166--168
+[14]
+Overfull \hbox (34.25986pt too wide) in paragraph at lines 198--200
 \T1/lmr/m/n/10.95 https://github.com/danroth27/BlazorWeather/tree/master/Blazor
 Weather.Electron
  []
 
-[13 <./figure/BlazorWeatherElectron.png>]
-<figure/RazorFile.png, id=79, 645.16031pt x 359.84438pt>
+[15 <./figure/BlazorWeatherElectron.png>]
+<figure/RazorFile.png, id=92, 645.16031pt x 359.84438pt>
 File: figure/RazorFile.png Graphic file (type png)
 <use figure/RazorFile.png>
-Package pdftex.def Info: figure/RazorFile.png  used on input line 181.
+Package pdftex.def Info: figure/RazorFile.png  used on input line 213.
 (pdftex.def)             Requested size: 354.83926pt x 197.91501pt.
-<figure/RazorFileCompiled.PNG, id=80, 663.22781pt x 292.09125pt>
+<figure/RazorFileCompiled.PNG, id=93, 663.22781pt x 292.09125pt>
 File: figure/RazorFileCompiled.PNG Graphic file (type png)
 <use figure/RazorFileCompiled.PNG>
-Package pdftex.def Info: figure/RazorFileCompiled.PNG  used on input line 190.
+Package pdftex.def Info: figure/RazorFileCompiled.PNG  used on input line 222.
 (pdftex.def)             Requested size: 364.77643pt x 160.65067pt.
- [14 <./figure/RazorFile.png>]
-<figure/BlazorPrimitives.PNG, id=85, 438.13687pt x 277.78781pt>
+ [16 <./figure/RazorFile.png>]
+<figure/BlazorPrimitives.PNG, id=98, 438.13687pt x 277.78781pt>
 File: figure/BlazorPrimitives.PNG Graphic file (type png)
 <use figure/BlazorPrimitives.PNG>
-Package pdftex.def Info: figure/BlazorPrimitives.PNG  used on input line 199.
+Package pdftex.def Info: figure/BlazorPrimitives.PNG  used on input line 231.
 (pdftex.def)             Requested size: 306.69371pt x 194.45012pt.
 
-[15 <./figure/RazorFileCompiled.PNG>]) [16 <./figure/BlazorPrimitives.PNG>]
+[17 <./figure/RazorFileCompiled.PNG>]) [18 <./figure/BlazorPrimitives.PNG>]
 \openout2 = `sorgenti/cap_3.aux'.
 
 
 (sorgenti/cap_3.tex
 Capitolo 3.
-<figure/ClientServerProCons.png, id=95, 404.26031pt x 213.79875pt>
+<figure/ClientServerProCons.png, id=107, 404.26031pt x 213.79875pt>
 File: figure/ClientServerProCons.png Graphic file (type png)
 <use figure/ClientServerProCons.png>
 Package pdftex.def Info: figure/ClientServerProCons.png  used on input line 22.
 
 (pdftex.def)             Requested size: 323.40869pt x 171.03922pt.
-[17
+[19
 
 
 
-] [18 <./figure/ClientServerProCons.png>]
-<figure/Standard_D1_V2.PNG, id=103, 722.7pt x 302.63063pt>
+] [20 <./figure/ClientServerProCons.png>]
+<figure/Standard_D1_V2.PNG, id=115, 722.7pt x 302.63063pt>
 File: figure/Standard_D1_V2.PNG Graphic file (type png)
 <use figure/Standard_D1_V2.PNG>
 Package pdftex.def Info: figure/Standard_D1_V2.PNG  used on input line 50.
 (pdftex.def)             Requested size: 361.3491pt x 151.31494pt.
- [19] [20 <./figure/Standard_D1_V2.PNG>]) [21] [22]
+ [21] [22 <./figure/Standard_D1_V2.PNG>] [23]
+<figure/blazorpongServerWeigth.PNG, id=127, 773.13844pt x 658.71094pt>
+File: figure/blazorpongServerWeigth.PNG Graphic file (type png)
+<use figure/blazorpongServerWeigth.PNG>
+Package pdftex.def Info: figure/blazorpongServerWeigth.PNG  used on input line 
+104.
+(pdftex.def)             Requested size: 386.56828pt x 329.35466pt.
+ [24]
+<figure/blazorpongClientWeigth.PNG, id=131, 608.2725pt x 670.00313pt>
+File: figure/blazorpongClientWeigth.PNG Graphic file (type png)
+<use figure/blazorpongClientWeigth.PNG>
+Package pdftex.def Info: figure/blazorpongClientWeigth.PNG  used on input line 
+112.
+(pdftex.def)             Requested size: 304.13551pt x 335.00075pt.
+) [25 <./figure/blazorpongServerWeigth.PNG>] [26 <./figure/blazorpongClientWeig
+th.PNG>]
 \openout2 = `sorgenti/cap_4.aux'.
 
  (sorgenti/cap_4.tex
 Capitolo 4.
-<figure/BlazorModels.PNG, id=118, 580.41844pt x 338.76563pt>
+<figure/BlazorModels.PNG, id=140, 580.41844pt x 338.76563pt>
 File: figure/BlazorModels.PNG Graphic file (type png)
 <use figure/BlazorModels.PNG>
 Package pdftex.def Info: figure/BlazorModels.PNG  used on input line 10.
 (pdftex.def)             Requested size: 290.20851pt x 169.38239pt.
-[23
+[27
 
 
 
- <./figure/BlazorModels.PNG>] [24]) [25] [26]
+ <./figure/BlazorModels.PNG>] [28]) [29] [30]
 \openout2 = `sorgenti/biblio.aux'.
 
  (sorgenti/biblio.tex
@@ -664,7 +713,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 core-3-0-
  []
 
-[27
+[31
 
 
 
@@ -688,28 +737,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--93
 []\T1/lmr/m/n/10.95 https://docs.microsoft.com/it-it/aspnet/core/host-and-
  []
 
-) [28] [29
+) [32] [33
 
 
 
 ] (tesi.aux (sorgenti/cap_1.aux) (sorgenti/cap_2.aux)
-(sorgenti/cap_3.aux) (sorgenti/cap_4.aux) (sorgenti/biblio.aux)) ) 
+(sorgenti/cap_3.aux) (sorgenti/cap_4.aux) (sorgenti/biblio.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4957 strings out of 492452
- 67108 string characters out of 3129808
- 140833 words of memory out of 3000000
- 9110 multiletter control sequences out of 15000+200000
- 48394 words of font info for 51 fonts, out of 3000000 for 9000
+ 4841 strings out of 480797
+ 69825 string characters out of 2894638
+ 314912 words of memory out of 3000000
+ 20660 multiletter control sequences out of 15000+200000
+ 577092 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,12n,49p,800b,365s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program F
-iles/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
-lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb>
-Output written on tesi.pdf (33 pages, 1997575 bytes).
+ 38i,12n,49p,800b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/UT0T222/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.
+enc}<C:/Users/UT0T222/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
+mbx10.pfb><C:/Users/UT0T222/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmbx12.pfb><C:/Users/UT0T222/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/lm/lmr10.pfb><C:/Users/UT0T222/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/lm/lmr12.pfb>
+Output written on tesi.pdf (37 pages, 2223391 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
+ 182 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

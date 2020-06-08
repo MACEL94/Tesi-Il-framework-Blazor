@@ -36,8 +36,8 @@ Ci\`o significa anche che la posizione del server sul quale \`e ospitata l'appli
 Questo modello \`e particolarmente indicato quando si vuole delegare il costo computazionale al server e non ai client che ci si connettono, dato che ci\`o che il client deve computare \`e il solo codice statico scaricato inizialmente, e le differenze di volta in volta ricevute dal server, dove avviene invece la gestione di ogni evento e il calcolo delle differenze tra ci\`o che viene visualizzato prima di un evento e ci\`o che deve cambiare nella User-Interface del client dopo la sua gestione.
 Ci\`o rende molto veloce ed efficiente il download iniziale e l'avvio dell'applicazione per gli utenti, il che lo rende il modello pi\`u adatto se le macchine che devono utilizzare l'applicazione sono apparecchi a basso costo, ammesso che siano sempre essere connessi ad internet.
 
-\subsection{BlazorPong }\label{sez:bpong}
-Un esempio di applicazione scritta utilizzando questo modello \`e BlazorPong, appositamente implementata per questo lavoro di tesi e la cui demo e codice sviluppato sono disponibili nel seguente repository su GitHub: \linebreak "https://github.com/MACEL94/BlazorPong".
+\subsection{BlazorPong - Server}\label{sez:bpongserv}
+Un esempio di applicazione scritta utilizzando questo modello \`e BlazorPongServer(BlazorPongServer.sln), appositamente implementata per questo lavoro di tesi e la cui demo e codice sviluppato sono disponibili nel seguente repository su GitHub: \linebreak "https://github.com/MACEL94/BlazorPong".
 
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.3]{figure/BlazorPong.PNG}}
@@ -69,7 +69,8 @@ Ci\`o che invece avviene grazie all'utente, \`e lo spostamento del proprio playe
 Ad ogni evento scatenato dall'utente, la connessione SignalR invia l'evento al server, che lo processa e restituisce a tutti gli utenti connessi la nuova posizione.
 Viene escluso dall'aggiornamento di posizione del blocco inviato dal server, il solo player che ha scatenato l'evento, poich\'e l'invio delle differenze necessarie per renderizzare la UI aggiornata viene gestito gi\`a da Blazor Server.
 
-\`E importante notare che gi\`a per questa semplice applicazione, il cui sviluppo \`e avvenuto mentre Blazor Server era ancora in preview, Blazor Server ha permesso di utilizzare pochissimo codice Javascript, che tuttavia \`e stato necessario per gestire gli eventi client-side che non sono ancora supportati da questo framework, come l'evento "onbeforeunload", che viene scatenato quando il documento che costituisce la pagina sta per essere liberato.
+\`E importante notare che gi\`a per questa semplice applicazione, il cui sviluppo \`e avvenuto mentre Blazor Server era ancora in preview e che ora è aggiornato all'ultima versione stabile disponibile, Blazor Server ha permesso di utilizzare pochissimo codice Javascript.
+Il poco Javascript presente \`e stato necessario per gestire gli eventi client-side che non sono ancora supportati da questo framework, come l'evento "onbeforeunload", che viene scatenato quando il documento che costituisce la pagina sta per essere liberato, evento che necessariamente deve essere intercettato per liberare la sessione del player dal server al momento della chiusura o uscita dal sito.
 
 \pagebreak
 
@@ -93,8 +94,8 @@ Ogni update alla UI e la relativa gestione, avvengono utilizzando lo stesso proc
 Per questo modello, blazor.WebAssembly.js \`e il nome dello script Javascript che all'apertura della pagina index si occupa di scaricare il .NET runtime compilato in WebAssembly, l'applicazione e le sue dipendenze, come anche dell'inizializzazione dell'applicazione.
 
 \subsection{CLR e WebAssembly}\label{sez:webAssembly}
-In particolare il nome Blazor WebAssembly per questo modello \`e stato scelto perch\`e nel browser di ciascun client che utilizza un'applicazione di questo tipo, viene scaricato ed utilizzato il file "mono.wasm".
-Questo file contiene il CLR(Common Language Runtime) di Mono, una delle implementazioni del .NET Standard, compilato in WebAssembly.
+In particolare il nome Blazor WebAssembly per questo modello \`e stato scelto perch\`e nel browser di ciascun client che utilizza un'applicazione di questo tipo, viene scaricato ed utilizzato il file "dotnet.wasm"(precedentemente chiamato "mono.wasm").
+Questo file contiene il CLR(Common Language Runtime) di Mono, una delle implementazioni del .NET Standard, compilato in WebAssembly e quindi eseguibile dal browser.
 Il runtime \`e necessario per poter interpretare ed eseguire i file compilati dell'applicazione(le DLL) e i pacchetti sulla quale si basa, che hanno estensione .dll e come target uno dei framework che implementano il .NET Standard(nel caso di Blazor, .NET Core), come visibile nella figura \ref{fig:CLR}.
 
 \begin{figure}[H]
@@ -130,14 +131,45 @@ Il passaggio successivo per avvicinarsi a prestazioni e interazioni native per i
 
 Nella figura \ref{fig:WhatIsAPWA} viene riassunto cosa siano le PWA ovvero applicazioni web che hanno la capacit\`a di funzionare anche offline, possono essere scaricate in modo persistente sulla macchina dell'utente che le esegue.
 Offrono il vantaggio di una maggiore velocit\`a di esecuzione e la possibilit\`a di sfruttare alcune API native.
-Questo modello quindi, pu\`o tornare utile quando la necessit\`a dell'applicazione che si vuole sviluppare \`e quella di utilizzare le notifiche push native del sistema operativo che sta utilizzando il client(al momento solo Windows).
+Questo modello quindi, pu\`o tornare utile quando la necessit\`a dell'applicazione che si vuole sviluppare \`e quella di utilizzare le notifiche push native del sistema operativo che sta utilizzando il client.
 
 Al momento, per realizzare una PWA utilizzando Blazor, bisogna partire dal modello Blazor WebAssembly aggiungendo un manifesto che descriva le capacit\`a dell'applicazione, i permessi richiesti e l'icona da utilizzare una volta installata, oltre chiaramente a dover implementare l'applicazione in modo che possa lavorare anche offline, basandosi su un service worker\cite{blazorPWA}.
 
-Un service worker \`e uno script che viene eseguito in background ed \`e delegato a gestire le attività di caching del sito.
+Un'applicazione web infatti per essere considerata una PWA, deve poter essere installata in caso l'utente utilizzi Windows o appuntata nel caso in cui l'utente stia utilizzando un cellulare, e deve supportare l'utilizzo dell'HTTPS, già presente di default nei template forniti per Blazor.
 
-Una cosa molto importante da tenere presente, \`e che le demo esistenti al momento per le PWA scritte in Blazor si basano sul browser Chrome e sul sistema operativo Windows.
-Per ora non risultano cross-browser e cross-platform.
+Una cosa molto importante da tenere presente, \`e che le demo esistenti al momento per le PWA scritte in Blazor si basano su browser Chromium Based(Chrome,Edge) e sul sistema operativo Windows per PC e IOS/Android per mobile.
+Per ora quindi non tutti i browser supportano queste PWA.
+
+\subsection{BlazorPong - Client e PWA}\label{sez:bpongclient}
+Un esempio di applicazione scritta utilizzando il modello Blazor WASM \`e BlazorPongClient(BlazorPongWasm.sln), appositamente implementato per questo lavoro di tesi e la cui demo e codice sviluppato sono disponibili nel seguente repository su GitHub: "https://github.com/MACEL94/BlazorPong".
+
+Questo progetto dimostra come sia possibile condividere il codice dei component e riutilizzarlo, visto che il component visibile al route /pong \`e lo stesso gi\`a presente in BlazorPongServer, spostato in un progetto condiviso e quindi referenziato in entrambi.
+
+Chiaramente l'applicazione in questo caso non \`e costituita da soli file statici, e non pu\`o essere scaricata completamente lato client o servita da un CDN.
+
+Ci\`o che si \`e scelto quindi \`e di spostare la sola logica di render della UI lato Client attraverso il cambio di modello.
+La WebApp viene comunque ospitata su un server dove continua ad avvenire la computazione dello spostamento della pallina e il calcolo di eventuali collisioni con muri o player, attraverso l'utilizzo di un background worker come in precedenza.
+
+In questo modello si \`e deciso di integrare anche il service worker che permette di installare l'applicazione in modo da farla sembrare nativa e ricercabile dal men\`u start, ad esempio in Windows.
+
+Ci\`o \`e visibile di seguito nelle immagini \ref{fig:installableBlazorPongWasm}, \ref{fig:searchingBlazorPongWasm} e \ref{fig:installedBlazorPongWasm}.
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=0.6]{figure/installableBlazorPongWasm.png}}
+	\caption{L'utente pu\`o decidere di installare l'applicazione.}
+	\label{fig:installableBlazorPongWasm}
+\end{figure}
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=0.5]{figure/searchingBlazorPongWasm.png}}
+	\caption{L'applicazione installata \`e ricercabile dal men\`u start.}
+	\label{fig:searchingBlazorPongWasm}
+\end{figure}
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=0.25]{figure/installedBlazorPongWasm.png}}
+	\caption{L'applicazione installata ha una sua form dedicata e sembra nativa.}
+	\label{fig:installedBlazorPongWasm}
+\end{figure}
 
 \pagebreak
 
