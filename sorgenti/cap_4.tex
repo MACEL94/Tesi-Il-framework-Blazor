@@ -30,13 +30,11 @@ La scelta migliore tra i modelli Blazor, \`e Blazor Server.
 Questo primo modello, essendo anche il pi\`u maturo, \`e gi\`a una valida tecnologia da tenere in considerazione e sfruttare quando risulta adatto.
 Per ora \`e comunque sconsigliato utilizzare questa tecnologia senza conoscere affatto JS, dato che in alcuni casi potrebbe essere necessario utilizzarlo, come \`e successo durante lo sviluppo di BlazorPong.
 
-Per il resto delle applicazioni, pu\`o risultare interessante provare ad utilizzare Blazor WebAssembly per implementare un prototipo in attesa del suo rilascio ufficiale a maggio 2020, ma non \`e consigliato utilizzarlo in produzione.
+Per il resto delle applicazioni, probabilmente \`e pi\`u adatto l'utilizzo di Blazor WebAssembly.
 
-\`E importante ricordare che durante lo sviluppo di BlazorPong, quasi ad ogni aggiornamento di versione di Blazor Server, che era ancora in preview, ci sono state breaking changes per le quali \`e stato necessario riscrivere parzialmente l'applicazione.
+\`E importante ricordare che durante lo sviluppo di BlazorPong, quasi ad ogni aggiornamento di versione di Blazor Server, che era ancora in preview, ci sono state breaking changes per le quali \`e stato necessario riscrivere parzialmente l'applicazione, ma da quando si \`e raggiunta una release stabile, il processo di update \`e stato quasi indolore e le novit\`a introdotte largamente retrocompatibili.
 
-Le possibilit\`a che Blazor WebAssembly possa subire cambiamenti importanti da questo momento a maggio 2020 sono quindi piuttosto alte, ed \`e sconsigliato scrivere applicazioni particolarmente complesse con questo framework fino al suo rilascio, soprattutto per questo motivo.
-
-Blazor WebAssembly ad ogni modo \`e il modello pi\`u interessante in questo momento, perch\`e architetturalmente \`e il pi\`u simile ai framework maggiormente utilizzati dagli sviluppatori web frontend, ma permette di non essere costretti ad utilizzare esclusivamente JS per la parte dinamica del codice dell'applicazione web che si vuole sviluppare.
+Blazor WebAssembly ad ogni modo \`e il modello pi\`u interessante in questo momento, perch\`e architetturalmente \`e il pi\`u simile ai framework maggiormente utilizzati dagli sviluppatori web frontend, ma permette di non essere costretti ad utilizzare esclusivamente JS per la parte dinamica del codice dell'applicazione web che si vuole sviluppare, punto estremamente importante per gli sviluppatori che utilizzano tecnologie Microsoft.
 
 Inoltre utilizzando la compilazione AOT verso WebAssembly, un'applicazione scritta con Blazor WebAssembly potrebbe arrivare ad avere prestazioni  migliori di un'applicazione equivalente, scritta utilizzando JS.
 

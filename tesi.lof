@@ -13,14 +13,14 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces L'utente pu\`o decidere di installare l'applicazione.}}{12}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces L'applicazione installata \`e ricercabile dal men\`u start.}}{13}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces L'applicazione installata ha una sua form dedicata e sembra nativa.}}{13}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Blazor Hybrid Application}}{15}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces File Razor}}{16}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Output}}{17}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Primitive di Blazor}}{18}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Blazor Hybrid Application}}{14}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces File Razor}}{15}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Output}}{16}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Primitive di Blazor}}{17}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Confronto Modelli Client-Server}}{20}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Parametri VM utilizzata per il test di carico}}{22}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Peso primo avvio blazorpong server.}}{25}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Peso primo avvio blazorpong client.}}{26}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Confronto Modelli Client-Server}}{19}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Parametri VM utilizzata per il test di carico}}{20}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Peso primo avvio blazorpong server.}}{24}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Peso primo avvio blazorpong client.}}{25}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Modelli Blazor}}{27}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Modelli Blazor}}{26}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.6)  8 JUN 2020 08:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.6)  8 JUN 2020 22:24
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -521,16 +521,12 @@ Package pdftex.def Info: figure/blazor-server.png  used on input line 24.
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-\T1/lmr/m/n/10.95 su Gi-tHub:
- []
-
 <figure/BlazorPong.PNG, id=41, 1017.04968pt x 505.13719pt>
 File: figure/BlazorPong.PNG Graphic file (type png)
 <use figure/BlazorPong.PNG>
 Package pdftex.def Info: figure/BlazorPong.PNG  used on input line 43.
 (pdftex.def)             Requested size: 305.11725pt x 151.54233pt.
-[6 <./figure/blazor-server.png>] [7 <./figure/BlazorPong.PNG>] [8]
+ [6 <./figure/blazor-server.png>] [7 <./figure/BlazorPong.PNG>] [8]
 <figure/blazor-WebAssembly.png, id=53, 173.448pt x 159.9576pt>
 File: figure/blazor-WebAssembly.png Graphic file (type png)
 <use figure/blazor-WebAssembly.png>
@@ -580,88 +576,87 @@ Overfull \hbox (0.1012pt too wide) in paragraph at lines 178--180
 n-di più con-si-de-ra-bi-le un'ap-
  []
 
+
+Overfull \hbox (34.25986pt too wide) in paragraph at lines 189--192
+\T1/lmr/m/n/10.95 https://github.com/danroth27/BlazorWeather/tree/master/Blazor
+Weather.Electron 
+ []
+
 <figure/BlazorWeatherElectron.png, id=83, 526.96875pt x 396.7322pt>
 File: figure/BlazorWeatherElectron.png Graphic file (type png)
 <use figure/BlazorWeatherElectron.png>
 Package pdftex.def Info: figure/BlazorWeatherElectron.png  used on input line 1
-93.
-(pdftex.def)             Requested size: 316.18369pt x 238.04114pt.
-[14]
-Overfull \hbox (34.25986pt too wide) in paragraph at lines 198--200
-\T1/lmr/m/n/10.95 https://github.com/danroth27/BlazorWeather/tree/master/Blazor
-Weather.Electron
- []
-
-[15 <./figure/BlazorWeatherElectron.png>]
-<figure/RazorFile.png, id=92, 645.16031pt x 359.84438pt>
+94.
+(pdftex.def)             Requested size: 263.48372pt x 198.3656pt.
+[14 <./figure/BlazorWeatherElectron.png>]
+<figure/RazorFile.png, id=88, 645.16031pt x 359.84438pt>
 File: figure/RazorFile.png Graphic file (type png)
 <use figure/RazorFile.png>
 Package pdftex.def Info: figure/RazorFile.png  used on input line 213.
 (pdftex.def)             Requested size: 354.83926pt x 197.91501pt.
-<figure/RazorFileCompiled.PNG, id=93, 663.22781pt x 292.09125pt>
+<figure/RazorFileCompiled.PNG, id=89, 663.22781pt x 292.09125pt>
 File: figure/RazorFileCompiled.PNG Graphic file (type png)
 <use figure/RazorFileCompiled.PNG>
 Package pdftex.def Info: figure/RazorFileCompiled.PNG  used on input line 222.
 (pdftex.def)             Requested size: 364.77643pt x 160.65067pt.
- [16 <./figure/RazorFile.png>]
-<figure/BlazorPrimitives.PNG, id=98, 438.13687pt x 277.78781pt>
+ [15 <./figure/RazorFile.png>]
+<figure/BlazorPrimitives.PNG, id=95, 438.13687pt x 277.78781pt>
 File: figure/BlazorPrimitives.PNG Graphic file (type png)
 <use figure/BlazorPrimitives.PNG>
 Package pdftex.def Info: figure/BlazorPrimitives.PNG  used on input line 231.
 (pdftex.def)             Requested size: 306.69371pt x 194.45012pt.
 
-[17 <./figure/RazorFileCompiled.PNG>]) [18 <./figure/BlazorPrimitives.PNG>]
+[16 <./figure/RazorFileCompiled.PNG>]) [17 <./figure/BlazorPrimitives.PNG>]
 \openout2 = `sorgenti/cap_3.aux'.
 
 
 (sorgenti/cap_3.tex
 Capitolo 3.
-<figure/ClientServerProCons.png, id=107, 404.26031pt x 213.79875pt>
+<figure/ClientServerProCons.png, id=104, 404.26031pt x 213.79875pt>
 File: figure/ClientServerProCons.png Graphic file (type png)
 <use figure/ClientServerProCons.png>
 Package pdftex.def Info: figure/ClientServerProCons.png  used on input line 22.
 
 (pdftex.def)             Requested size: 323.40869pt x 171.03922pt.
-[19
+[18
 
 
 
-] [20 <./figure/ClientServerProCons.png>]
-<figure/Standard_D1_V2.PNG, id=115, 722.7pt x 302.63063pt>
+] [19 <./figure/ClientServerProCons.png>]
+<figure/Standard_D1_V2.PNG, id=112, 722.7pt x 302.63063pt>
 File: figure/Standard_D1_V2.PNG Graphic file (type png)
 <use figure/Standard_D1_V2.PNG>
-Package pdftex.def Info: figure/Standard_D1_V2.PNG  used on input line 50.
+Package pdftex.def Info: figure/Standard_D1_V2.PNG  used on input line 48.
 (pdftex.def)             Requested size: 361.3491pt x 151.31494pt.
- [21] [22 <./figure/Standard_D1_V2.PNG>] [23]
+ [20 <./figure/Standard_D1_V2.PNG>] [21] [22] [23]
 <figure/blazorpongServerWeigth.PNG, id=127, 773.13844pt x 658.71094pt>
 File: figure/blazorpongServerWeigth.PNG Graphic file (type png)
 <use figure/blazorpongServerWeigth.PNG>
 Package pdftex.def Info: figure/blazorpongServerWeigth.PNG  used on input line 
-104.
+105.
 (pdftex.def)             Requested size: 386.56828pt x 329.35466pt.
- [24]
-<figure/blazorpongClientWeigth.PNG, id=131, 608.2725pt x 670.00313pt>
+<figure/blazorpongClientWeigth.PNG, id=128, 608.2725pt x 670.00313pt>
 File: figure/blazorpongClientWeigth.PNG Graphic file (type png)
 <use figure/blazorpongClientWeigth.PNG>
 Package pdftex.def Info: figure/blazorpongClientWeigth.PNG  used on input line 
-112.
+113.
 (pdftex.def)             Requested size: 304.13551pt x 335.00075pt.
-) [25 <./figure/blazorpongServerWeigth.PNG>] [26 <./figure/blazorpongClientWeig
+) [24 <./figure/blazorpongServerWeigth.PNG>] [25 <./figure/blazorpongClientWeig
 th.PNG>]
 \openout2 = `sorgenti/cap_4.aux'.
 
  (sorgenti/cap_4.tex
 Capitolo 4.
-<figure/BlazorModels.PNG, id=140, 580.41844pt x 338.76563pt>
+<figure/BlazorModels.PNG, id=137, 580.41844pt x 338.76563pt>
 File: figure/BlazorModels.PNG Graphic file (type png)
 <use figure/BlazorModels.PNG>
 Package pdftex.def Info: figure/BlazorModels.PNG  used on input line 10.
 (pdftex.def)             Requested size: 290.20851pt x 169.38239pt.
-[27
+[26
 
 
 
- <./figure/BlazorModels.PNG>] [28]) [29] [30]
+ <./figure/BlazorModels.PNG>] [27]) [28] [29]
 \openout2 = `sorgenti/biblio.aux'.
 
  (sorgenti/biblio.tex
@@ -713,31 +708,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 core-3-0-
  []
 
-[31
+[30
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+[]\T1/lmr/m/n/10.95 Disponibile: https://devblogs.microsoft.com/aspnet/blazor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
 []\T1/lmr/m/n/10.95 Disponibile:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 []\T1/lmr/m/n/10.95 Disponibile:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 \T1/lmr/m/n/10.95 https://github.com/ElectronNET/Electron.NET/blob
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 []\T1/lmr/m/n/10.95 https://docs.microsoft.com/it-it/aspnet/core/host-and-
  []
 
-) [32] [33
+) [31] [32
 
 
 
@@ -749,8 +749,8 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  4841 strings out of 480797
- 69825 string characters out of 2894638
- 314912 words of memory out of 3000000
+ 69838 string characters out of 2894638
+ 314917 words of memory out of 3000000
  20660 multiletter control sequences out of 15000+200000
  577092 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -761,9 +761,9 @@ mbx10.pfb><C:/Users/UT0T222/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
 c/lm/lmbx12.pfb><C:/Users/UT0T222/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/lm/lmr10.pfb><C:/Users/UT0T222/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/public/lm/lmr12.pfb>
-Output written on tesi.pdf (37 pages, 2223391 bytes).
+Output written on tesi.pdf (36 pages, 2222359 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
+ 176 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -37,7 +37,7 @@ Questo modello \`e particolarmente indicato quando si vuole delegare il costo co
 Ci\`o rende molto veloce ed efficiente il download iniziale e l'avvio dell'applicazione per gli utenti, il che lo rende il modello pi\`u adatto se le macchine che devono utilizzare l'applicazione sono apparecchi a basso costo, ammesso che siano sempre essere connessi ad internet.
 
 \subsection{BlazorPong - Server}\label{sez:bpongserv}
-Un esempio di applicazione scritta utilizzando questo modello \`e BlazorPongServer(BlazorPongServer.sln), appositamente implementata per questo lavoro di tesi e la cui demo e codice sviluppato sono disponibili nel seguente repository su GitHub: \linebreak "https://github.com/MACEL94/BlazorPong".
+Un esempio di applicazione scritta utilizzando questo modello \`e BlazorPongServer(BlazorPongServer.sln), appositamente implementata per questo lavoro di tesi e la cui demo e codice sviluppato sono disponibili nel seguente repository su GitHub: "https://github.com/MACEL94/BlazorPong".
 
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.3]{figure/BlazorPong.PNG}}
@@ -46,12 +46,12 @@ Un esempio di applicazione scritta utilizzando questo modello \`e BlazorPongServ
 \end{figure}
 
 Questa applicazione, visibile nella figura \ref{fig:BlazorPong} permette a due giocatori che si collegano al sito contemporaneamente di giocare, e ai successivi utenti che si collegano di seguire la partita in corso come spettatori in tempo reale.
-In questa applicazione \`e stato utilizzato il modello Blazor Server side per vari motivi:
+In questa applicazione si \`e inizialmente scelto il modello Blazor Server per vari motivi:
 \begin{enumerate}
 	\item Il background worker del server che si occupa di aggiornare la posizione della pallina su tutti i client connessi, deve essere eseguito in un unico thread utilizzato per tutti i client.
-	\item Il calcolo delle differenze da applicare a ciascun DOM di ciascun utente connesso, per quanto avvenga molto spesso(\`e stato limitato per rendere 60 fps circa), non ha un peso tale da non poter essere eseguito lato server poich\'e l'applicazione \`e molto semplice e di conseguenza leggera.
-	Una sola macchina host gratuita come quella che \`e stata utilizzata(su Azure), riesce a far giocare senza problemi due persone con diversi spettatori.
-	\`E comunque bene specificare che tutti i test di performance che sono stati fatti sono stati eseguiti in Europa, e che il server utilizzato si trova in Francia.
+	\item Il calcolo delle differenze da applicare a ciascun DOM di ciascun utente connesso, per quanto avvenga molto spesso(\`e stato limitato per rendere 60 fps circa), non ha un peso tale da mettere in difficolt\`a un server scarso(la macchina scelta \'e gratuita) poich\'e l'applicazione \`e estremamente semplice e di conseguenza molto leggera.
+	Una sola macchina host come quella che \`e stata utilizzata(su Azure), riesce a far giocare senza problemi due persone con diversi spettatori.
+	\`E comunque bene specificare che tutti i test di performance che sono stati fatti sono stati eseguiti in Europa, e che il server utilizzato come host si trova in Francia.
 	\item Essendo la gestione degli eventi server side, il gioco pu\`o essere visualizzato in modalit\`a spettatore senza problemi anche su cellulari non performanti.
 \end{enumerate}
 
@@ -69,13 +69,13 @@ Ci\`o che invece avviene grazie all'utente, \`e lo spostamento del proprio playe
 Ad ogni evento scatenato dall'utente, la connessione SignalR invia l'evento al server, che lo processa e restituisce a tutti gli utenti connessi la nuova posizione.
 Viene escluso dall'aggiornamento di posizione del blocco inviato dal server, il solo player che ha scatenato l'evento, poich\'e l'invio delle differenze necessarie per renderizzare la UI aggiornata viene gestito gi\`a da Blazor Server.
 
-\`E importante notare che gi\`a per questa semplice applicazione, il cui sviluppo \`e avvenuto mentre Blazor Server era ancora in preview e che ora è aggiornato all'ultima versione stabile disponibile, Blazor Server ha permesso di utilizzare pochissimo codice Javascript.
+\`E importante notare che gi\`a per questa semplice applicazione, il cui sviluppo \`e avvenuto mentre Blazor Server era ancora in preview e che ora \`e stato aggiornato all'ultima versione stabile disponibile, Blazor Server ha permesso di utilizzare pochissimo codice Javascript.
 Il poco Javascript presente \`e stato necessario per gestire gli eventi client-side che non sono ancora supportati da questo framework, come l'evento "onbeforeunload", che viene scatenato quando il documento che costituisce la pagina sta per essere liberato, evento che necessariamente deve essere intercettato per liberare la sessione del player dal server al momento della chiusura o uscita dal sito.
 
 \pagebreak
 
 \section{Blazor WebAssembly}\label{sez:bwa}
-Blazor WebAssembly \`e un modello attualmente in anteprima, e sar\`a ufficialmente rilasciato verso maggio del 2020.
+Blazor WebAssembly \`e il modello appena rilasciato ufficialmente\cite{blazorWebAssemblyRelease}.
 
 In questo modello il codice della SPA viene scaricato ed eseguito nel browser del client che si collega, come solitamente avviene quando si utilizza un framework moderno per UI come i gi\`a citati Angular, React e Vue.
 
@@ -117,7 +117,7 @@ Il progetto per la creazione di WASM \`e nato nel 2015, mentre dal 2017 i browse
 Come si pu\`o vedere nella figura \ref{fig:WasmVSJavascript}, uno dei motivi per cui WASM \`e pi\`u veloce di Javascript \`e che non deve essere analizzato e compilato prima di poter essere interpretato, va solamente decompresso e per questo motivo spesso viene definito il byte code per il web.
 
 La compilazione pu\`o avvenire in modalit\`a AOT(Ahead of Time) e non solamente JIT(Just in Time) come per JS, il che si traduce in un sensibile miglioramento delle prestazioni del codice dinamico.
-Questa tecnologia \`e ci\`o che rende possibile il funzionamento di Blazor WebAssembly.
+Questa tecnologia \`e ci\`o che rende possibile il funzionamento di Blazor WebAssembly, che tuttavia rimane per ora molto pi\`u lento di JS in quanto il codice compilato in WASM \`e il solo Runtime Mono, e non l'intero codice dinamico di ogni applicazione scritta in Blazor WASM, feature estremamente richiesta ma ancora in fase di valutazione(non in sviluppo attivo) in quanto molto complessa da realizzare.
 
 \subsection{Blazor PWA}\label{sez:bpwa}
 Il passaggio successivo per avvicinarsi a prestazioni e interazioni native per il client, allontanandosi ulteriormente dal modello Blazor Server, \`e chiamato Blazor PWA.
@@ -130,20 +130,20 @@ Il passaggio successivo per avvicinarsi a prestazioni e interazioni native per i
 \end{figure}
 
 Nella figura \ref{fig:WhatIsAPWA} viene riassunto cosa siano le PWA ovvero applicazioni web che hanno la capacit\`a di funzionare anche offline, possono essere scaricate in modo persistente sulla macchina dell'utente che le esegue.
-Offrono il vantaggio di una maggiore velocit\`a di esecuzione e la possibilit\`a di sfruttare alcune API native.
+Offrono il vantaggio di una velocit\`a potenzialmente ancora maggiore di esecuzione e permettono di sfruttare alcune API native.
 Questo modello quindi, pu\`o tornare utile quando la necessit\`a dell'applicazione che si vuole sviluppare \`e quella di utilizzare le notifiche push native del sistema operativo che sta utilizzando il client.
 
 Al momento, per realizzare una PWA utilizzando Blazor, bisogna partire dal modello Blazor WebAssembly aggiungendo un manifesto che descriva le capacit\`a dell'applicazione, i permessi richiesti e l'icona da utilizzare una volta installata, oltre chiaramente a dover implementare l'applicazione in modo che possa lavorare anche offline, basandosi su un service worker\cite{blazorPWA}.
 
-Un'applicazione web infatti per essere considerata una PWA, deve poter essere installata in caso l'utente utilizzi Windows o appuntata nel caso in cui l'utente stia utilizzando un cellulare, e deve supportare l'utilizzo dell'HTTPS, già presente di default nei template forniti per Blazor.
+Un'applicazione web infatti per essere considerata una PWA, deve poter essere installata in caso l'utente utilizzi Windows o appuntata nel caso in cui l'utente stia utilizzando un cellulare, e deve supportare l'utilizzo dell'HTTPS, gi\`a presente di default nei template forniti per Blazor.
 
-Una cosa molto importante da tenere presente, \`e che le demo esistenti al momento per le PWA scritte in Blazor si basano su browser Chromium Based(Chrome,Edge) e sul sistema operativo Windows per PC e IOS/Android per mobile.
+Una cosa molto importante da tenere presente, \`e che al momento le PWA scritte in Blazor si basano su browser Chromium Based(Chrome,Edge) e sul sistema operativo Windows per PC e IOS/Android per mobile.
 Per ora quindi non tutti i browser supportano queste PWA.
 
 \subsection{BlazorPong - Client e PWA}\label{sez:bpongclient}
 Un esempio di applicazione scritta utilizzando il modello Blazor WASM \`e BlazorPongClient(BlazorPongWasm.sln), appositamente implementato per questo lavoro di tesi e la cui demo e codice sviluppato sono disponibili nel seguente repository su GitHub: "https://github.com/MACEL94/BlazorPong".
 
-Questo progetto dimostra come sia possibile condividere il codice dei component e riutilizzarlo, visto che il component visibile al route /pong \`e lo stesso gi\`a presente in BlazorPongServer, spostato in un progetto condiviso e quindi referenziato in entrambi.
+Questo progetto dimostra come sia possibile condividere il codice dei component e riutilizzarli, visto che il gioco visibile al route /pong \`e lo stesso gi\`a presente in BlazorPongServer, contenuto in un progetto condiviso e quindi referenziato in entrambi.
 
 Chiaramente l'applicazione in questo caso non \`e costituita da soli file statici, e non pu\`o essere scaricata completamente lato client o servita da un CDN.
 
@@ -152,7 +152,7 @@ La WebApp viene comunque ospitata su un server dove continua ad avvenire la comp
 
 In questo modello si \`e deciso di integrare anche il service worker che permette di installare l'applicazione in modo da farla sembrare nativa e ricercabile dal men\`u start, ad esempio in Windows.
 
-Ci\`o \`e visibile di seguito nelle immagini \ref{fig:installableBlazorPongWasm}, \ref{fig:searchingBlazorPongWasm} e \ref{fig:installedBlazorPongWasm}.
+Questo \`e visibile di seguito nelle immagini \ref{fig:installableBlazorPongWasm}, \ref{fig:searchingBlazorPongWasm} e \ref{fig:installedBlazorPongWasm}.
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.6]{figure/installableBlazorPongWasm.png}}
 	\caption{L'utente pu\`o decidere di installare l'applicazione.}
@@ -187,15 +187,15 @@ Electron combina il motore di rendering del browser Chromium ed il runtime Node.
 Utilizzando quindi il pacchetto NuGet Electron.NET, si pu\`o fare in modo di eseguire un'applicazione .NET Core nell'ambiente(browser e runtime) garantito da Electron, utilizzando Blazor in fase di sviluppo\cite{electronDotNet}.
 
 In questo modo si pu\`o ottenere un'applicazione con capacit\`a native, che sia cross-platform, la cui interfaccia sia stata scritta utilizzando Blazor.
-Nella figura \ref{fig:BlazorHybridApplication} si pu\`o vedere una Web Application compilata nativamente con Electron(con target Windows), e quindi eseguita come applicazione desktop:
+Nella figura \ref{fig:BlazorHybridApplication} si pu\`o vedere una Web Application compilata nativamente con Electron(con target Windows), e quindi eseguita come applicazione desktop.
+Il codice open source di questa applicazione, si pu\`o trovare al seguente link: https://github.com/danroth27/BlazorWeather/tree/master/BlazorWeather.Electron
 
 \begin{figure}[H]
-	\centerline{\includegraphics[scale=0.6]{figure/BlazorWeatherElectron.png}}
+	\centerline{\includegraphics[scale=0.5]{figure/BlazorWeatherElectron.png}}
 	\caption{Blazor Hybrid Application}
 	\label{fig:BlazorHybridApplication}
 \end{figure}
 
-Il codice open source di questa applicazione, si pu\`o trovare al seguente link: https://github.com/danroth27/BlazorWeather/tree/master/BlazorWeather.Electron
 \pagebreak
 
 \subsection{Blazor Native}\label{sez:bnative}
