@@ -30,7 +30,7 @@ La scelta migliore tra i modelli Blazor, \`e Blazor Server.
 Questo primo modello, essendo anche il pi\`u maturo, \`e gi\`a una valida tecnologia da tenere in considerazione e sfruttare quando risulta adatto.
 Per ora \`e comunque sconsigliato utilizzare questa tecnologia senza conoscere affatto JS, dato che in alcuni casi potrebbe essere necessario utilizzarlo, come \`e successo durante lo sviluppo di BlazorPong.
 
-Per il resto delle applicazioni, probabilmente \`e pi\`u adatto l'utilizzo di Blazor WebAssembly.
+Per il resto delle applicazioni, probabilmente \`e pi\`u adatto l'utilizzo di Blazor WebAssembly, magari introducendo anche il concetto di PWA dato che diventa cos\`i semplice.
 
 \`E importante ricordare che durante lo sviluppo di BlazorPong, quasi ad ogni aggiornamento di versione di Blazor Server, che era ancora in preview, ci sono state breaking changes per le quali \`e stato necessario riscrivere parzialmente l'applicazione, ma da quando si \`e raggiunta una release stabile, il processo di update \`e stato quasi indolore e le novit\`a introdotte largamente retrocompatibili.
 
@@ -43,14 +43,13 @@ I problemi del modello WebAssembly per\`o sono evidenti:
 	\item Le prestazioni native che potenzialmente potrebbero essere raggiunte, sono ancora lontane in questo momento.
 	Questo principalmente perch\`e il codice convertito in WebAssembly \`e solo il runtime Mono che quindi interpreta il codice compilato dell'applicazione durante l'esecuzione(le DLL) e non ha le prestazioni native che Blazor potrebbe raggiungere.
 	Se Microsoft riuscir\`a a implementare un compilatore che esegua direttamente la compilazione di tutto il codice da C\# a WebAssembly, allora le prestazioni del codice potrebbero rispettare ci\`o che il framework cerca di offrire, tuttavia molto dipender\`a dall'efficienza di questo nuovo compilatore;
-	\item Il tooling messo a disposizione non \`e sufficiente per giustificare l'utilizzo di Blazor in produzione, dato che nemmeno il debugging al momento risulta pienamente supportato;
 	\item Alcuni eventi della UI, non sono ancora supportati da Blazor, che fornisce delle interfacce per essere interoperabile con JS, ma di fatto non ne elimina ancora l'obbligo della conoscenza, principale motivo per il quale un developer potrebbe volerlo utilizzare.
 	\item La community, essendo nata solo di recente, non \`e paragonabile a quella di JS e dei suoi maggiori framework, quindi il supporto, gli esempi disponibili online come anche la documentazione e gli effettivi utilizzatori, sono molto limitati, almeno per ora.
 \end{enumerate}
 
-Infine Blazor PWA, Blazor Hybrid e Blazor Native al momento sono progetti altamente sperimentali, ed il loro utilizzo a scopo non puramente accademico potrebbe rivelarsi una scelta sbagliata, il consiglio \`e quello di tenerli in considerazione quando verranno rilasciati ufficialmente ed eventualmente di valutare se effettivamente il loro utilizzo sia giustificato.
+Infine Blazor Hybrid e Blazor Native al momento sono progetti altamente sperimentali, ed il loro utilizzo a scopo non puramente accademico potrebbe rivelarsi una scelta sbagliata, la considerazione pi\`u ovvia \`e quella di tenerli in considerazione quando verranno rilasciati ufficialmente e comunque di valutare attentamente se l'utilizzo sia giustificato.
 
-Il presente studio prova quindi ad aggregare e studiare le informazioni disponibili al momento su Blazor, ed \`e importante tenere presente che solo uno dei 5 modelli attualmente annunciati \`e stato ufficialmente rilasciato, quindi alcune delle cose descritte potrebbero cambiare nel tempo, come ad esempio le tecnologie sulle quali si basano Blazor PWA o Blazor Hybrid.
+Il presente studio prova quindi ad aggregare e studiare le informazioni disponibili al momento su Blazor, ed \`e importante tenere presente che solo tre dei 5 modelli attualmente annunciati sono stati ufficialmente rilasciati, quindi alcune delle cose descritte potrebbero cambiare nel tempo, come ad esempio le tecnologie sulle quali si basano Blazor Hybrid o Blazor Native.
 
 Una raccomandazione per ulteriori ricerche future potrebbe essere quella di realizzare uno studio simile per determinare eventuali differenze ed evoluzioni siano avvenute nel tempo a Blazor rispetto a quello qui descritto ed i motivi di questi cambiamenti, confrontandolo poi con framework con lo stesso scopo ma non prodotti da Microsoft.
-Un'altro punto di partenza potrebbe essere quello di effettuare indagini su quanti developer backend e frontend abbiano scelto o scartato Blazor e per quali motivi lo abbiano fatto.
+Un'altro punto di partenza potrebbe essere quello di effettuare indagini su quanti developer backend e frontend abbiano scelto o scartato Blazor e per quali motivi lo abbiano fatto, dati che sono stati cercati per questo studio di tesi ma non ancora disponibili online.
